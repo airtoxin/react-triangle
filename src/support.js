@@ -3,12 +3,12 @@ export default class TriangleSupport extends Component {}
 TriangleSupport.propTypes = {
     offsetX: PropTypes.number,
     offsetY: PropTypes.number,
-    pointTop: PropTypes.bool,
+    direction: PropTypes.oneOf(["up", "down", "left", "right"]),
     size: PropTypes.number
 };
 TriangleSupport.defaultProps = {
     offsetX: 0,
     offsetY: 0,
-    pointTop: true,
+    direction: "up",
     size: 100
 };

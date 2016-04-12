@@ -19,7 +19,9 @@ _reactDom2.default.render(_react2.default.createElement(
     "svg",
     { width: "1000px", height: "1000px" },
     _react2.default.createElement(_lib2.default, null),
-    _react2.default.createElement(_lib2.default, { pointTop: false })
+    _react2.default.createElement(_lib2.default, { direction: "down" }),
+    _react2.default.createElement(_lib2.default, { direction: "left" }),
+    _react2.default.createElement(_lib2.default, { direction: "right" })
 ), document.getElementById("example"));
 
 },{"../lib":167,"react":166,"react-dom":3}],2:[function(require,module,exports){
@@ -19393,6 +19395,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.nextDown = exports.nextUp = exports.nextRight = exports.nextLeft = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19413,6 +19416,20 @@ var _support = require("./support");
 var _support2 = _interopRequireDefault(_support);
 
 var _triangles = require("./triangles");
+
+var Triangles = _interopRequireWildcard(_triangles);
+
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+        return obj;
+    } else {
+        var newObj = {};if (obj != null) {
+            for (var key in obj) {
+                if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+            }
+        }newObj.default = obj;return newObj;
+    }
+}
 
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
@@ -19448,7 +19465,9 @@ var Triangle = function (_TriangleSupport) {
     _createClass(Triangle, [{
         key: "render",
         value: function render() {
-            return this.props.pointTop ? _react2.default.createElement(_triangles.PointTopTriangle, this.props) : _react2.default.createElement(_triangles.LineTopTriangle, this.props);
+            var camel = this.props.direction.substring(0, 1).toUpperCase() + this.props.direction.substring(1);
+            var T = Triangles[camel + "Triangle"];
+            return _react2.default.createElement(T, this.props);
         }
     }]);
 
@@ -19456,6 +19475,13 @@ var Triangle = function (_TriangleSupport) {
 }(_support2.default);
 
 exports.default = Triangle;
+var nextLeft = exports.nextLeft = function nextLeft(prevX, prevY, prevPointTop, prevSize) {};
+
+var nextRight = exports.nextRight = function nextRight() {};
+
+var nextUp = exports.nextUp = function nextUp() {};
+
+var nextDown = exports.nextDown = function nextDown() {};
 
 },{"./support":168,"./triangles":169,"react":199}],168:[function(require,module,exports){
 "use strict";
@@ -19511,13 +19537,13 @@ exports.default = TriangleSupport;
 TriangleSupport.propTypes = {
     offsetX: _react.PropTypes.number,
     offsetY: _react.PropTypes.number,
-    pointTop: _react.PropTypes.bool,
+    direction: _react.PropTypes.oneOf(["up", "down", "left", "right"]),
     size: _react.PropTypes.number
 };
 TriangleSupport.defaultProps = {
     offsetX: 0,
     offsetY: 0,
-    pointTop: true,
+    direction: "up",
     size: 100
 };
 
@@ -19529,7 +19555,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.LineTopTriangle = exports.PointTopTriangle = undefined;
+exports.RightTriangle = exports.LeftTriangle = exports.DownTriangle = exports.UpTriangle = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19571,16 +19597,16 @@ function _inherits(subClass, superClass) {
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 } // eslint-disable-line no-unused-vars
 
-var PointTopTriangle = exports.PointTopTriangle = function (_TriangleSupport) {
-    _inherits(PointTopTriangle, _TriangleSupport);
+var UpTriangle = exports.UpTriangle = function (_TriangleSupport) {
+    _inherits(UpTriangle, _TriangleSupport);
 
-    function PointTopTriangle() {
-        _classCallCheck(this, PointTopTriangle);
+    function UpTriangle() {
+        _classCallCheck(this, UpTriangle);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(PointTopTriangle).apply(this, arguments));
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(UpTriangle).apply(this, arguments));
     }
 
-    _createClass(PointTopTriangle, [{
+    _createClass(UpTriangle, [{
         key: "render",
         value: function render() {
             var points = this._calcVertexCoord().map(function (s) {
@@ -19599,19 +19625,19 @@ var PointTopTriangle = exports.PointTopTriangle = function (_TriangleSupport) {
         }
     }]);
 
-    return PointTopTriangle;
+    return UpTriangle;
 }(_support2.default);
 
-var LineTopTriangle = exports.LineTopTriangle = function (_TriangleSupport2) {
-    _inherits(LineTopTriangle, _TriangleSupport2);
+var DownTriangle = exports.DownTriangle = function (_TriangleSupport2) {
+    _inherits(DownTriangle, _TriangleSupport2);
 
-    function LineTopTriangle() {
-        _classCallCheck(this, LineTopTriangle);
+    function DownTriangle() {
+        _classCallCheck(this, DownTriangle);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(LineTopTriangle).apply(this, arguments));
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(DownTriangle).apply(this, arguments));
     }
 
-    _createClass(LineTopTriangle, [{
+    _createClass(DownTriangle, [{
         key: "render",
         value: function render() {
             var points = this._calcVertexCoord().map(function (s) {
@@ -19630,7 +19656,69 @@ var LineTopTriangle = exports.LineTopTriangle = function (_TriangleSupport2) {
         }
     }]);
 
-    return LineTopTriangle;
+    return DownTriangle;
+}(_support2.default);
+
+var LeftTriangle = exports.LeftTriangle = function (_TriangleSupport3) {
+    _inherits(LeftTriangle, _TriangleSupport3);
+
+    function LeftTriangle() {
+        _classCallCheck(this, LeftTriangle);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(LeftTriangle).apply(this, arguments));
+    }
+
+    _createClass(LeftTriangle, [{
+        key: "render",
+        value: function render() {
+            var points = this._calcVertexCoord().map(function (s) {
+                return s.join(",");
+            }).join(" ");
+            return _react2.default.createElement("polygon", { points: points });
+        }
+    }, {
+        key: "_calcVertexCoord",
+        value: function _calcVertexCoord() {
+            var ox = this.props.offsetX;
+            var oy = this.props.offsetY;
+            var sz = this.props.size;
+            var x = Math.sqrt(3) * sz / 2;
+            return [[ox, oy + sz / 2], [ox + x, oy], [ox + x, oy + sz]];
+        }
+    }]);
+
+    return LeftTriangle;
+}(_support2.default);
+
+var RightTriangle = exports.RightTriangle = function (_TriangleSupport4) {
+    _inherits(RightTriangle, _TriangleSupport4);
+
+    function RightTriangle() {
+        _classCallCheck(this, RightTriangle);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(RightTriangle).apply(this, arguments));
+    }
+
+    _createClass(RightTriangle, [{
+        key: "render",
+        value: function render() {
+            var points = this._calcVertexCoord().map(function (s) {
+                return s.join(",");
+            }).join(" ");
+            return _react2.default.createElement("polygon", { points: points });
+        }
+    }, {
+        key: "_calcVertexCoord",
+        value: function _calcVertexCoord() {
+            var ox = this.props.offsetX;
+            var oy = this.props.offsetY;
+            var sz = this.props.size;
+            var x = Math.sqrt(3) * sz / 2;
+            return [[ox, oy + sz], [ox, oy], [ox + x, oy + sz / 2]];
+        }
+    }]);
+
+    return RightTriangle;
 }(_support2.default);
 
 },{"./support":168,"react":199}],170:[function(require,module,exports){

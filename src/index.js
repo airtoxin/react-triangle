@@ -1,11 +1,19 @@
 import React from "react"; // eslint-disable-line no-unused-vars
 import TriangleSupport from "./support";
-import {PointTopTriangle, LineTopTriangle} from "./triangles";
+import * as Triangles from "./triangles";
 
 export default class Triangle extends TriangleSupport {
     render() {
-        return this.props.pointTop ?
-            <PointTopTriangle {...this.props} /> :
-            <LineTopTriangle {...this.props} />;
+        const camel = this.props.direction.substring(0, 1).toUpperCase() + this.props.direction.substring(1);
+        const T = Triangles[`${camel}Triangle`];
+        return <T {...this.props} />;
     }
 }
+
+export const nextLeft = (prevX, prevY, prevPointTop, prevSize) => {};
+
+export const nextRight = () => {};
+
+export const nextUp = () => {};
+
+export const nextDown = () => {};
