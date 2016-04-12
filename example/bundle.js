@@ -19392,6 +19392,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.LineTopTriangle = exports.PointTopTriangle = exports.TriangleSupport = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19431,8 +19432,94 @@ function _inherits(subClass, superClass) {
 
 // eslint-disable-line no-unused-vars
 
-var Triangle = function (_Component) {
-    _inherits(Triangle, _Component);
+var TriangleSupport = exports.TriangleSupport = function (_Component) {
+    _inherits(TriangleSupport, _Component);
+
+    function TriangleSupport() {
+        _classCallCheck(this, TriangleSupport);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(TriangleSupport).apply(this, arguments));
+    }
+
+    return TriangleSupport;
+}(_react.Component);
+
+;
+TriangleSupport.propTypes = {
+    offsetX: _react.PropTypes.number,
+    offsetY: _react.PropTypes.number,
+    pointTop: _react.PropTypes.bool,
+    size: _react.PropTypes.number
+};
+TriangleSupport.defaultProps = {
+    offsetX: 0,
+    offsetY: 0,
+    pointTop: true,
+    size: 100
+};
+
+var PointTopTriangle = exports.PointTopTriangle = function (_TriangleSupport) {
+    _inherits(PointTopTriangle, _TriangleSupport);
+
+    function PointTopTriangle() {
+        _classCallCheck(this, PointTopTriangle);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(PointTopTriangle).apply(this, arguments));
+    }
+
+    _createClass(PointTopTriangle, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement("polygon", { points: "0,0 100,0 100,100 0,100" });
+        }
+    }, {
+        key: "_calcVertexCoord",
+        value: function _calcVertexCoord() {
+            var ox = this.props.offsetX;
+            var oy = this.props.offsetY;
+            var sz = this.props.size;
+            var y = Math.sqrt(3) * sz / 2;
+            return [[ox, oy + y], [ox + sz / 2, oy], [ox + sz, oy + y]];
+        }
+    }]);
+
+    return PointTopTriangle;
+}(TriangleSupport);
+
+;
+
+var LineTopTriangle = exports.LineTopTriangle = function (_TriangleSupport2) {
+    _inherits(LineTopTriangle, _TriangleSupport2);
+
+    function LineTopTriangle() {
+        _classCallCheck(this, LineTopTriangle);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(LineTopTriangle).apply(this, arguments));
+    }
+
+    _createClass(LineTopTriangle, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement("polygon", { points: "0,0 100,0 100,100 0,100" });
+        }
+    }, {
+        key: "_calcVertexCoord",
+        value: function _calcVertexCoord() {
+            var ox = this.props.offsetX;
+            var oy = this.props.offsetY;
+            var sz = this.props.size;
+            var y = Math.sqrt(3) * sz / 2;
+            return [[ox, oy + y], [ox + sz / 2, oy], [ox + sz, oy + y]];
+        }
+    }]);
+
+    return LineTopTriangle;
+}(TriangleSupport);
+
+;
+
+var Triangle = function (_TriangleSupport3) {
+    _inherits(Triangle, _TriangleSupport3);
 
     function Triangle() {
         _classCallCheck(this, Triangle);
@@ -19443,12 +19530,12 @@ var Triangle = function (_Component) {
     _createClass(Triangle, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("polygon", { points: "0,0 100,0 100,100 0,100" });
+            return this.props.pointTop ? _react2.default.createElement(PointTopTriangle, this.props) : _react2.default.createElement(LineTopTriangle, this.props);
         }
     }]);
 
     return Triangle;
-}(_react.Component);
+}(TriangleSupport);
 
 exports.default = Triangle;
 
