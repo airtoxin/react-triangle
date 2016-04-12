@@ -18,7 +18,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(
     "svg",
     { width: "1000px", height: "1000px" },
-    _react2.default.createElement(_lib2.default, null)
+    _react2.default.createElement(_lib2.default, null),
+    _react2.default.createElement(_lib2.default, { pointTop: false })
 ), document.getElementById("example"));
 
 },{"../lib":167,"react":166,"react-dom":3}],2:[function(require,module,exports){
@@ -19392,7 +19393,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.LineTopTriangle = exports.PointTopTriangle = exports.TriangleSupport = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19403,6 +19403,68 @@ var _createClass = function () {
         if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
     };
 }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _support = require("./support");
+
+var _support2 = _interopRequireDefault(_support);
+
+var _triangles = require("./triangles");
+
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
+
+function _possibleConstructorReturn(self, call) {
+    if (!self) {
+        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+} // eslint-disable-line no-unused-vars
+
+var Triangle = function (_TriangleSupport) {
+    _inherits(Triangle, _TriangleSupport);
+
+    function Triangle() {
+        _classCallCheck(this, Triangle);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(Triangle).apply(this, arguments));
+    }
+
+    _createClass(Triangle, [{
+        key: "render",
+        value: function render() {
+            return this.props.pointTop ? _react2.default.createElement(_triangles.PointTopTriangle, this.props) : _react2.default.createElement(_triangles.LineTopTriangle, this.props);
+        }
+    }]);
+
+    return Triangle;
+}(_support2.default);
+
+exports.default = Triangle;
+
+},{"./support":168,"./triangles":169,"react":199}],168:[function(require,module,exports){
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _react = require("react");
 
@@ -19432,7 +19494,7 @@ function _inherits(subClass, superClass) {
 
 // eslint-disable-line no-unused-vars
 
-var TriangleSupport = exports.TriangleSupport = function (_Component) {
+var TriangleSupport = function (_Component) {
     _inherits(TriangleSupport, _Component);
 
     function TriangleSupport() {
@@ -19444,7 +19506,8 @@ var TriangleSupport = exports.TriangleSupport = function (_Component) {
     return TriangleSupport;
 }(_react.Component);
 
-;
+exports.default = TriangleSupport;
+
 TriangleSupport.propTypes = {
     offsetX: _react.PropTypes.number,
     offsetY: _react.PropTypes.number,
@@ -19458,6 +19521,56 @@ TriangleSupport.defaultProps = {
     size: 100
 };
 
+},{"react":199}],169:[function(require,module,exports){
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.LineTopTriangle = exports.PointTopTriangle = undefined;
+
+var _createClass = function () {
+    function defineProperties(target, props) {
+        for (var i = 0; i < props.length; i++) {
+            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }return function (Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+    };
+}();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _support = require("./support");
+
+var _support2 = _interopRequireDefault(_support);
+
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
+
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
+
+function _possibleConstructorReturn(self, call) {
+    if (!self) {
+        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+} // eslint-disable-line no-unused-vars
+
 var PointTopTriangle = exports.PointTopTriangle = function (_TriangleSupport) {
     _inherits(PointTopTriangle, _TriangleSupport);
 
@@ -19470,7 +19583,10 @@ var PointTopTriangle = exports.PointTopTriangle = function (_TriangleSupport) {
     _createClass(PointTopTriangle, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("polygon", { points: "0,0 100,0 100,100 0,100" });
+            var points = this._calcVertexCoord().map(function (s) {
+                return s.join(",");
+            }).join(" ");
+            return _react2.default.createElement("polygon", { points: points });
         }
     }, {
         key: "_calcVertexCoord",
@@ -19484,9 +19600,7 @@ var PointTopTriangle = exports.PointTopTriangle = function (_TriangleSupport) {
     }]);
 
     return PointTopTriangle;
-}(TriangleSupport);
-
-;
+}(_support2.default);
 
 var LineTopTriangle = exports.LineTopTriangle = function (_TriangleSupport2) {
     _inherits(LineTopTriangle, _TriangleSupport2);
@@ -19500,7 +19614,10 @@ var LineTopTriangle = exports.LineTopTriangle = function (_TriangleSupport2) {
     _createClass(LineTopTriangle, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("polygon", { points: "0,0 100,0 100,100 0,100" });
+            var points = this._calcVertexCoord().map(function (s) {
+                return s.join(",");
+            }).join(" ");
+            return _react2.default.createElement("polygon", { points: points });
         }
     }, {
         key: "_calcVertexCoord",
@@ -19509,94 +19626,71 @@ var LineTopTriangle = exports.LineTopTriangle = function (_TriangleSupport2) {
             var oy = this.props.offsetY;
             var sz = this.props.size;
             var y = Math.sqrt(3) * sz / 2;
-            return [[ox, oy + y], [ox + sz / 2, oy], [ox + sz, oy + y]];
+            return [[ox, oy], [ox + sz / 2, oy + y], [ox + sz, oy]];
         }
     }]);
 
     return LineTopTriangle;
-}(TriangleSupport);
+}(_support2.default);
 
-;
-
-var Triangle = function (_TriangleSupport3) {
-    _inherits(Triangle, _TriangleSupport3);
-
-    function Triangle() {
-        _classCallCheck(this, Triangle);
-
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(Triangle).apply(this, arguments));
-    }
-
-    _createClass(Triangle, [{
-        key: "render",
-        value: function render() {
-            return this.props.pointTop ? _react2.default.createElement(PointTopTriangle, this.props) : _react2.default.createElement(LineTopTriangle, this.props);
-        }
-    }]);
-
-    return Triangle;
-}(TriangleSupport);
-
-exports.default = Triangle;
-
-},{"react":197}],168:[function(require,module,exports){
+},{"./support":168,"react":199}],170:[function(require,module,exports){
 arguments[4][26][0].apply(exports,arguments)
-},{"_process":2,"dup":26,"fbjs/lib/invariant":191}],169:[function(require,module,exports){
+},{"_process":2,"dup":26,"fbjs/lib/invariant":193}],171:[function(require,module,exports){
 arguments[4][27][0].apply(exports,arguments)
-},{"./ReactChildren":170,"./ReactClass":171,"./ReactComponent":172,"./ReactDOMFactories":174,"./ReactElement":176,"./ReactElementValidator":177,"./ReactPropTypes":183,"./ReactVersion":184,"./onlyChild":187,"_process":2,"dup":27,"fbjs/lib/warning":195,"object-assign":196}],170:[function(require,module,exports){
+},{"./ReactChildren":172,"./ReactClass":173,"./ReactComponent":174,"./ReactDOMFactories":176,"./ReactElement":178,"./ReactElementValidator":179,"./ReactPropTypes":185,"./ReactVersion":186,"./onlyChild":189,"_process":2,"dup":27,"fbjs/lib/warning":197,"object-assign":198}],172:[function(require,module,exports){
 arguments[4][30][0].apply(exports,arguments)
-},{"./PooledClass":168,"./ReactElement":176,"./traverseAllChildren":188,"dup":30,"fbjs/lib/emptyFunction":189}],171:[function(require,module,exports){
+},{"./PooledClass":170,"./ReactElement":178,"./traverseAllChildren":190,"dup":30,"fbjs/lib/emptyFunction":191}],173:[function(require,module,exports){
 arguments[4][31][0].apply(exports,arguments)
-},{"./ReactComponent":172,"./ReactElement":176,"./ReactNoopUpdateQueue":180,"./ReactPropTypeLocationNames":181,"./ReactPropTypeLocations":182,"_process":2,"dup":31,"fbjs/lib/emptyObject":190,"fbjs/lib/invariant":191,"fbjs/lib/keyMirror":192,"fbjs/lib/keyOf":193,"fbjs/lib/warning":195,"object-assign":196}],172:[function(require,module,exports){
+},{"./ReactComponent":174,"./ReactElement":178,"./ReactNoopUpdateQueue":182,"./ReactPropTypeLocationNames":183,"./ReactPropTypeLocations":184,"_process":2,"dup":31,"fbjs/lib/emptyObject":192,"fbjs/lib/invariant":193,"fbjs/lib/keyMirror":194,"fbjs/lib/keyOf":195,"fbjs/lib/warning":197,"object-assign":198}],174:[function(require,module,exports){
 arguments[4][32][0].apply(exports,arguments)
-},{"./ReactInstrumentation":178,"./ReactNoopUpdateQueue":180,"./canDefineProperty":185,"_process":2,"dup":32,"fbjs/lib/emptyObject":190,"fbjs/lib/invariant":191,"fbjs/lib/warning":195}],173:[function(require,module,exports){
+},{"./ReactInstrumentation":180,"./ReactNoopUpdateQueue":182,"./canDefineProperty":187,"_process":2,"dup":32,"fbjs/lib/emptyObject":192,"fbjs/lib/invariant":193,"fbjs/lib/warning":197}],175:[function(require,module,exports){
 arguments[4][36][0].apply(exports,arguments)
-},{"dup":36}],174:[function(require,module,exports){
+},{"dup":36}],176:[function(require,module,exports){
 arguments[4][45][0].apply(exports,arguments)
-},{"./ReactElement":176,"./ReactElementValidator":177,"_process":2,"dup":45,"fbjs/lib/mapObject":194}],175:[function(require,module,exports){
+},{"./ReactElement":178,"./ReactElementValidator":179,"_process":2,"dup":45,"fbjs/lib/mapObject":196}],177:[function(require,module,exports){
 arguments[4][57][0].apply(exports,arguments)
-},{"./ReactInvalidSetStateWarningDevTool":179,"_process":2,"dup":57,"fbjs/lib/warning":195}],176:[function(require,module,exports){
+},{"./ReactInvalidSetStateWarningDevTool":181,"_process":2,"dup":57,"fbjs/lib/warning":197}],178:[function(require,module,exports){
 arguments[4][62][0].apply(exports,arguments)
-},{"./ReactCurrentOwner":173,"./canDefineProperty":185,"_process":2,"dup":62,"fbjs/lib/warning":195,"object-assign":196}],177:[function(require,module,exports){
+},{"./ReactCurrentOwner":175,"./canDefineProperty":187,"_process":2,"dup":62,"fbjs/lib/warning":197,"object-assign":198}],179:[function(require,module,exports){
 arguments[4][63][0].apply(exports,arguments)
-},{"./ReactCurrentOwner":173,"./ReactElement":176,"./ReactPropTypeLocationNames":181,"./ReactPropTypeLocations":182,"./canDefineProperty":185,"./getIteratorFn":186,"_process":2,"dup":63,"fbjs/lib/invariant":191,"fbjs/lib/warning":195}],178:[function(require,module,exports){
+},{"./ReactCurrentOwner":175,"./ReactElement":178,"./ReactPropTypeLocationNames":183,"./ReactPropTypeLocations":184,"./canDefineProperty":187,"./getIteratorFn":188,"_process":2,"dup":63,"fbjs/lib/invariant":193,"fbjs/lib/warning":197}],180:[function(require,module,exports){
 arguments[4][72][0].apply(exports,arguments)
-},{"./ReactDebugTool":175,"dup":72}],179:[function(require,module,exports){
+},{"./ReactDebugTool":177,"dup":72}],181:[function(require,module,exports){
 arguments[4][73][0].apply(exports,arguments)
-},{"_process":2,"dup":73,"fbjs/lib/warning":195}],180:[function(require,module,exports){
+},{"_process":2,"dup":73,"fbjs/lib/warning":197}],182:[function(require,module,exports){
 arguments[4][80][0].apply(exports,arguments)
-},{"_process":2,"dup":80,"fbjs/lib/warning":195}],181:[function(require,module,exports){
+},{"_process":2,"dup":80,"fbjs/lib/warning":197}],183:[function(require,module,exports){
 arguments[4][83][0].apply(exports,arguments)
-},{"_process":2,"dup":83}],182:[function(require,module,exports){
+},{"_process":2,"dup":83}],184:[function(require,module,exports){
 arguments[4][84][0].apply(exports,arguments)
-},{"dup":84,"fbjs/lib/keyMirror":192}],183:[function(require,module,exports){
+},{"dup":84,"fbjs/lib/keyMirror":194}],185:[function(require,module,exports){
 arguments[4][85][0].apply(exports,arguments)
-},{"./ReactElement":176,"./ReactPropTypeLocationNames":181,"./getIteratorFn":186,"dup":85,"fbjs/lib/emptyFunction":189}],184:[function(require,module,exports){
+},{"./ReactElement":178,"./ReactPropTypeLocationNames":183,"./getIteratorFn":188,"dup":85,"fbjs/lib/emptyFunction":191}],186:[function(require,module,exports){
 arguments[4][91][0].apply(exports,arguments)
-},{"dup":91}],185:[function(require,module,exports){
+},{"dup":91}],187:[function(require,module,exports){
 arguments[4][112][0].apply(exports,arguments)
-},{"_process":2,"dup":112}],186:[function(require,module,exports){
+},{"_process":2,"dup":112}],188:[function(require,module,exports){
 arguments[4][123][0].apply(exports,arguments)
-},{"dup":123}],187:[function(require,module,exports){
+},{"dup":123}],189:[function(require,module,exports){
 arguments[4][131][0].apply(exports,arguments)
-},{"./ReactElement":176,"_process":2,"dup":131,"fbjs/lib/invariant":191}],188:[function(require,module,exports){
+},{"./ReactElement":178,"_process":2,"dup":131,"fbjs/lib/invariant":193}],190:[function(require,module,exports){
 arguments[4][137][0].apply(exports,arguments)
-},{"./ReactCurrentOwner":173,"./ReactElement":176,"./getIteratorFn":186,"_process":2,"dup":137,"fbjs/lib/invariant":191,"fbjs/lib/warning":195}],189:[function(require,module,exports){
+},{"./ReactCurrentOwner":175,"./ReactElement":178,"./getIteratorFn":188,"_process":2,"dup":137,"fbjs/lib/invariant":193,"fbjs/lib/warning":197}],191:[function(require,module,exports){
 arguments[4][146][0].apply(exports,arguments)
-},{"dup":146}],190:[function(require,module,exports){
+},{"dup":146}],192:[function(require,module,exports){
 arguments[4][147][0].apply(exports,arguments)
-},{"_process":2,"dup":147}],191:[function(require,module,exports){
+},{"_process":2,"dup":147}],193:[function(require,module,exports){
 arguments[4][154][0].apply(exports,arguments)
-},{"_process":2,"dup":154}],192:[function(require,module,exports){
+},{"_process":2,"dup":154}],194:[function(require,module,exports){
 arguments[4][157][0].apply(exports,arguments)
-},{"./invariant":191,"_process":2,"dup":157}],193:[function(require,module,exports){
+},{"./invariant":193,"_process":2,"dup":157}],195:[function(require,module,exports){
 arguments[4][158][0].apply(exports,arguments)
-},{"dup":158}],194:[function(require,module,exports){
+},{"dup":158}],196:[function(require,module,exports){
 arguments[4][159][0].apply(exports,arguments)
-},{"dup":159}],195:[function(require,module,exports){
+},{"dup":159}],197:[function(require,module,exports){
 arguments[4][164][0].apply(exports,arguments)
-},{"./emptyFunction":189,"_process":2,"dup":164}],196:[function(require,module,exports){
+},{"./emptyFunction":191,"_process":2,"dup":164}],198:[function(require,module,exports){
 arguments[4][165][0].apply(exports,arguments)
-},{"dup":165}],197:[function(require,module,exports){
+},{"dup":165}],199:[function(require,module,exports){
 arguments[4][166][0].apply(exports,arguments)
-},{"./lib/React":169,"dup":166}]},{},[1]);
+},{"./lib/React":171,"dup":166}]},{},[1]);
