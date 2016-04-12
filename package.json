@@ -5,8 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "build-all": "npm run build && cd example && npm install && npm run build",
     "lint": "eslint src test",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build-all",
     "test": "mocha --recursive test"
   },
   "repository": {
