@@ -8,14 +8,14 @@ export class UpTriangle extends TriangleSupport {
     }
 
     _calcVertexCoord() {
-        const ox = this.props.offsetX;
-        const oy = this.props.offsetY;
-        const sz = this.props.size;
-        const y = Math.sqrt(3) * sz / 2;
+        const x = this.props.x;
+        const y = this.props.y;
+        const s = this.props.size;
+        const h = Math.sqrt(3) * s / 2;
         return [
-            [ox, oy + y],
-            [ox + sz / 2, oy],
-            [ox + sz, oy + y]
+            [x, y + h],
+            [x + s / 2, y],
+            [x + s, y + h]
         ];
     }
 }
@@ -27,14 +27,14 @@ export class DownTriangle extends TriangleSupport {
     }
 
     _calcVertexCoord() {
-        const ox = this.props.offsetX;
-        const oy = this.props.offsetY;
-        const sz = this.props.size;
-        const y = Math.sqrt(3) * sz / 2;
+        const x = this.props.x;
+        const y = this.props.y;
+        const s = this.props.size;
+        const h = Math.sqrt(3) * s / 2;
         return [
-            [ox, oy],
-            [ox + sz / 2, oy + y],
-            [ox + sz, oy]
+            [x, y],
+            [x + s / 2, y + h],
+            [x + s, y]
         ];
     }
 }
@@ -46,14 +46,14 @@ export class LeftTriangle extends TriangleSupport {
     }
 
     _calcVertexCoord() {
-        const ox = this.props.offsetX;
-        const oy = this.props.offsetY;
-        const sz = this.props.size;
-        const x = Math.sqrt(3) * sz / 2;
+        const x = this.props.x;
+        const y = this.props.y;
+        const s = this.props.size;
+        const w = Math.sqrt(3) * s / 2;
         return [
-            [ox, oy + sz / 2],
-            [ox + x, oy],
-            [ox + x, oy + sz]
+            [x, y + s / 2],
+            [x + w, y],
+            [x + w, y + s]
         ];
     }
 }
@@ -65,14 +65,14 @@ export class RightTriangle extends TriangleSupport {
     }
 
     _calcVertexCoord() {
-        const ox = this.props.offsetX;
-        const oy = this.props.offsetY;
-        const sz = this.props.size;
-        const x = Math.sqrt(3) * sz / 2;
+        const x = this.props.x;
+        const y = this.props.y;
+        const s = this.props.size;
+        const w = Math.sqrt(3) * s / 2;
         return [
-            [ox, oy + sz],
-            [ox, oy],
-            [ox + x, oy + sz / 2]
+            [x, y + s],
+            [x, y],
+            [x + w, y + s / 2]
         ];
     }
 }
