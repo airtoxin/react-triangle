@@ -1,6 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
@@ -15,13 +17,22 @@ var _lib2 = _interopRequireDefault(_lib);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var prev = {
+    x: 50,
+    y: 50,
+    direction: "up",
+    size: 50
+};
+
+var Triangles = Array.from(Array(100).keys()).map(function (i) {
+    prev = _lib2.default.nextRight(prev);
+    return _react2.default.createElement(_lib2.default, _extends({ key: i }, prev));
+});
+
 _reactDom2.default.render(_react2.default.createElement(
     "svg",
     { width: "1000px", height: "1000px" },
-    _react2.default.createElement(_lib2.default, null),
-    _react2.default.createElement(_lib2.default, { direction: "down" }),
-    _react2.default.createElement(_lib2.default, { direction: "left" }),
-    _react2.default.createElement(_lib2.default, { direction: "right" })
+    Triangles
 ), document.getElementById("example"));
 
 },{"../lib":167,"react":166,"react-dom":3}],2:[function(require,module,exports){
@@ -19455,10 +19466,14 @@ function _inherits(subClass, superClass) {
 var Triangle = function (_TriangleSupport) {
     _inherits(Triangle, _TriangleSupport);
 
-    function Triangle() {
+    function Triangle(props) {
         _classCallCheck(this, Triangle);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(Triangle).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Triangle).call(this, props));
+
+        var camel = props.direction.substring(0, 1).toUpperCase() + props.direction.substring(1);
+        _this.T = Triangles[camel + "Triangle"];
+        return _this;
     }
 
     _createClass(Triangle, [{
@@ -19467,6 +19482,30 @@ var Triangle = function (_TriangleSupport) {
             var camel = this.props.direction.substring(0, 1).toUpperCase() + this.props.direction.substring(1);
             var T = Triangles[camel + "Triangle"];
             return _react2.default.createElement(T, this.props);
+        }
+    }], [{
+        key: "nextLeft",
+        value: function nextLeft(opts) {
+            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
+            return Triangles[camel + "Triangle"].nextLeft(opts);
+        }
+    }, {
+        key: "nextRight",
+        value: function nextRight(opts) {
+            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
+            return Triangles[camel + "Triangle"].nextRight(opts);
+        }
+    }, {
+        key: "nextUp",
+        value: function nextUp(opts) {
+            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
+            return Triangles[camel + "Triangle"].nextUp(opts);
+        }
+    }, {
+        key: "nextDown",
+        value: function nextDown(opts) {
+            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
+            return Triangles[camel + "Triangle"].nextDown(opts);
         }
     }]);
 
@@ -19613,7 +19652,7 @@ var UpTriangle = exports.UpTriangle = function (_TriangleSupport) {
             var y = this.props.y;
             var s = this.props.size;
             var h = Math.sqrt(3) * s / 2;
-            return [[x, y + h], [x + s / 2, y], [x + s, y + h]];
+            return [[x, y], [x + s / 2, y - h], [x + s, y]];
         }
     }], [{
         key: "nextLeft",
@@ -19704,7 +19743,7 @@ var DownTriangle = exports.DownTriangle = function (_TriangleSupport2) {
             var y = this.props.y;
             var s = this.props.size;
             var h = Math.sqrt(3) * s / 2;
-            return [[x, y], [x + s / 2, y + h], [x + s, y]];
+            return [[x, y], [x + s, y], [x + s / 2, y + h]];
         }
     }], [{
         key: "nextLeft",
@@ -19793,7 +19832,7 @@ var LeftTriangle = exports.LeftTriangle = function (_TriangleSupport3) {
             var y = this.props.y;
             var s = this.props.size;
             var w = Math.sqrt(3) * s / 2;
-            return [[x, y + s / 2], [x + w, y], [x + w, y + s]];
+            return [[x, y], [x, y - s], [x + w, y - s / 2]];
         }
     }], [{
         key: "nextLeft",
@@ -19834,7 +19873,7 @@ var LeftTriangle = exports.LeftTriangle = function (_TriangleSupport3) {
 
             return {
                 x: x,
-                y: y + size,
+                y: y - size,
                 direction: "right",
                 size: size
             };
@@ -19882,7 +19921,7 @@ var RightTriangle = exports.RightTriangle = function (_TriangleSupport4) {
             var y = this.props.y;
             var s = this.props.size;
             var w = Math.sqrt(3) * s / 2;
-            return [[x, y + s], [x, y], [x + w, y + s / 2]];
+            return [[x, y], [x + w, y - s / 2], [x + w, y + s / 2]];
         }
     }], [{
         key: "nextLeft",
@@ -19906,7 +19945,7 @@ var RightTriangle = exports.RightTriangle = function (_TriangleSupport4) {
             var y = _ref14.y;
             var size = _ref14.size;
 
-            var w = Math.sqrt(3) * s / 2;
+            var w = Math.sqrt(3) * size / 2;
             return {
                 x: x + w,
                 y: y + size / 2,
