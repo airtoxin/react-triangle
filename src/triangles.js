@@ -150,7 +150,7 @@ export class LeftTriangle extends TriangleSupport {
     static nextUp({x, y, size}) {
         return {
             x,
-            y: y + size,
+            y: y - size,
             direction: "right",
             size
         };
@@ -193,7 +193,7 @@ export class RightTriangle extends TriangleSupport {
         };
     }
     static nextRight({x, y, size}) {
-        const w = Math.sqrt(3) * s / 2;
+        const w = Math.sqrt(3) * size / 2;
         return {
             x: x + w,
             y: y + size / 2,
