@@ -13,9 +13,9 @@ export class UpTriangle extends TriangleSupport {
         const s = this.props.size;
         const h = Math.sqrt(3) * s / 2;
         return [
-            [x, y + h],
-            [x + s / 2, y],
-            [x + s, y + h]
+            [x, y],
+            [x + s / 2, y - h],
+            [x + s, y]
         ];
     }
 
@@ -70,8 +70,8 @@ export class DownTriangle extends TriangleSupport {
         const h = Math.sqrt(3) * s / 2;
         return [
             [x, y],
-            [x + s / 2, y + h],
-            [x + s, y]
+            [x + s, y],
+            [x + s / 2, y + h]
         ];
     }
 
@@ -123,9 +123,9 @@ export class LeftTriangle extends TriangleSupport {
         const s = this.props.size;
         const w = Math.sqrt(3) * s / 2;
         return [
-            [x, y + s / 2],
-            [x + w, y],
-            [x + w, y + s]
+            [x, y],
+            [x, y - s],
+            [x + w, y - s / 2]
         ];
     }
 
@@ -177,8 +177,8 @@ export class RightTriangle extends TriangleSupport {
         const s = this.props.size;
         const w = Math.sqrt(3) * s / 2;
         return [
-            [x, y + s],
             [x, y],
+            [x + w, y - s / 2],
             [x + w, y + s / 2]
         ];
     }
