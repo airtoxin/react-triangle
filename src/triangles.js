@@ -33,7 +33,6 @@ export class UpTriangle extends TriangleSupport {
         };
     }
     static nextUp({x, y, size}) {
-        const h = Math.sqrt(3) * size / 2;
         return {
             x: x,
             y: y - size * 2,
@@ -42,7 +41,6 @@ export class UpTriangle extends TriangleSupport {
         };
     }
     static nextDown({x, y, size}) {
-        const h = Math.sqrt(3) * size / 2;
         return {
             x: x,
             y: y,
