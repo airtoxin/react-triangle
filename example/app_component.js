@@ -1,5 +1,5 @@
 import React, {Component} from "react"; // eslint-disable-line no-unused-vars
-import Triangle from "../lib";
+import Triangle from "react-triangle";
 
 export default class App extends Component {
     constructor(...args) {
