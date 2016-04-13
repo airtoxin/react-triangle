@@ -1,5 +1,10 @@
 import React, {Component, PropTypes} from "react"; // eslint-disable-line no-unused-vars
-export default class TriangleSupport extends Component {}
+export default class TriangleSupport extends Component {
+    render() {
+        const points = this._calcVertexCoord().map((s) => s.join(",")).join(" ");
+        return (<polygon points={points} {...this.props} />);
+    }
+}
 TriangleSupport.propTypes = {
     x: PropTypes.number,
     y: PropTypes.number,

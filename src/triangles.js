@@ -2,11 +2,6 @@ import React from "react"; // eslint-disable-line no-unused-vars
 import TriangleSupport from "./support";
 
 export class UpTriangle extends TriangleSupport {
-    render() {
-        const points = this._calcVertexCoord().map((s) => s.join(",")).join(" ");
-        return (<polygon points={points} />);
-    }
-
     _calcVertexCoord() {
         const x = this.props.x;
         const y = this.props.y;
@@ -58,11 +53,6 @@ export class UpTriangle extends TriangleSupport {
 }
 
 export class DownTriangle extends TriangleSupport {
-    render() {
-        const points = this._calcVertexCoord().map((s) => s.join(",")).join(" ");
-        return (<polygon points={points} />);
-    }
-
     _calcVertexCoord() {
         const x = this.props.x;
         const y = this.props.y;
@@ -112,11 +102,6 @@ export class DownTriangle extends TriangleSupport {
 }
 
 export class LeftTriangle extends TriangleSupport {
-    render() {
-        const points = this._calcVertexCoord().map((s) => s.join(",")).join(" ");
-        return (<polygon points={points} />);
-    }
-
     _calcVertexCoord() {
         const x = this.props.x;
         const y = this.props.y;
@@ -166,11 +151,6 @@ export class LeftTriangle extends TriangleSupport {
 }
 
 export class RightTriangle extends TriangleSupport {
-    render() {
-        const points = this._calcVertexCoord().map((s) => s.join(",")).join(" ");
-        return (<polygon points={points} />);
-    }
-
     _calcVertexCoord() {
         const x = this.props.x;
         const y = this.props.y;
