@@ -21,9 +21,9 @@ export default class Triangle extends TriangleSupport {
         const camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
         return Triangles[`${camel}Triangle`].nextRight(opts);
     }
-    static nextTop(opts) {
+    static nextUp(opts) {
         const camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
-        return Triangles[`${camel}Triangle`].nextTop(opts);
+        return Triangles[`${camel}Triangle`].nextUp(opts);
     }
     static nextDown(opts) {
         const camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
