@@ -19395,7 +19395,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.nextDown = exports.nextUp = exports.nextRight = exports.nextLeft = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19475,13 +19474,6 @@ var Triangle = function (_TriangleSupport) {
 }(_support2.default);
 
 exports.default = Triangle;
-var nextLeft = exports.nextLeft = function nextLeft(prevX, prevY, prevPointTop, prevSize) {};
-
-var nextRight = exports.nextRight = function nextRight() {};
-
-var nextUp = exports.nextUp = function nextUp() {};
-
-var nextDown = exports.nextDown = function nextDown() {};
 
 },{"./support":168,"./triangles":169,"react":199}],168:[function(require,module,exports){
 "use strict";
@@ -19535,14 +19527,14 @@ var TriangleSupport = function (_Component) {
 exports.default = TriangleSupport;
 
 TriangleSupport.propTypes = {
-    offsetX: _react.PropTypes.number,
-    offsetY: _react.PropTypes.number,
+    x: _react.PropTypes.number,
+    y: _react.PropTypes.number,
     direction: _react.PropTypes.oneOf(["up", "down", "left", "right"]),
     size: _react.PropTypes.number
 };
 TriangleSupport.defaultProps = {
-    offsetX: 0,
-    offsetY: 0,
+    x: 0,
+    y: 0,
     direction: "up",
     size: 100
 };
@@ -19617,11 +19609,71 @@ var UpTriangle = exports.UpTriangle = function (_TriangleSupport) {
     }, {
         key: "_calcVertexCoord",
         value: function _calcVertexCoord() {
-            var ox = this.props.offsetX;
-            var oy = this.props.offsetY;
-            var sz = this.props.size;
-            var y = Math.sqrt(3) * sz / 2;
-            return [[ox, oy + y], [ox + sz / 2, oy], [ox + sz, oy + y]];
+            var x = this.props.x;
+            var y = this.props.y;
+            var s = this.props.size;
+            var h = Math.sqrt(3) * s / 2;
+            return [[x, y + h], [x + s / 2, y], [x + s, y + h]];
+        }
+    }], [{
+        key: "nextLeft",
+        value: function nextLeft(_ref) {
+            var x = _ref.x;
+            var y = _ref.y;
+            var size = _ref.size;
+
+            var h = Math.sqrt(3) * size / 2;
+            return {
+                x: x - size / 2,
+                y: y - h,
+                direction: "down",
+                size: size
+            };
+        }
+    }, {
+        key: "nextRight",
+        value: function nextRight(_ref2) {
+            var x = _ref2.x;
+            var y = _ref2.y;
+            var size = _ref2.size;
+
+            var h = Math.sqrt(3) * size / 2;
+            return {
+                x: x + size / 2,
+                y: y - h,
+                direction: "down",
+                size: size
+            };
+        }
+    }, {
+        key: "nextUp",
+        value: function nextUp(_ref3) {
+            var x = _ref3.x;
+            var y = _ref3.y;
+            var size = _ref3.size;
+
+            var h = Math.sqrt(3) * size / 2;
+            return {
+                x: x,
+                y: y - size * 2,
+                direction: "down",
+                size: size
+            };
+        }
+    }, {
+        key: "nextDown",
+        value: function nextDown(_ref4) {
+            var x = _ref4.x;
+            var y = _ref4.y;
+            var size = _ref4.size;
+
+            var h = Math.sqrt(3) * size / 2;
+            return {
+                x: x,
+                y: y,
+                direction: "down",
+                size: size
+            };
         }
     }]);
 
@@ -19648,11 +19700,69 @@ var DownTriangle = exports.DownTriangle = function (_TriangleSupport2) {
     }, {
         key: "_calcVertexCoord",
         value: function _calcVertexCoord() {
-            var ox = this.props.offsetX;
-            var oy = this.props.offsetY;
-            var sz = this.props.size;
-            var y = Math.sqrt(3) * sz / 2;
-            return [[ox, oy], [ox + sz / 2, oy + y], [ox + sz, oy]];
+            var x = this.props.x;
+            var y = this.props.y;
+            var s = this.props.size;
+            var h = Math.sqrt(3) * s / 2;
+            return [[x, y], [x + s / 2, y + h], [x + s, y]];
+        }
+    }], [{
+        key: "nextLeft",
+        value: function nextLeft(_ref5) {
+            var x = _ref5.x;
+            var y = _ref5.y;
+            var size = _ref5.size;
+
+            var h = Math.sqrt(3) * size / 2;
+            return {
+                x: x - size / 2,
+                y: y + h,
+                direction: "up",
+                size: size
+            };
+        }
+    }, {
+        key: "nextRight",
+        value: function nextRight(_ref6) {
+            var x = _ref6.x;
+            var y = _ref6.y;
+            var size = _ref6.size;
+
+            var h = Math.sqrt(3) * size / 2;
+            return {
+                x: x + size / 2,
+                y: y + h,
+                direction: "up",
+                size: size
+            };
+        }
+    }, {
+        key: "nextUp",
+        value: function nextUp(_ref7) {
+            var x = _ref7.x;
+            var y = _ref7.y;
+            var size = _ref7.size;
+
+            return {
+                x: x,
+                y: y,
+                direction: "up",
+                size: size
+            };
+        }
+    }, {
+        key: "nextDown",
+        value: function nextDown(_ref8) {
+            var x = _ref8.x;
+            var y = _ref8.y;
+            var size = _ref8.size;
+
+            return {
+                x: x,
+                y: y + size * 2,
+                direction: "up",
+                size: size
+            };
         }
     }]);
 
@@ -19679,11 +19789,69 @@ var LeftTriangle = exports.LeftTriangle = function (_TriangleSupport3) {
     }, {
         key: "_calcVertexCoord",
         value: function _calcVertexCoord() {
-            var ox = this.props.offsetX;
-            var oy = this.props.offsetY;
-            var sz = this.props.size;
-            var x = Math.sqrt(3) * sz / 2;
-            return [[ox, oy + sz / 2], [ox + x, oy], [ox + x, oy + sz]];
+            var x = this.props.x;
+            var y = this.props.y;
+            var s = this.props.size;
+            var w = Math.sqrt(3) * s / 2;
+            return [[x, y + s / 2], [x + w, y], [x + w, y + s]];
+        }
+    }], [{
+        key: "nextLeft",
+        value: function nextLeft(_ref9) {
+            var x = _ref9.x;
+            var y = _ref9.y;
+            var size = _ref9.size;
+
+            var w = Math.sqrt(3) * size / 2;
+            return {
+                x: x - w,
+                y: y - size / 2,
+                direction: "right",
+                size: size
+            };
+        }
+    }, {
+        key: "nextRight",
+        value: function nextRight(_ref10) {
+            var x = _ref10.x;
+            var y = _ref10.y;
+            var size = _ref10.size;
+
+            var w = Math.sqrt(3) * size / 2;
+            return {
+                x: x + w,
+                y: y - size / 2,
+                direction: "right",
+                size: size
+            };
+        }
+    }, {
+        key: "nextUp",
+        value: function nextUp(_ref11) {
+            var x = _ref11.x;
+            var y = _ref11.y;
+            var size = _ref11.size;
+
+            return {
+                x: x,
+                y: y + size,
+                direction: "right",
+                size: size
+            };
+        }
+    }, {
+        key: "nextDown",
+        value: function nextDown(_ref12) {
+            var x = _ref12.x;
+            var y = _ref12.y;
+            var size = _ref12.size;
+
+            return {
+                x: x,
+                y: y,
+                direction: "right",
+                size: size
+            };
         }
     }]);
 
@@ -19710,11 +19878,69 @@ var RightTriangle = exports.RightTriangle = function (_TriangleSupport4) {
     }, {
         key: "_calcVertexCoord",
         value: function _calcVertexCoord() {
-            var ox = this.props.offsetX;
-            var oy = this.props.offsetY;
-            var sz = this.props.size;
-            var x = Math.sqrt(3) * sz / 2;
-            return [[ox, oy + sz], [ox, oy], [ox + x, oy + sz / 2]];
+            var x = this.props.x;
+            var y = this.props.y;
+            var s = this.props.size;
+            var w = Math.sqrt(3) * s / 2;
+            return [[x, y + s], [x, y], [x + w, y + s / 2]];
+        }
+    }], [{
+        key: "nextLeft",
+        value: function nextLeft(_ref13) {
+            var x = _ref13.x;
+            var y = _ref13.y;
+            var size = _ref13.size;
+
+            var w = Math.sqrt(3) * size / 2;
+            return {
+                x: x - w,
+                y: y + size / 2,
+                direction: "left",
+                size: size
+            };
+        }
+    }, {
+        key: "nextRight",
+        value: function nextRight(_ref14) {
+            var x = _ref14.x;
+            var y = _ref14.y;
+            var size = _ref14.size;
+
+            var w = Math.sqrt(3) * s / 2;
+            return {
+                x: x + w,
+                y: y + size / 2,
+                direction: "left",
+                size: size
+            };
+        }
+    }, {
+        key: "nextUp",
+        value: function nextUp(_ref15) {
+            var x = _ref15.x;
+            var y = _ref15.y;
+            var size = _ref15.size;
+
+            return {
+                x: x,
+                y: y,
+                direction: "left",
+                size: size
+            };
+        }
+    }, {
+        key: "nextDown",
+        value: function nextDown(_ref16) {
+            var x = _ref16.x;
+            var y = _ref16.y;
+            var size = _ref16.size;
+
+            return {
+                x: x,
+                y: y + size,
+                direction: "left",
+                size: size
+            };
         }
     }]);
 

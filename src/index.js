@@ -9,11 +9,3 @@ export default class Triangle extends TriangleSupport {
         return <T {...this.props} />;
     }
 }
-
-export const nextLeft = (prevX, prevY, prevPointTop, prevSize) => {};
-
-export const nextRight = () => {};
-
-export const nextUp = () => {};
-
-export const nextDown = () => {};
