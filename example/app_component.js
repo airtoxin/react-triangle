@@ -1,5 +1,5 @@
 import React, {Component} from "react"; // eslint-disable-line no-unused-vars
-import Triangle from "react-triangle";
+import Triangle from "../lib";
 
 export default class App extends Component {
     constructor(...args) {
@@ -27,14 +27,16 @@ export default class App extends Component {
             size: this.state.size
         };
         const Triangles = Array.from(Array(100).keys()).map((i) => {
+            const rgb = `rgb(${this.state.R + i * this.state.step}, ${this.state.G + i * this.state.step}, ${this.state.B + i * this.state.step})`
+            const T = (<Triangle key={i} {...prev} style={{fill: rgb}} />);
+
             prev.x = prev.x + this.state.offsetX;
             prev.y = prev.y + this.state.offsetY;
 
             const camel = this.state.orderDirection.substring(0, 1).toUpperCase() + this.state.orderDirection.substring(1);
             prev = Triangle[`next${camel}`](prev);
 
-            const rgb = `rgb(${this.state.R + i * this.state.step}, ${this.state.G + i * this.state.step}, ${this.state.B + i * this.state.step})`
-            return (<Triangle key={i} {...prev} style={{fill: rgb}} />);
+            return T;
         });
 
         return (

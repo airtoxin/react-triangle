@@ -1,49 +1,49 @@
 import React from "react"; // eslint-disable-line no-unused-vars
 import TriangleSupport from "./support";
 
+const d1 = 1 / Math.sqrt(3);
+const d2 = 2 / Math.sqrt(3);
+
 export class UpTriangle extends TriangleSupport {
     _calcVertexCoord() {
         const x = this.props.x;
         const y = this.props.y;
         const s = this.props.size;
-        const h = Math.sqrt(3) * s / 2;
         return [
-            [x, y],
-            [x + s / 2, y - h],
-            [x + s, y]
+            [x, y - d2 * s / 2],
+            [x + s / 2, y + d1 * s / 2],
+            [x - s / 2, y + d1 * s / 2]
         ];
     }
 
     static nextLeft({x, y, size}) {
-        const h = Math.sqrt(3) * size / 2;
         return {
             x: x - size / 2,
-            y: y - h,
+            y: y - d1 * size / 2,
             direction: "down",
             size
         };
     }
     static nextRight({x, y, size}) {
-        const h = Math.sqrt(3) * size / 2;
         return {
             x: x + size / 2,
-            y: y - h,
+            y: y - d1 * size / 2,
             direction: "down",
             size
         };
     }
     static nextUp({x, y, size}) {
         return {
-            x: x,
-            y: y - size * 2,
+            x,
+            y: y - d2 * size, // d2 * 2 * size / 2
             direction: "down",
             size
         };
     }
     static nextDown({x, y, size}) {
         return {
-            x: x,
-            y: y,
+            x,
+            y: y + d1 * size, // d1 * 2 * size / 2
             direction: "down",
             size
         };
@@ -55,28 +55,25 @@ export class DownTriangle extends TriangleSupport {
         const x = this.props.x;
         const y = this.props.y;
         const s = this.props.size;
-        const h = Math.sqrt(3) * s / 2;
         return [
-            [x, y],
-            [x + s, y],
-            [x + s / 2, y + h]
+            [x, y + d2 * s / 2],
+            [x - s / 2, y - d1 * s / 2],
+            [x + s / 2, y - d1 * s / 2]
         ];
     }
 
     static nextLeft({x, y, size}) {
-        const h = Math.sqrt(3) * size / 2;
         return {
             x: x - size / 2,
-            y: y + h,
+            y: y + d1 * size / 2,
             direction: "up",
             size
         };
     }
     static nextRight({x, y, size}) {
-        const h = Math.sqrt(3) * size / 2;
         return {
             x: x + size / 2,
-            y: y + h,
+            y: y + d1 * size / 2,
             direction: "up",
             size
         };
@@ -84,7 +81,7 @@ export class DownTriangle extends TriangleSupport {
     static nextUp({x, y, size}) {
         return {
             x,
-            y,
+            y: y - d1 * size, // d1 * 2 * size / 2
             direction: "up",
             size
         };
@@ -92,7 +89,7 @@ export class DownTriangle extends TriangleSupport {
     static nextDown({x, y, size}) {
         return {
             x,
-            y: y + size * 2,
+            y: y + d2 * size, // d2 * 2 * size / 2
             direction: "up",
             size
         };
@@ -104,44 +101,41 @@ export class LeftTriangle extends TriangleSupport {
         const x = this.props.x;
         const y = this.props.y;
         const s = this.props.size;
-        const w = Math.sqrt(3) * s / 2;
         return [
-            [x, y],
-            [x, y - s],
-            [x + w, y - s / 2]
+            [x - d2 * s / 2, y],
+            [x + d1 * s / 2, y - s / 2],
+            [x + d1 * s / 2, y + s / 2]
         ];
     }
 
     static nextLeft({x, y, size}) {
-        const w = Math.sqrt(3) * size / 2;
         return {
-            x: x - w,
-            y: y - size / 2,
+            x: x - d2 * size, // d2 * 2 * size / 2
+            y,
             direction: "right",
             size
         };
     }
     static nextRight({x, y, size}) {
-        const w = Math.sqrt(3) * size / 2;
         return {
-            x: x + w,
-            y: y - size / 2,
+            x: x + d1 * size, // d1 * 2 * size / 2
+            y,
             direction: "right",
             size
         };
     }
     static nextUp({x, y, size}) {
         return {
-            x,
-            y: y - size,
+            x: x - d1 * size / 2,
+            y: y - size / 2,
             direction: "right",
             size
         };
     }
     static nextDown({x, y, size}) {
         return {
-            x,
-            y,
+            x: x - d1 * size / 2,
+            y: y + size / 2,
             direction: "right",
             size
         };
@@ -153,44 +147,41 @@ export class RightTriangle extends TriangleSupport {
         const x = this.props.x;
         const y = this.props.y;
         const s = this.props.size;
-        const w = Math.sqrt(3) * s / 2;
         return [
-            [x, y],
-            [x + w, y - s / 2],
-            [x + w, y + s / 2]
+            [x + d2 * s / 2, y],
+            [x - d1 * s / 2, y + s / 2],
+            [x - d1 * s / 2, y - s / 2]
         ];
     }
 
     static nextLeft({x, y, size}) {
-        const w = Math.sqrt(3) * size / 2;
         return {
-            x: x - w,
-            y: y + size / 2,
+            x: x - d1 * size, // d1 * 2 * size / 2
+            y,
             direction: "left",
             size
         };
     }
     static nextRight({x, y, size}) {
-        const w = Math.sqrt(3) * size / 2;
         return {
-            x: x + w,
-            y: y + size / 2,
+            x: x + d2 * size, // d2 * 2 * size / 2
+            y,
             direction: "left",
             size
         };
     }
     static nextUp({x, y, size}) {
         return {
-            x,
-            y,
+            x: x + d1 * size / 2,
+            y: y - size / 2,
             direction: "left",
             size
         };
     }
     static nextDown({x, y, size}) {
         return {
-            x,
-            y: y + size,
+            x: x + d1 * size / 2,
+            y: y + size / 2,
             direction: "left",
             size
         };
