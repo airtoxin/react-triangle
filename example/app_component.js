@@ -5,8 +5,8 @@ import {TriangleGenerator} from "../lib";
 import Triangle from "./triangle_component";
 
 export default class App extends Component {
-    constructor(...args) {
-        super(...args);
+    constructor(props) {
+        super(props);
         this.state = {
             x: 100,
             y: 100,

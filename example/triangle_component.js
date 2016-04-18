@@ -3,8 +3,7 @@ import Triangle, {TriangleGenerator} from "../lib";
 
 export default class TriangleComponent extends Component {
     constructor(props) {
-        super();
-        this.props = props;
+        super(props);
         const fill = Math.random() < 0.5 ? "black" : "white";
         const nextFill = fill === "black" ? "white": "black";
         this.state = {

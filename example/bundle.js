@@ -39,16 +39,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var App = function (_Component) {
     _inherits(App, _Component);
 
-    function App() {
-        var _Object$getPrototypeO;
-
+    function App(props) {
         _classCallCheck(this, App);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        var _this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(App)).call.apply(_Object$getPrototypeO, [this].concat(args)));
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this, props));
 
         _this.state = {
             x: 100,
@@ -19658,9 +19652,8 @@ var TriangleComponent = function (_Component) {
     function TriangleComponent(props) {
         _classCallCheck(this, TriangleComponent);
 
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TriangleComponent).call(this));
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TriangleComponent).call(this, props));
 
-        _this.props = props;
         var fill = Math.random() < 0.5 ? "black" : "white";
         var nextFill = fill === "black" ? "white" : "black";
         _this.state = {
