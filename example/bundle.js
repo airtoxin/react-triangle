@@ -13,6 +13,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactDom = require("react-dom");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
 var _reactRadioGroup = require("react-radio-group");
 
 var _reactRadioGroup2 = _interopRequireDefault(_reactRadioGroup);
@@ -45,18 +49,10 @@ var App = function (_Component) {
         var _this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(App)).call.apply(_Object$getPrototypeO, [this].concat(args)));
 
         _this.state = {
-            x: 500,
-            y: 500,
+            x: 400,
+            y: 100,
             direction: "up",
-            orderDirection: "right",
-            size: 50,
-            steps: 25,
-            offsetX: 0,
-            offsetY: 0,
-            R: 0,
-            G: 99,
-            B: 160,
-            colorStep: 5
+            size: 50
         };
         return _this;
     }
@@ -66,23 +62,12 @@ var App = function (_Component) {
         value: function render() {
             var _this2 = this;
 
-            var prev = {
-                x: this.state.x,
-                y: this.state.y,
-                direction: this.state.direction,
-                size: this.state.size
-            };
-            var Triangles = Array.from(Array(this.state.steps).keys()).map(function (i) {
-                var rgb = "rgb(" + (_this2.state.R + i * _this2.state.colorStep) + ", " + (_this2.state.G + i * _this2.state.colorStep) + ", " + (_this2.state.B + i * _this2.state.colorStep) + ")";
-                var T = _react2.default.createElement(_lib2.default, _extends({ key: i }, prev, { style: { fill: rgb } }));
-
-                prev.x = prev.x + _this2.state.offsetX;
-                prev.y = prev.y + _this2.state.offsetY;
-
-                var camel = _this2.state.orderDirection.substring(0, 1).toUpperCase() + _this2.state.orderDirection.substring(1);
-                prev = _lib2.default["next" + camel](prev);
-
-                return T;
+            var generator = new _lib.TriangleGenerator(this.state);
+            var Triangles = Array.from(Array(10).keys()).map(function (i) {
+                return Array.from(Array(10).keys()).map(function (j) {
+                    var props = generator.byCoord(j, i);
+                    return _react2.default.createElement(_lib2.default, _extends({ key: "i" + i + "j" + j }, props));
+                });
             });
 
             return _react2.default.createElement(
@@ -150,70 +135,9 @@ var App = function (_Component) {
                         _react2.default.createElement(
                             "div",
                             { style: { display: "flex", flexDirection: "row" } },
-                            "orderDirection:",
-                            _react2.default.createElement(
-                                _reactRadioGroup2.default,
-                                { name: "orderDirection", selectedValue: this.state.orderDirection, onChange: function onChange(v) {
-                                        return _this2.setState({ orderDirection: v });
-                                    } },
-                                function (Radio) {
-                                    return _react2.default.createElement(
-                                        "div",
-                                        null,
-                                        "up",
-                                        _react2.default.createElement(Radio, { value: "up" }),
-                                        "down",
-                                        _react2.default.createElement(Radio, { value: "down" }),
-                                        "left",
-                                        _react2.default.createElement(Radio, { value: "left" }),
-                                        "right",
-                                        _react2.default.createElement(Radio, { value: "right" })
-                                    );
-                                }
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { style: { display: "flex", flexDirection: "row" } },
                             "size: ",
                             _react2.default.createElement("input", { type: "number", value: this.state.size, onChange: function onChange(e) {
                                     return _this2.setState({ size: +e.target.value });
-                                } }),
-                            "steps: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.steps, onChange: function onChange(e) {
-                                    return _this2.setState({ steps: +e.target.value });
-                                } })
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { style: { display: "flex", flexDirection: "row" } },
-                            "offsetX: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.offsetX, onChange: function onChange(e) {
-                                    return _this2.setState({ offsetX: +e.target.value });
-                                } }),
-                            "offsetY: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.offsetY, onChange: function onChange(e) {
-                                    return _this2.setState({ offsetY: +e.target.value });
-                                } })
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { style: { display: "flex", flexDirection: "row" } },
-                            "R: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.R, onChange: function onChange(e) {
-                                    return _this2.setState({ R: +e.target.value });
-                                } }),
-                            "G: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.G, onChange: function onChange(e) {
-                                    return _this2.setState({ G: +e.target.value });
-                                } }),
-                            "B: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.B, onChange: function onChange(e) {
-                                    return _this2.setState({ B: +e.target.value });
-                                } }),
-                            "colorStep: ",
-                            _react2.default.createElement("input", { type: "number", value: this.state.colorStep, onChange: function onChange(e) {
-                                    return _this2.setState({ colorStep: +e.target.value });
                                 } })
                         )
                     )
@@ -232,7 +156,7 @@ var App = function (_Component) {
 
 exports.default = App;
 
-},{"../lib":170,"react":169,"react-radio-group":5}],2:[function(require,module,exports){
+},{"../lib":170,"react":169,"react-dom":4,"react-radio-group":5}],2:[function(require,module,exports){
 "use strict";
 
 var _react = require("react");
@@ -19690,6 +19614,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.TriangleGenerator = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19747,6 +19672,8 @@ function _inherits(subClass, superClass) {
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 } // eslint-disable-line no-unused-vars
 
+var TriangleGenerator = exports.TriangleGenerator = Triangles.TriangleGenerator;
+
 var Triangle = function (_TriangleSupport) {
     _inherits(Triangle, _TriangleSupport);
 
@@ -19766,30 +19693,6 @@ var Triangle = function (_TriangleSupport) {
             var camel = this.props.direction.substring(0, 1).toUpperCase() + this.props.direction.substring(1);
             var T = Triangles[camel + "Triangle"];
             return _react2.default.createElement(T, this.props);
-        }
-    }], [{
-        key: "nextLeft",
-        value: function nextLeft(opts) {
-            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
-            return Triangles[camel + "Triangle"].nextLeft(opts);
-        }
-    }, {
-        key: "nextRight",
-        value: function nextRight(opts) {
-            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
-            return Triangles[camel + "Triangle"].nextRight(opts);
-        }
-    }, {
-        key: "nextUp",
-        value: function nextUp(opts) {
-            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
-            return Triangles[camel + "Triangle"].nextUp(opts);
-        }
-    }, {
-        key: "nextDown",
-        value: function nextDown(opts) {
-            var camel = opts.direction.substring(0, 1).toUpperCase() + opts.direction.substring(1);
-            return Triangles[camel + "Triangle"].nextDown(opts);
         }
     }]);
 
@@ -19900,7 +19803,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.RightTriangle = exports.LeftTriangle = exports.DownTriangle = exports.UpTriangle = undefined;
+exports.RightTriangle = exports.LeftTriangle = exports.DownTriangle = exports.UpTriangle = exports.TriangleGenerator = undefined;
+
+var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+            }
+        }
+    }return target;
+};
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19910,7 +19823,7 @@ var _createClass = function () {
     }return function (Constructor, protoProps, staticProps) {
         if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
     };
-}();
+}(); // eslint-disable-line no-unused-vars
 
 var _react = require("react");
 
@@ -19924,12 +19837,6 @@ function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
 }
 
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
-
 function _possibleConstructorReturn(self, call) {
     if (!self) {
         throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -19940,10 +19847,71 @@ function _inherits(subClass, superClass) {
     if (typeof superClass !== "function" && superClass !== null) {
         throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-} // eslint-disable-line no-unused-vars
+}
 
-var d1 = 1 / Math.sqrt(3);
-var d2 = 2 / Math.sqrt(3);
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
+
+var TriangleGenerator = exports.TriangleGenerator = function () {
+    function TriangleGenerator(props) {
+        _classCallCheck(this, TriangleGenerator);
+
+        this.props = props;
+    }
+
+    _createClass(TriangleGenerator, [{
+        key: "byCoord",
+        value: function byCoord(deltaX, deltaY) {
+            var isSameDirection = (deltaX + deltaY) % 2 === 0;
+            return _extends({}, this.props, {
+                // overwrites
+                x: this._getX(deltaX, deltaY),
+                y: this._getY(deltaX, deltaY),
+                direction: isSameDirection ? this.props.direction : this._getAdjacentDirection(),
+                size: this.props.size
+            });
+        }
+    }, {
+        key: "_getX",
+        value: function _getX(deltaX, deltaY) {
+            if (this.props.direction === "up" || this.props.direction === "down") {
+                return this.props.x + this.props.size / 2 * deltaX;
+            }
+            if (this.props.direction === "left" || this.props.direction === "right") {
+                return this.props.x + Math.sqrt(3) * this.props.size / 2 * deltaX;
+            }
+        }
+    }, {
+        key: "_getY",
+        value: function _getY(deltaX, deltaY) {
+            if (this.props.direction === "up" || this.props.direction === "down") {
+                return this.props.y + Math.sqrt(3) * this.props.size / 2 * deltaY;
+            }
+            if (this.props.direction === "left" || this.props.direction === "right") {
+                return this.props.y + this.props.size / 2 * deltaY;
+            }
+        }
+    }, {
+        key: "_getAdjacentDirection",
+        value: function _getAdjacentDirection() {
+            switch (this.props.direction) {
+                case "up":
+                    return "down";
+                case "down":
+                    return "up";
+                case "left":
+                    return "right";
+                case "right":
+                    return "left";
+            }
+        }
+    }]);
+
+    return TriangleGenerator;
+}();
 
 var UpTriangle = exports.UpTriangle = function (_TriangleSupport) {
     _inherits(UpTriangle, _TriangleSupport);
@@ -19960,63 +19928,8 @@ var UpTriangle = exports.UpTriangle = function (_TriangleSupport) {
             var x = this.props.x;
             var y = this.props.y;
             var s = this.props.size;
-            return [[x, y - d2 * s / 2], [x + s / 2, y + d1 * s / 2], [x - s / 2, y + d1 * s / 2]];
-        }
-    }], [{
-        key: "nextLeft",
-        value: function nextLeft(_ref) {
-            var x = _ref.x;
-            var y = _ref.y;
-            var size = _ref.size;
-
-            return {
-                x: x - size / 2,
-                y: y - d1 * size / 2,
-                direction: "down",
-                size: size
-            };
-        }
-    }, {
-        key: "nextRight",
-        value: function nextRight(_ref2) {
-            var x = _ref2.x;
-            var y = _ref2.y;
-            var size = _ref2.size;
-
-            return {
-                x: x + size / 2,
-                y: y - d1 * size / 2,
-                direction: "down",
-                size: size
-            };
-        }
-    }, {
-        key: "nextUp",
-        value: function nextUp(_ref3) {
-            var x = _ref3.x;
-            var y = _ref3.y;
-            var size = _ref3.size;
-
-            return {
-                x: x,
-                y: y - d2 * size, // d2 * 2 * size / 2
-                direction: "down",
-                size: size
-            };
-        }
-    }, {
-        key: "nextDown",
-        value: function nextDown(_ref4) {
-            var x = _ref4.x;
-            var y = _ref4.y;
-            var size = _ref4.size;
-
-            return {
-                x: x,
-                y: y + d1 * size, // d1 * 2 * size / 2
-                direction: "down",
-                size: size
-            };
+            var h = Math.sqrt(3) * s / 2;
+            return [[x - s / 2, y + h / 2], [x, y - h / 2], [x + s / 2, y + h / 2]];
         }
     }]);
 
@@ -20038,63 +19951,8 @@ var DownTriangle = exports.DownTriangle = function (_TriangleSupport2) {
             var x = this.props.x;
             var y = this.props.y;
             var s = this.props.size;
-            return [[x, y + d2 * s / 2], [x - s / 2, y - d1 * s / 2], [x + s / 2, y - d1 * s / 2]];
-        }
-    }], [{
-        key: "nextLeft",
-        value: function nextLeft(_ref5) {
-            var x = _ref5.x;
-            var y = _ref5.y;
-            var size = _ref5.size;
-
-            return {
-                x: x - size / 2,
-                y: y + d1 * size / 2,
-                direction: "up",
-                size: size
-            };
-        }
-    }, {
-        key: "nextRight",
-        value: function nextRight(_ref6) {
-            var x = _ref6.x;
-            var y = _ref6.y;
-            var size = _ref6.size;
-
-            return {
-                x: x + size / 2,
-                y: y + d1 * size / 2,
-                direction: "up",
-                size: size
-            };
-        }
-    }, {
-        key: "nextUp",
-        value: function nextUp(_ref7) {
-            var x = _ref7.x;
-            var y = _ref7.y;
-            var size = _ref7.size;
-
-            return {
-                x: x,
-                y: y - d1 * size, // d1 * 2 * size / 2
-                direction: "up",
-                size: size
-            };
-        }
-    }, {
-        key: "nextDown",
-        value: function nextDown(_ref8) {
-            var x = _ref8.x;
-            var y = _ref8.y;
-            var size = _ref8.size;
-
-            return {
-                x: x,
-                y: y + d2 * size, // d2 * 2 * size / 2
-                direction: "up",
-                size: size
-            };
+            var h = Math.sqrt(3) * s / 2;
+            return [[x - s / 2, y - h / 2], [x, y + h / 2], [x + s / 2, y - h / 2]];
         }
     }]);
 
@@ -20116,63 +19974,8 @@ var LeftTriangle = exports.LeftTriangle = function (_TriangleSupport3) {
             var x = this.props.x;
             var y = this.props.y;
             var s = this.props.size;
-            return [[x - d2 * s / 2, y], [x + d1 * s / 2, y - s / 2], [x + d1 * s / 2, y + s / 2]];
-        }
-    }], [{
-        key: "nextLeft",
-        value: function nextLeft(_ref9) {
-            var x = _ref9.x;
-            var y = _ref9.y;
-            var size = _ref9.size;
-
-            return {
-                x: x - d2 * size, // d2 * 2 * size / 2
-                y: y,
-                direction: "right",
-                size: size
-            };
-        }
-    }, {
-        key: "nextRight",
-        value: function nextRight(_ref10) {
-            var x = _ref10.x;
-            var y = _ref10.y;
-            var size = _ref10.size;
-
-            return {
-                x: x + d1 * size, // d1 * 2 * size / 2
-                y: y,
-                direction: "right",
-                size: size
-            };
-        }
-    }, {
-        key: "nextUp",
-        value: function nextUp(_ref11) {
-            var x = _ref11.x;
-            var y = _ref11.y;
-            var size = _ref11.size;
-
-            return {
-                x: x - d1 * size / 2,
-                y: y - size / 2,
-                direction: "right",
-                size: size
-            };
-        }
-    }, {
-        key: "nextDown",
-        value: function nextDown(_ref12) {
-            var x = _ref12.x;
-            var y = _ref12.y;
-            var size = _ref12.size;
-
-            return {
-                x: x - d1 * size / 2,
-                y: y + size / 2,
-                direction: "right",
-                size: size
-            };
+            var w = Math.sqrt(3) * s / 2;
+            return [[x - w / 2, y + s / 2], [x + w / 2, y], [x - w / 2, y - s / 2]];
         }
     }]);
 
@@ -20194,63 +19997,8 @@ var RightTriangle = exports.RightTriangle = function (_TriangleSupport4) {
             var x = this.props.x;
             var y = this.props.y;
             var s = this.props.size;
-            return [[x + d2 * s / 2, y], [x - d1 * s / 2, y + s / 2], [x - d1 * s / 2, y - s / 2]];
-        }
-    }], [{
-        key: "nextLeft",
-        value: function nextLeft(_ref13) {
-            var x = _ref13.x;
-            var y = _ref13.y;
-            var size = _ref13.size;
-
-            return {
-                x: x - d1 * size, // d1 * 2 * size / 2
-                y: y,
-                direction: "left",
-                size: size
-            };
-        }
-    }, {
-        key: "nextRight",
-        value: function nextRight(_ref14) {
-            var x = _ref14.x;
-            var y = _ref14.y;
-            var size = _ref14.size;
-
-            return {
-                x: x + d2 * size, // d2 * 2 * size / 2
-                y: y,
-                direction: "left",
-                size: size
-            };
-        }
-    }, {
-        key: "nextUp",
-        value: function nextUp(_ref15) {
-            var x = _ref15.x;
-            var y = _ref15.y;
-            var size = _ref15.size;
-
-            return {
-                x: x + d1 * size / 2,
-                y: y - size / 2,
-                direction: "left",
-                size: size
-            };
-        }
-    }, {
-        key: "nextDown",
-        value: function nextDown(_ref16) {
-            var x = _ref16.x;
-            var y = _ref16.y;
-            var size = _ref16.size;
-
-            return {
-                x: x + d1 * size / 2,
-                y: y + size / 2,
-                direction: "left",
-                size: size
-            };
+            var w = Math.sqrt(3) * s / 2;
+            return [[x + w / 2, y + s / 2], [x - w / 2, y], [x + w / 2, y - s / 2]];
         }
     }]);
 

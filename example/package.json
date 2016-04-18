@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify index.js -o bundle.js -t [ babelify --presets [ es2015 react ] ]",
+    "watch": "watchify index.js -o bundle.js -v -t [ babelify --presets [ es2015 react ] ]",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
     "react": "15.0.1",
     "react-dom": "15.0.1",
     "react-radio-group": "2.2.0",
-    "react-triangle": "0.0.2"
+    "react-triangle": "0.0.2",
+    "watchify": "3.7.0"
   }
 }
