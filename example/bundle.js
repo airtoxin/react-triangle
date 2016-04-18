@@ -19616,6 +19616,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.TriangleGenerator = undefined;
 
+var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+            }
+        }
+    }return target;
+};
+
 var _createClass = function () {
     function defineProperties(target, props) {
         for (var i = 0; i < props.length; i++) {
@@ -19672,8 +19682,6 @@ function _inherits(subClass, superClass) {
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 } // eslint-disable-line no-unused-vars
 
-var TriangleGenerator = exports.TriangleGenerator = Triangles.TriangleGenerator;
-
 var Triangle = function (_TriangleSupport) {
     _inherits(Triangle, _TriangleSupport);
 
@@ -19700,6 +19708,64 @@ var Triangle = function (_TriangleSupport) {
 }(_support2.default);
 
 exports.default = Triangle;
+
+var TriangleGenerator = exports.TriangleGenerator = function () {
+    function TriangleGenerator(defaultProps) {
+        _classCallCheck(this, TriangleGenerator);
+
+        this.props = defaultProps;
+    }
+
+    _createClass(TriangleGenerator, [{
+        key: "byCoord",
+        value: function byCoord(deltaX, deltaY) {
+            var isSameDirection = (deltaX + deltaY) % 2 === 0;
+            return _extends({}, this.props, {
+                // overwrites
+                x: this._getX(deltaX, deltaY),
+                y: this._getY(deltaX, deltaY),
+                direction: isSameDirection ? this.props.direction : this._getAdjacentDirection(),
+                size: this.props.size
+            });
+        }
+    }, {
+        key: "_getX",
+        value: function _getX(deltaX, deltaY) {
+            if (this.props.direction === "up" || this.props.direction === "down") {
+                return this.props.x + this.props.size / 2 * deltaX;
+            }
+            if (this.props.direction === "left" || this.props.direction === "right") {
+                return this.props.x + Math.sqrt(3) * this.props.size / 2 * deltaX;
+            }
+        }
+    }, {
+        key: "_getY",
+        value: function _getY(deltaX, deltaY) {
+            if (this.props.direction === "up" || this.props.direction === "down") {
+                return this.props.y + Math.sqrt(3) * this.props.size / 2 * deltaY;
+            }
+            if (this.props.direction === "left" || this.props.direction === "right") {
+                return this.props.y + this.props.size / 2 * deltaY;
+            }
+        }
+    }, {
+        key: "_getAdjacentDirection",
+        value: function _getAdjacentDirection() {
+            switch (this.props.direction) {
+                case "up":
+                    return "down";
+                case "down":
+                    return "up";
+                case "left":
+                    return "right";
+                case "right":
+                    return "left";
+            }
+        }
+    }]);
+
+    return TriangleGenerator;
+}();
 
 },{"./support":171,"./triangles":172,"react":202}],171:[function(require,module,exports){
 "use strict";
@@ -19803,17 +19869,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.RightTriangle = exports.LeftTriangle = exports.DownTriangle = exports.UpTriangle = exports.TriangleGenerator = undefined;
-
-var _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];for (var key in source) {
-            if (Object.prototype.hasOwnProperty.call(source, key)) {
-                target[key] = source[key];
-            }
-        }
-    }return target;
-};
+exports.RightTriangle = exports.LeftTriangle = exports.DownTriangle = exports.UpTriangle = undefined;
 
 var _createClass = function () {
     function defineProperties(target, props) {
@@ -19823,7 +19879,7 @@ var _createClass = function () {
     }return function (Constructor, protoProps, staticProps) {
         if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
     };
-}(); // eslint-disable-line no-unused-vars
+}();
 
 var _react = require("react");
 
@@ -19837,6 +19893,12 @@ function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
 }
 
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
+
 function _possibleConstructorReturn(self, call) {
     if (!self) {
         throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -19847,71 +19909,7 @@ function _inherits(subClass, superClass) {
     if (typeof superClass !== "function" && superClass !== null) {
         throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
     }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
-
-function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-    }
-}
-
-var TriangleGenerator = exports.TriangleGenerator = function () {
-    function TriangleGenerator(props) {
-        _classCallCheck(this, TriangleGenerator);
-
-        this.props = props;
-    }
-
-    _createClass(TriangleGenerator, [{
-        key: "byCoord",
-        value: function byCoord(deltaX, deltaY) {
-            var isSameDirection = (deltaX + deltaY) % 2 === 0;
-            return _extends({}, this.props, {
-                // overwrites
-                x: this._getX(deltaX, deltaY),
-                y: this._getY(deltaX, deltaY),
-                direction: isSameDirection ? this.props.direction : this._getAdjacentDirection(),
-                size: this.props.size
-            });
-        }
-    }, {
-        key: "_getX",
-        value: function _getX(deltaX, deltaY) {
-            if (this.props.direction === "up" || this.props.direction === "down") {
-                return this.props.x + this.props.size / 2 * deltaX;
-            }
-            if (this.props.direction === "left" || this.props.direction === "right") {
-                return this.props.x + Math.sqrt(3) * this.props.size / 2 * deltaX;
-            }
-        }
-    }, {
-        key: "_getY",
-        value: function _getY(deltaX, deltaY) {
-            if (this.props.direction === "up" || this.props.direction === "down") {
-                return this.props.y + Math.sqrt(3) * this.props.size / 2 * deltaY;
-            }
-            if (this.props.direction === "left" || this.props.direction === "right") {
-                return this.props.y + this.props.size / 2 * deltaY;
-            }
-        }
-    }, {
-        key: "_getAdjacentDirection",
-        value: function _getAdjacentDirection() {
-            switch (this.props.direction) {
-                case "up":
-                    return "down";
-                case "down":
-                    return "up";
-                case "left":
-                    return "right";
-                case "right":
-                    return "left";
-            }
-        }
-    }]);
-
-    return TriangleGenerator;
-}();
+} // eslint-disable-line no-unused-vars
 
 var UpTriangle = exports.UpTriangle = function (_TriangleSupport) {
     _inherits(UpTriangle, _TriangleSupport);
