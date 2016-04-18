@@ -19672,6 +19672,9 @@ var TriangleComponent = function (_Component) {
                 stroke: this.state.fill,
                 onClick: function onClick() {
                     return _this2.handleClick();
+                },
+                onMouseOver: function onMouseOver() {
+                    return _this2.handleClick();
                 }
             }));
         }

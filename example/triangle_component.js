@@ -8,7 +8,7 @@ export default class TriangleComponent extends Component {
         const nextFill = fill === "black" ? "white": "black";
         this.state = {
             fill,
-            nextFill,
+            nextFill
         };
     }
 
@@ -19,6 +19,7 @@ export default class TriangleComponent extends Component {
                 {...this.state}
                 stroke={this.state.fill}
                 onClick={() => this.handleClick()}
+                onMouseOver={() => this.handleClick()}
             />
         );
     }
