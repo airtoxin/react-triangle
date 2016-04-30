@@ -36,9 +36,9 @@ export class LeftTriangle extends TriangleSupport {
         const s = this.props.size;
         const w = Math.sqrt(3) * s / 2;
         return [
-            [x - w / 2, y + s / 2],
-            [x + w / 2, y],
-            [x - w / 2, y - s / 2]
+            [x + w / 2, y + s / 2],
+            [x - w / 2, y],
+            [x + w / 2, y - s / 2]
         ];
     }
 }
@@ -50,9 +50,9 @@ export class RightTriangle extends TriangleSupport {
         const s = this.props.size;
         const w = Math.sqrt(3) * s / 2;
         return [
-            [x + w / 2, y + s / 2],
-            [x - w / 2, y],
-            [x + w / 2, y - s / 2]
+            [x - w / 2, y + s / 2],
+            [x + w / 2, y],
+            [x - w / 2, y - s / 2]
         ];
     }
 }
