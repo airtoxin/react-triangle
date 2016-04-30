@@ -20070,7 +20070,7 @@ var LeftTriangle = exports.LeftTriangle = function (_TriangleSupport3) {
             var y = this.props.y;
             var s = this.props.size;
             var w = Math.sqrt(3) * s / 2;
-            return [[x - w / 2, y + s / 2], [x + w / 2, y], [x - w / 2, y - s / 2]];
+            return [[x + w / 2, y + s / 2], [x - w / 2, y], [x + w / 2, y - s / 2]];
         }
     }]);
 
@@ -20093,7 +20093,7 @@ var RightTriangle = exports.RightTriangle = function (_TriangleSupport4) {
             var y = this.props.y;
             var s = this.props.size;
             var w = Math.sqrt(3) * s / 2;
-            return [[x + w / 2, y + s / 2], [x - w / 2, y], [x + w / 2, y - s / 2]];
+            return [[x - w / 2, y + s / 2], [x + w / 2, y], [x - w / 2, y - s / 2]];
         }
     }]);
 
