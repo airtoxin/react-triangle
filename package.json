@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/airtoxin/react-triangle.git"
   },
-  "keywords": [],
+  "keywords": ["react", "react-component", "component", "svg", "polygon", "triangle", "grid"],
   "author": "airtoxin <airtoxin@icloud.com>",
   "license": "MIT",
   "bugs": {
