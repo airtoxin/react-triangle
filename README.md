@@ -1,4 +1,4 @@
-# react-triangle
+# react-triangle [![Build Status](https://travis-ci.org/airtoxin/react-triangle.svg?branch=master)](https://travis-ci.org/airtoxin/react-triangle)
 draw svg triangle grid with react
 
 ![img/screen.png](img/screen.png)
