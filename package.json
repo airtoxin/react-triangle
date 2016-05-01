@@ -1,6 +1,6 @@
 {
   "name": "react-triangle",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "draw svg triangle grid with react",
   "main": "lib/index.js",
   "scripts": {
