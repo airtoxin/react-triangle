@@ -8,7 +8,9 @@
     "build-all": "npm run build && cd example && npm install && npm run build",
     "lint": "eslint src test",
     "prepublish": "npm run build-all",
-    "test": "mocha --recursive test --compilers js:babel-register"
+    "test": "mocha --recursive test --compilers js:babel-register",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -46,11 +48,11 @@
     "is": "3.1.0",
     "jsdom": "8.3.1",
     "mocha": "2.4.5",
-    "react-addons-test-utils": "15.0.2"
+    "react-addons-test-utils": "15.0.2",
+    "@kadira/storybook": "2.21.0"
   },
   "peerDependencies": {
     "react": "0.14.x || 15.0.x"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
