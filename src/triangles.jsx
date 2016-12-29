@@ -1,5 +1,5 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
-import TriangleSupport from './support';
+import TriangleSupport from './support.jsx';
 
 export class UpTriangle extends TriangleSupport {
   _calcVertexCoord() {
