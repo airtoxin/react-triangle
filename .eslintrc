@@ -1,21 +1,15 @@
 {
-    "env": {
-        "node": true,
-        "es6": true,
-        "browser": true,
-        "mocha": true
-    },
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "plugins": [
-        "react"
-    ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ]
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "mocha": true
+  },
+  "plugins": [
+    "babel",
+    "async-await"
+  ],
+  "rules": {
+    "generator-star-spacing": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+  }
 }
