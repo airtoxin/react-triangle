@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import seedrandom from 'seedrandom';
 import { storiesOf, action } from '@kadira/storybook';
 import Triangle, { TriangleGenerator } from '../src/index.jsx';
 
+const rng = seedrandom(process.env.NODE_ENV);
 const story = storiesOf('-----examples-----', module);
 
 story.add('README\'s example', () => {
@@ -107,10 +109,10 @@ story.add('animation with transform', () => {
       super();
       this.state = {
         deg: 0,
-        x: Math.random() * size,
-        y: Math.random() * size,
-        size: 50 + Math.random() * 100,
-        speed: Math.random() * 10,
+        x: rng() * size,
+        y: rng() * size,
+        size: 50 + rng() * 100,
+        speed: rng() * 10,
       };
       this.interval = null;
     }
@@ -154,7 +156,7 @@ story.add('draw', () => {
   class DrawTriangle extends Component {
     constructor() {
       super();
-      this.state = { fill: Math.random() < 0.5 };
+      this.state = { fill: rng() < 0.5 };
     }
 
     render() {
