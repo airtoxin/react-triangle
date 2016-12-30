@@ -10,7 +10,7 @@
     "dev": "run-p watch storybook",
     "test": "run-p test:*",
     "test:lint": "eslint {src,test,stories} --fix",
-    "test:unit": "mocha --require jsdom-global/register --compilers babel-register --recursive test",
+    "test:unit": "mocha --require jsdom-global/register --compilers jsx:babel-register --recursive test",
     "test:storybook": "NODE_ENV=test storyshots",
     "prepublish": "run-s test build",
     "storybook": "start-storybook -p 6006",
