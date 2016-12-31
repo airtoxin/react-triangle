@@ -1,73 +1,30 @@
 import React, { Component } from 'react';
 import seedrandom from 'seedrandom';
 import { storiesOf, action } from '@kadira/storybook';
-import Triangle, { TriangleGenerator } from '../src/index.jsx';
+import Triangle, { TriangleGenerator, gridPoints } from '../src/index.jsx';
 
 const rng = seedrandom(process.env.NODE_ENV);
 const story = storiesOf('-----examples-----', module);
 
 story.add('README\'s example', () => {
-  class Triangles extends Component {
-    constructor(props) {
-      super(props);
-      this.generator = new TriangleGenerator({
-        x: 50,
-        y: 50,
-        size: 50,
-        direction: "left"
-      });
-    }
-
-    render() {
-      const triangles = Array.from(Array(10).keys()).map((i) => {
-        return Array.from(Array(10).keys()).map((j) => {
-          const triangleProps = this.generator.byCoord(i, j);
-          return this.triangle(triangleProps);
-        });
-      });
-      return (<g>{triangles}</g>);
-    }
-
-    triangle(props) {
-      return (
-        <Triangle
-          x={props.x}
-          y={props.y}
-          size={props.size}
-          direction={props.direction}
-          key={`x${props.x}y${props.y}`}
-          style={{strokeWidth: "1px", stroke: "white"}}
-        />
-      );
-    }
-  }
+  const triangles = gridPoints('up', 0, 0, 50, 10, 5).map(({ props }) => (
+    <Triangle key={`${props.x}-${props.y}`} {...props} stroke="white"/>
+  ));
 
   return (
     <svg width="500" height="500">
-      <Triangles />
+      {triangles}
     </svg>
   );
 });
 
 story.add('up-down direction grid system', () => {
-  const generator = new TriangleGenerator({
-    x: 100,
-    y: 100,
-    size: 100,
-    direction: 'up'
-  });
-
-  const triangles = Array.from(Array(10).keys()).map((i) => {
-    return Array.from(Array(10).keys()).map((j) => {
-      const props = generator.byCoord(i, j);
-      return (
-        <g key={`${props.x},${props.y}`}>
-          <Triangle {...props} stroke="white" />
-          <text x={props.x - 10} y={props.y} fill="white">{`${i},${j}`}</text>
-        </g>
-      );
-    });
-  });
+  const triangles = gridPoints('up', 100, 100, 100, 10, 10).map(({ props, gridX, gridY }) => (
+    <g key={`${props.x},${props.y}`}>
+      <Triangle {...props} stroke="white" />
+      <text x={props.x - 10} y={props.y} fill="white">{`${gridX},${gridY}`}</text>
+    </g>
+  ));
 
   return (
     <svg width="1000" height="1000">
@@ -77,24 +34,12 @@ story.add('up-down direction grid system', () => {
 });
 
 story.add('left-right direction grid system', () => {
-  const generator = new TriangleGenerator({
-    x: 100,
-    y: 100,
-    size: 100,
-    direction: 'left'
-  });
-
-  const triangles = Array.from(Array(10).keys()).map((i) => {
-    return Array.from(Array(10).keys()).map((j) => {
-      const props = generator.byCoord(i, j);
-      return (
-        <g key={`${props.x},${props.y}`}>
-          <Triangle {...props} stroke="white" />
-          <text x={props.x - 10} y={props.y} fill="white">{`${i},${j}`}</text>
-        </g>
-      );
-    });
-  });
+  const triangles = gridPoints('left', 100, 100, 100, 10, 10).map(({ props, gridX, gridY }) => (
+    <g key={`${props.x},${props.y}`}>
+      <Triangle {...props} stroke="white" />
+      <text x={props.x - 10} y={props.y} fill="white">{`${gridX},${gridY}`}</text>
+    </g>
+  ));
 
   return (
     <svg width="1000" height="1000">
@@ -132,6 +77,7 @@ story.add('animation with transform', () => {
     render() {
       return (
         <Triangle
+          direction="up"
           x={this.state.x}
           y={this.state.y}
           size={this.state.size}
@@ -162,6 +108,7 @@ story.add('draw', () => {
     render() {
       return (
         <Triangle
+          direction="up"
           x={this.props.x}
           y={this.props.y}
           direction={this.props.direction}
@@ -174,25 +121,13 @@ story.add('draw', () => {
     }
   }
 
-  const generator = new TriangleGenerator({
-    x: 50,
-    y: 50,
-    size: 50,
-    direction: 'up',
-  });
-  const triangles = Array.from(Array(10).keys()).map((i) => {
-    return Array.from(Array(10).keys()).map((j) => {
-      const props = generator.byCoord(i, j);
-      return (
-        <DrawTriangle key={`${i},${j}`} {...props} size={50} />
-      );
-    });
-  });
+  const triangles = gridPoints('up', 50, 50, 50, 10, 10).map(({ props }) => (
+    <DrawTriangle key={`${props.x},${props.y}`} {...props} />
+  ));
 
   return(
     <div>
       <p>move mouse on triangles</p>
-
       <svg width="500" height="500">
         {triangles}
       </svg>

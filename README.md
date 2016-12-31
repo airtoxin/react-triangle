@@ -10,46 +10,23 @@ draw svg triangle grid with react
 ## Usage
 
 ```javascript
-import React, {Component} from "react";
-import ReactDom from "react-dom";
-import Triangle, {TriangleGenerator} from "react-triangle";
+import React from 'react';
+import ReactDom from 'react-dom';
+import Triangle, { gridPoints } from 'react-triangle';
 
-class Triangles extends Component {
-    constructor(props) {
-        super(props);
-        this.generator = new TriangleGenerator({
-            x: 0,
-            y: 0,
-            size: 50,
-            direction: "left"
-        });
-    }
+const Triangles = () => {
+  const triangles = gridPoints('up', 0, 0, 50, 10, 5).map(props => (
+    <Triangle key={`${props.x}-${props.y}`} {...props} stroke="white"/>
+  ));
 
-    render() {
-        const triangles = Array.from(Array(10).keys()).map((i) => {
-            return Array.from(Array(10).keys()).map((j) => {
-                const triangleProps = this.generator.byCoord(i, j);
-                return this.triangle(triangleProps);
-            });
-        });
-        return (<svg>{triangles}</svg>);
-    }
+  return (
+    <svg width="500" height="500">
+      {triangles}
+    </svg>
+  );
+};
 
-    triangle(props) {
-        return (
-            <Triangle
-                x={props.x}
-                y={props.y}
-                size={props.size}
-                direction={props.direction}
-                key={`x${props.x}y${props.y}`}
-                style={{strokeWidth: "1px", stroke: "white"}}
-            />
-        );
-    }
-}
-
-ReactDom.render(<Triangles />, document.getElementById("example"));
+ReactDom.render(<Triangles />, document.getElementById('example'));
 ```
 
 ![img/usagetriangles.png](img/usagetriangles.png)

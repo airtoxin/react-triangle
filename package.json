@@ -58,7 +58,6 @@
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "2.2.3",
     "eslint-plugin-react": "6.8.0",
-    "fn-name": "2.0.1",
     "is": "3.2.0",
     "jsdom": "9.9.1",
     "jsdom-global": "2.1.1",
