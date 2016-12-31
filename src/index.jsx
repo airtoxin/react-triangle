@@ -17,3 +17,4 @@ Triangle.propTypes = {
 };
 
 export default Triangle;
+export { gridPoint, gridPoints } from './utils';
