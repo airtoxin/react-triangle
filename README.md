@@ -7,7 +7,7 @@ draw svg triangle grid with react
 
 `$ npm install react-triangle`
 
-## Usage
+## Example
 
 ```javascript
 import React from 'react';
@@ -31,48 +31,73 @@ ReactDom.render(<Triangles />, document.getElementById('example'));
 
 ![img/usagetriangles.png](img/usagetriangles.png)
 
-## Api
+More examples, see [Storybook](https://airtoxin.github.io/react-triangle).
 
-### react component class `Triangle` (default exported)
+## Documents
 
-triangle react component. `<Triangle x={10} y={50} size={30} direction="up"/>`
+### `<Triangle direction={} x={} y={} size={}/>` (default exported)
 
-#### component props `x`
+Main React component of triangle.
 
-PropTypes.number
+| name      | PropTypes                                                   | description          |
+|-----------|-------------------------------------------------------------|----------------------|
+| direction | PropTypes.oneOf(['up', 'down', 'left', 'right']).isRequired | triangle direction   |
+| x         | PropTypes.number.isRequired                                 | center coordinate x  |
+| y         | PropTypes.number.isRequired                                 | center coordinate y  |
+| size      | PropTypes.number.isRequired                                 | triangle edge length |
 
-Triangle position of x (px).
+```js
+import Triangle from 'react-triangle';
 
-#### component props `y`
+<Triangle direction="up" x={0} y={0} size={50} />
+```
 
-PropTypes.number
+### `gridPoint(oDirection, oX, oY, size, gridX, gridY)`
 
-Triangle position of y (px).
+__return: `{ props: { direction, x, y, size }, gridX, gridY }`__
 
-#### component props `size`
+Helper function to calculate triangle location in grid.
+`props` field in returning object of this function can use for props of `Triangle` component.
 
-PropTypes.number
+(prefix `o` means original.)
 
-Triangle side length (px).
+| name       | value type                          | description                              |
+|------------|-------------------------------------|------------------------------------------|
+| oDirection | 'up' or 'down' or 'left' or 'right' | original triangle direction              |
+| oX         | number                              | original triangle's center coordinate x  |
+| oY         | number                              | original triangle's center coordinate y  |
+| size       | number                              | triangle edge length                     |
+| gridX      | integer                             | coordinate x in hexagonal grid system    |
+| gridY      | integer                             | coordinate y in hexagonal grid system    |
 
-#### component props `direction`
+```js
+import Triangle, { gridPoint } from 'react-triangle';
 
-PropTypes.oneOf(["up", "down", "left", "right"])
+const { props } = gridPoint('up', 0, 0, 50, 3, 4);
+<Triangle {...props}/>
+```
 
-Triangle direction.
+### `gridPoints(oDirection, oX, oY, size, gridWidth, gridHeight)`
 
-![img/directions.png](img/directions.png)
+__return: `[ { props: { direction, x, y, size }, gridX, gridY }, ... ]`__
 
-### class `TriangleGenerator` (named exported)
+Helper function to bulk calculate triangles location of grid.
 
-Helper class of Triangle class.
+(prefix `o` means original.)
 
-#### constructor arguments
+| name       | value type                          | description                              |
+|------------|-------------------------------------|------------------------------------------|
+| oDirection | 'up' or 'down' or 'left' or 'right' | original triangle direction              |
+| oX         | number                              | original triangle's center coordinate x  |
+| oY         | number                              | original triangle's center coordinate y  |
+| size       | number                              | triangle edge length                     |
+| gridWidth  | integer                             | grid size of x                           |
+| gridHeight | integer                             | grid size of y                           |
 
-Canonical triangle props object. `new TriangleGenerator({x:0, y:0, size:10, direction:"right"})`
+```js
+import Triangle, { gridPoints } from 'react-triangle';
 
-Those of `x, y, size, direction` props used as variables. Other props values are passed through.
-
-#### instance method `generator.byCoord(x, y)`
-
-Generate props of Triangle class by coordinates x and y. `generator.byCoord(10, 20)`
+const triangles = gridPoints('up', 0, 0, 50, 5, 10).map(({ props, gridX, gridY }) => (
+  <Triangle key={`${gridX}-${gridY}`} {...props}/>
+));
+```
