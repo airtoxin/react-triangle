@@ -2,1208 +2,356 @@ exports[`README's example`] = `
 <svg
   height="500"
   width="500">
-  <g>
-    <polygon
-      direction="left"
-      points="71.65063509461096,75 28.349364905389034,50 71.65063509461096,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={50} />
-    <polygon
-      direction="right"
-      points="28.349364905389034,100 71.65063509461096,75 28.349364905389034,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={75} />
-    <polygon
-      direction="left"
-      points="71.65063509461096,125 28.349364905389034,100 71.65063509461096,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={100} />
-    <polygon
-      direction="right"
-      points="28.349364905389034,150 71.65063509461096,125 28.349364905389034,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={125} />
-    <polygon
-      direction="left"
-      points="71.65063509461096,175 28.349364905389034,150 71.65063509461096,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={150} />
-    <polygon
-      direction="right"
-      points="28.349364905389034,200 71.65063509461096,175 28.349364905389034,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={175} />
-    <polygon
-      direction="left"
-      points="71.65063509461096,225 28.349364905389034,200 71.65063509461096,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={200} />
-    <polygon
-      direction="right"
-      points="28.349364905389034,250 71.65063509461096,225 28.349364905389034,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={225} />
-    <polygon
-      direction="left"
-      points="71.65063509461096,275 28.349364905389034,250 71.65063509461096,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={250} />
-    <polygon
-      direction="right"
-      points="28.349364905389034,300 71.65063509461096,275 28.349364905389034,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={50}
-      y={275} />
-    <polygon
-      direction="right"
-      points="71.65063509461096,75 114.95190528383289,50 71.65063509461096,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={50} />
-    <polygon
-      direction="left"
-      points="114.95190528383289,100 71.65063509461096,75 114.95190528383289,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={75} />
-    <polygon
-      direction="right"
-      points="71.65063509461096,125 114.95190528383289,100 71.65063509461096,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={100} />
-    <polygon
-      direction="left"
-      points="114.95190528383289,150 71.65063509461096,125 114.95190528383289,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={125} />
-    <polygon
-      direction="right"
-      points="71.65063509461096,175 114.95190528383289,150 71.65063509461096,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={150} />
-    <polygon
-      direction="left"
-      points="114.95190528383289,200 71.65063509461096,175 114.95190528383289,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={175} />
-    <polygon
-      direction="right"
-      points="71.65063509461096,225 114.95190528383289,200 71.65063509461096,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={200} />
-    <polygon
-      direction="left"
-      points="114.95190528383289,250 71.65063509461096,225 114.95190528383289,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={225} />
-    <polygon
-      direction="right"
-      points="71.65063509461096,275 114.95190528383289,250 71.65063509461096,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={250} />
-    <polygon
-      direction="left"
-      points="114.95190528383289,300 71.65063509461096,275 114.95190528383289,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={93.30127018922192}
-      y={275} />
-    <polygon
-      direction="left"
-      points="158.25317547305482,75 114.95190528383289,50 158.25317547305482,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={50} />
-    <polygon
-      direction="right"
-      points="114.95190528383289,100 158.25317547305482,75 114.95190528383289,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={75} />
-    <polygon
-      direction="left"
-      points="158.25317547305482,125 114.95190528383289,100 158.25317547305482,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={100} />
-    <polygon
-      direction="right"
-      points="114.95190528383289,150 158.25317547305482,125 114.95190528383289,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={125} />
-    <polygon
-      direction="left"
-      points="158.25317547305482,175 114.95190528383289,150 158.25317547305482,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={150} />
-    <polygon
-      direction="right"
-      points="114.95190528383289,200 158.25317547305482,175 114.95190528383289,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={175} />
-    <polygon
-      direction="left"
-      points="158.25317547305482,225 114.95190528383289,200 158.25317547305482,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={200} />
-    <polygon
-      direction="right"
-      points="114.95190528383289,250 158.25317547305482,225 114.95190528383289,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={225} />
-    <polygon
-      direction="left"
-      points="158.25317547305482,275 114.95190528383289,250 158.25317547305482,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={250} />
-    <polygon
-      direction="right"
-      points="114.95190528383289,300 158.25317547305482,275 114.95190528383289,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={136.60254037844385}
-      y={275} />
-    <polygon
-      direction="right"
-      points="158.25317547305482,75 201.55444566227678,50 158.25317547305482,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={50} />
-    <polygon
-      direction="left"
-      points="201.55444566227678,100 158.25317547305482,75 201.55444566227678,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={75} />
-    <polygon
-      direction="right"
-      points="158.25317547305482,125 201.55444566227678,100 158.25317547305482,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={100} />
-    <polygon
-      direction="left"
-      points="201.55444566227678,150 158.25317547305482,125 201.55444566227678,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={125} />
-    <polygon
-      direction="right"
-      points="158.25317547305482,175 201.55444566227678,150 158.25317547305482,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={150} />
-    <polygon
-      direction="left"
-      points="201.55444566227678,200 158.25317547305482,175 201.55444566227678,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={175} />
-    <polygon
-      direction="right"
-      points="158.25317547305482,225 201.55444566227678,200 158.25317547305482,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={200} />
-    <polygon
-      direction="left"
-      points="201.55444566227678,250 158.25317547305482,225 201.55444566227678,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={225} />
-    <polygon
-      direction="right"
-      points="158.25317547305482,275 201.55444566227678,250 158.25317547305482,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={250} />
-    <polygon
-      direction="left"
-      points="201.55444566227678,300 158.25317547305482,275 201.55444566227678,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={179.9038105676658}
-      y={275} />
-    <polygon
-      direction="left"
-      points="244.8557158514987,75 201.55444566227675,50 244.8557158514987,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={50} />
-    <polygon
-      direction="right"
-      points="201.55444566227675,100 244.8557158514987,75 201.55444566227675,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={75} />
-    <polygon
-      direction="left"
-      points="244.8557158514987,125 201.55444566227675,100 244.8557158514987,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={100} />
-    <polygon
-      direction="right"
-      points="201.55444566227675,150 244.8557158514987,125 201.55444566227675,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={125} />
-    <polygon
-      direction="left"
-      points="244.8557158514987,175 201.55444566227675,150 244.8557158514987,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={150} />
-    <polygon
-      direction="right"
-      points="201.55444566227675,200 244.8557158514987,175 201.55444566227675,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={175} />
-    <polygon
-      direction="left"
-      points="244.8557158514987,225 201.55444566227675,200 244.8557158514987,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={200} />
-    <polygon
-      direction="right"
-      points="201.55444566227675,250 244.8557158514987,225 201.55444566227675,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={225} />
-    <polygon
-      direction="left"
-      points="244.8557158514987,275 201.55444566227675,250 244.8557158514987,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={250} />
-    <polygon
-      direction="right"
-      points="201.55444566227675,300 244.8557158514987,275 201.55444566227675,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={223.20508075688772}
-      y={275} />
-    <polygon
-      direction="right"
-      points="244.85571585149867,75 288.1569860407206,50 244.85571585149867,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={50} />
-    <polygon
-      direction="left"
-      points="288.1569860407206,100 244.85571585149867,75 288.1569860407206,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={75} />
-    <polygon
-      direction="right"
-      points="244.85571585149867,125 288.1569860407206,100 244.85571585149867,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={100} />
-    <polygon
-      direction="left"
-      points="288.1569860407206,150 244.85571585149867,125 288.1569860407206,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={125} />
-    <polygon
-      direction="right"
-      points="244.85571585149867,175 288.1569860407206,150 244.85571585149867,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={150} />
-    <polygon
-      direction="left"
-      points="288.1569860407206,200 244.85571585149867,175 288.1569860407206,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={175} />
-    <polygon
-      direction="right"
-      points="244.85571585149867,225 288.1569860407206,200 244.85571585149867,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={200} />
-    <polygon
-      direction="left"
-      points="288.1569860407206,250 244.85571585149867,225 288.1569860407206,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={225} />
-    <polygon
-      direction="right"
-      points="244.85571585149867,275 288.1569860407206,250 244.85571585149867,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={250} />
-    <polygon
-      direction="left"
-      points="288.1569860407206,300 244.85571585149867,275 288.1569860407206,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={266.50635094610965}
-      y={275} />
-    <polygon
-      direction="left"
-      points="331.45825622994255,75 288.15698604072065,50 331.45825622994255,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={50} />
-    <polygon
-      direction="right"
-      points="288.15698604072065,100 331.45825622994255,75 288.15698604072065,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={75} />
-    <polygon
-      direction="left"
-      points="331.45825622994255,125 288.15698604072065,100 331.45825622994255,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={100} />
-    <polygon
-      direction="right"
-      points="288.15698604072065,150 331.45825622994255,125 288.15698604072065,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={125} />
-    <polygon
-      direction="left"
-      points="331.45825622994255,175 288.15698604072065,150 331.45825622994255,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={150} />
-    <polygon
-      direction="right"
-      points="288.15698604072065,200 331.45825622994255,175 288.15698604072065,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={175} />
-    <polygon
-      direction="left"
-      points="331.45825622994255,225 288.15698604072065,200 331.45825622994255,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={200} />
-    <polygon
-      direction="right"
-      points="288.15698604072065,250 331.45825622994255,225 288.15698604072065,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={225} />
-    <polygon
-      direction="left"
-      points="331.45825622994255,275 288.15698604072065,250 331.45825622994255,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={250} />
-    <polygon
-      direction="right"
-      points="288.15698604072065,300 331.45825622994255,275 288.15698604072065,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={309.8076211353316}
-      y={275} />
-    <polygon
-      direction="right"
-      points="331.45825622994255,75 374.75952641916444,50 331.45825622994255,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={50} />
-    <polygon
-      direction="left"
-      points="374.75952641916444,100 331.45825622994255,75 374.75952641916444,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={75} />
-    <polygon
-      direction="right"
-      points="331.45825622994255,125 374.75952641916444,100 331.45825622994255,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={100} />
-    <polygon
-      direction="left"
-      points="374.75952641916444,150 331.45825622994255,125 374.75952641916444,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={125} />
-    <polygon
-      direction="right"
-      points="331.45825622994255,175 374.75952641916444,150 331.45825622994255,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={150} />
-    <polygon
-      direction="left"
-      points="374.75952641916444,200 331.45825622994255,175 374.75952641916444,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={175} />
-    <polygon
-      direction="right"
-      points="331.45825622994255,225 374.75952641916444,200 331.45825622994255,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={200} />
-    <polygon
-      direction="left"
-      points="374.75952641916444,250 331.45825622994255,225 374.75952641916444,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={225} />
-    <polygon
-      direction="right"
-      points="331.45825622994255,275 374.75952641916444,250 331.45825622994255,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={250} />
-    <polygon
-      direction="left"
-      points="374.75952641916444,300 331.45825622994255,275 374.75952641916444,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={353.1088913245535}
-      y={275} />
-    <polygon
-      direction="left"
-      points="418.0607966083864,75 374.7595264191645,50 418.0607966083864,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={50} />
-    <polygon
-      direction="right"
-      points="374.7595264191645,100 418.0607966083864,75 374.7595264191645,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={75} />
-    <polygon
-      direction="left"
-      points="418.0607966083864,125 374.7595264191645,100 418.0607966083864,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={100} />
-    <polygon
-      direction="right"
-      points="374.7595264191645,150 418.0607966083864,125 374.7595264191645,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={125} />
-    <polygon
-      direction="left"
-      points="418.0607966083864,175 374.7595264191645,150 418.0607966083864,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={150} />
-    <polygon
-      direction="right"
-      points="374.7595264191645,200 418.0607966083864,175 374.7595264191645,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={175} />
-    <polygon
-      direction="left"
-      points="418.0607966083864,225 374.7595264191645,200 418.0607966083864,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={200} />
-    <polygon
-      direction="right"
-      points="374.7595264191645,250 418.0607966083864,225 374.7595264191645,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={225} />
-    <polygon
-      direction="left"
-      points="418.0607966083864,275 374.7595264191645,250 418.0607966083864,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={250} />
-    <polygon
-      direction="right"
-      points="374.7595264191645,300 418.0607966083864,275 374.7595264191645,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={396.41016151377545}
-      y={275} />
-    <polygon
-      direction="right"
-      points="418.06079660838645,75 461.36206679760835,50 418.06079660838645,25"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={50} />
-    <polygon
-      direction="left"
-      points="461.36206679760835,100 418.06079660838645,75 461.36206679760835,50"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={75} />
-    <polygon
-      direction="right"
-      points="418.06079660838645,125 461.36206679760835,100 418.06079660838645,75"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={100} />
-    <polygon
-      direction="left"
-      points="461.36206679760835,150 418.06079660838645,125 461.36206679760835,100"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={125} />
-    <polygon
-      direction="right"
-      points="418.06079660838645,175 461.36206679760835,150 418.06079660838645,125"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={150} />
-    <polygon
-      direction="left"
-      points="461.36206679760835,200 418.06079660838645,175 461.36206679760835,150"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={175} />
-    <polygon
-      direction="right"
-      points="418.06079660838645,225 461.36206679760835,200 418.06079660838645,175"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={200} />
-    <polygon
-      direction="left"
-      points="461.36206679760835,250 418.06079660838645,225 461.36206679760835,200"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={225} />
-    <polygon
-      direction="right"
-      points="418.06079660838645,275 461.36206679760835,250 418.06079660838645,225"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={250} />
-    <polygon
-      direction="left"
-      points="461.36206679760835,300 418.06079660838645,275 461.36206679760835,250"
-      size={50}
-      style={
-        Object {
-          "stroke": "white",
-          "strokeWidth": "1px",
-        }
-      }
-      x={439.7114317029974}
-      y={275} />
-  </g>
+  <polygon
+    direction="up"
+    points="-5.302876193624534e-15,-28.867513459481287 25.00000000000001,14.433756729740622 -25.000000000000004,14.433756729740637"
+    size={50}
+    stroke="white"
+    x={0}
+    y={0} />
+  <polygon
+    direction="down"
+    points="1.7676253978748447e-15,57.735026918962575 -25.000000000000004,14.433756729740653 24.999999999999993,14.433756729740631"
+    size={50}
+    stroke="white"
+    x={0}
+    y={28.867513459481287} />
+  <polygon
+    direction="up"
+    points="-5.302876193624534e-15,57.735026918962575 25.00000000000001,101.03629710818448 -25.000000000000004,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={0}
+    y={86.60254037844386} />
+  <polygon
+    direction="down"
+    points="1.7676253978748447e-15,144.33756729740645 -25.000000000000004,101.03629710818451 24.999999999999993,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={0}
+    y={115.47005383792515} />
+  <polygon
+    direction="up"
+    points="-5.302876193624534e-15,144.33756729740645 25.00000000000001,187.63883748662835 -25.000000000000004,187.63883748662835"
+    size={50}
+    stroke="white"
+    x={0}
+    y={173.20508075688772} />
+  <polygon
+    direction="down"
+    points="25,14.433756729740644 -3.552713678800501e-15,-28.86751345948128 49.99999999999999,-28.8675134594813"
+    size={50}
+    stroke="white"
+    x={25}
+    y={-14.433756729740644} />
+  <polygon
+    direction="up"
+    points="24.999999999999996,14.433756729740644 50.000000000000014,57.735026918962554 -3.552713678800501e-15,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={25}
+    y={43.30127018922193} />
+  <polygon
+    direction="down"
+    points="25,101.03629710818451 -3.552713678800501e-15,57.73502691896259 49.99999999999999,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={25}
+    y={72.16878364870323} />
+  <polygon
+    direction="up"
+    points="24.999999999999996,101.03629710818451 50.000000000000014,144.33756729740642 -3.552713678800501e-15,144.33756729740645"
+    size={50}
+    stroke="white"
+    x={25}
+    y={129.9038105676658} />
+  <polygon
+    direction="down"
+    points="25,187.63883748662835 -3.552713678800501e-15,144.33756729740645 49.99999999999999,144.33756729740642"
+    size={50}
+    stroke="white"
+    x={25}
+    y={158.77132402714707} />
+  <polygon
+    direction="up"
+    points="49.99999999999999,-28.867513459481287 75.00000000000001,14.433756729740622 24.999999999999996,14.433756729740637"
+    size={50}
+    stroke="white"
+    x={50}
+    y={0} />
+  <polygon
+    direction="down"
+    points="50,57.735026918962575 24.999999999999996,14.433756729740653 75,14.433756729740631"
+    size={50}
+    stroke="white"
+    x={50}
+    y={28.867513459481287} />
+  <polygon
+    direction="up"
+    points="49.99999999999999,57.735026918962575 75.00000000000001,101.03629710818448 24.999999999999996,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={50}
+    y={86.60254037844386} />
+  <polygon
+    direction="down"
+    points="50,144.33756729740645 24.999999999999996,101.03629710818451 75,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={50}
+    y={115.47005383792515} />
+  <polygon
+    direction="up"
+    points="49.99999999999999,144.33756729740645 75.00000000000001,187.63883748662835 24.999999999999996,187.63883748662835"
+    size={50}
+    stroke="white"
+    x={50}
+    y={173.20508075688772} />
+  <polygon
+    direction="down"
+    points="75,14.433756729740644 50,-28.86751345948128 100,-28.8675134594813"
+    size={50}
+    stroke="white"
+    x={75}
+    y={-14.433756729740644} />
+  <polygon
+    direction="up"
+    points="75,14.433756729740644 100.00000000000001,57.735026918962554 50,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={75}
+    y={43.30127018922193} />
+  <polygon
+    direction="down"
+    points="75,101.03629710818451 50,57.73502691896259 100,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={75}
+    y={72.16878364870323} />
+  <polygon
+    direction="up"
+    points="75,101.03629710818451 100.00000000000001,144.33756729740642 50,144.33756729740645"
+    size={50}
+    stroke="white"
+    x={75}
+    y={129.9038105676658} />
+  <polygon
+    direction="down"
+    points="75,187.63883748662835 50,144.33756729740645 100,144.33756729740642"
+    size={50}
+    stroke="white"
+    x={75}
+    y={158.77132402714707} />
+  <polygon
+    direction="up"
+    points="100,-28.867513459481287 125.00000000000001,14.433756729740622 75,14.433756729740637"
+    size={50}
+    stroke="white"
+    x={100}
+    y={0} />
+  <polygon
+    direction="down"
+    points="100,57.735026918962575 75,14.433756729740653 125,14.433756729740631"
+    size={50}
+    stroke="white"
+    x={100}
+    y={28.867513459481287} />
+  <polygon
+    direction="up"
+    points="100,57.735026918962575 125.00000000000001,101.03629710818448 75,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={100}
+    y={86.60254037844386} />
+  <polygon
+    direction="down"
+    points="100,144.33756729740645 75,101.03629710818451 125,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={100}
+    y={115.47005383792515} />
+  <polygon
+    direction="up"
+    points="100,144.33756729740645 125.00000000000001,187.63883748662835 75,187.63883748662835"
+    size={50}
+    stroke="white"
+    x={100}
+    y={173.20508075688772} />
+  <polygon
+    direction="down"
+    points="125,14.433756729740644 100,-28.86751345948128 150,-28.8675134594813"
+    size={50}
+    stroke="white"
+    x={125}
+    y={-14.433756729740644} />
+  <polygon
+    direction="up"
+    points="125,14.433756729740644 150,57.735026918962554 100,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={125}
+    y={43.30127018922193} />
+  <polygon
+    direction="down"
+    points="125,101.03629710818451 100,57.73502691896259 150,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={125}
+    y={72.16878364870323} />
+  <polygon
+    direction="up"
+    points="125,101.03629710818451 150,144.33756729740642 100,144.33756729740645"
+    size={50}
+    stroke="white"
+    x={125}
+    y={129.9038105676658} />
+  <polygon
+    direction="down"
+    points="125,187.63883748662835 100,144.33756729740645 150,144.33756729740642"
+    size={50}
+    stroke="white"
+    x={125}
+    y={158.77132402714707} />
+  <polygon
+    direction="up"
+    points="150,-28.867513459481287 175,14.433756729740622 125,14.433756729740637"
+    size={50}
+    stroke="white"
+    x={150}
+    y={0} />
+  <polygon
+    direction="down"
+    points="150,57.735026918962575 125,14.433756729740653 175,14.433756729740631"
+    size={50}
+    stroke="white"
+    x={150}
+    y={28.867513459481287} />
+  <polygon
+    direction="up"
+    points="150,57.735026918962575 175,101.03629710818448 125,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={150}
+    y={86.60254037844386} />
+  <polygon
+    direction="down"
+    points="150,144.33756729740645 125,101.03629710818451 175,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={150}
+    y={115.47005383792515} />
+  <polygon
+    direction="up"
+    points="150,144.33756729740645 175,187.63883748662835 125,187.63883748662835"
+    size={50}
+    stroke="white"
+    x={150}
+    y={173.20508075688772} />
+  <polygon
+    direction="down"
+    points="175,14.433756729740644 150,-28.86751345948128 200,-28.8675134594813"
+    size={50}
+    stroke="white"
+    x={175}
+    y={-14.433756729740644} />
+  <polygon
+    direction="up"
+    points="175,14.433756729740644 200,57.735026918962554 150,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={175}
+    y={43.30127018922193} />
+  <polygon
+    direction="down"
+    points="175,101.03629710818451 150,57.73502691896259 200,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={175}
+    y={72.16878364870323} />
+  <polygon
+    direction="up"
+    points="175,101.03629710818451 200,144.33756729740642 150,144.33756729740645"
+    size={50}
+    stroke="white"
+    x={175}
+    y={129.9038105676658} />
+  <polygon
+    direction="down"
+    points="175,187.63883748662835 150,144.33756729740645 200,144.33756729740642"
+    size={50}
+    stroke="white"
+    x={175}
+    y={158.77132402714707} />
+  <polygon
+    direction="up"
+    points="200,-28.867513459481287 225,14.433756729740622 175,14.433756729740637"
+    size={50}
+    stroke="white"
+    x={200}
+    y={0} />
+  <polygon
+    direction="down"
+    points="200,57.735026918962575 175,14.433756729740653 225,14.433756729740631"
+    size={50}
+    stroke="white"
+    x={200}
+    y={28.867513459481287} />
+  <polygon
+    direction="up"
+    points="200,57.735026918962575 225,101.03629710818448 175,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={200}
+    y={86.60254037844386} />
+  <polygon
+    direction="down"
+    points="200,144.33756729740645 175,101.03629710818451 225,101.0362971081845"
+    size={50}
+    stroke="white"
+    x={200}
+    y={115.47005383792515} />
+  <polygon
+    direction="up"
+    points="200,144.33756729740645 225,187.63883748662835 175,187.63883748662835"
+    size={50}
+    stroke="white"
+    x={200}
+    y={173.20508075688772} />
+  <polygon
+    direction="down"
+    points="225,14.433756729740644 200,-28.86751345948128 250,-28.8675134594813"
+    size={50}
+    stroke="white"
+    x={225}
+    y={-14.433756729740644} />
+  <polygon
+    direction="up"
+    points="225,14.433756729740644 250,57.735026918962554 200,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={225}
+    y={43.30127018922193} />
+  <polygon
+    direction="down"
+    points="225,101.03629710818451 200,57.73502691896259 250,57.73502691896257"
+    size={50}
+    stroke="white"
+    x={225}
+    y={72.16878364870323} />
+  <polygon
+    direction="up"
+    points="225,101.03629710818451 250,144.33756729740642 200,144.33756729740645"
+    size={50}
+    stroke="white"
+    x={225}
+    y={129.9038105676658} />
+  <polygon
+    direction="down"
+    points="225,187.63883748662835 200,144.33756729740645 250,144.33756729740642"
+    size={50}
+    stroke="white"
+    x={225}
+    y={158.77132402714707} />
 </svg>
 `;
 
@@ -1214,7 +362,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="362.8648288654773,264.6210506345187 436.1012771580127,137.77180122595655 509.3377254505481,264.6210506345187"
+    points="436.1012771580127,116.63025965786285 509.3377254505481,243.47950906642495 362.8648288654773,243.479509066425"
     size={146.4728965850707}
     stroke="black"
     transform="rotate(0,436.1012771580127,201.19642593023764)"
@@ -1223,7 +371,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="127.87559451898413,178.44994232017683 176.05345045786606,95.00344803429937 224.23130639674798,178.44994232017683"
+    points="176.05345045786606,81.0956989866531 224.231306396748,164.54219327253054 127.87559451898412,164.5421932725306"
     size={96.35571187776387}
     stroke="black"
     transform="rotate(0,176.05345045786606,136.7266951772381)"
@@ -1232,7 +380,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="312.5779011563526,254.9635554592067 362.3756794186042,168.7112734049379 412.1734576808558,254.9635554592067"
+    points="362.3756794186042,154.3358930625598 412.1734576808558,240.58817511682852 312.5779011563526,240.58817511682855"
     size={99.59555652450322}
     stroke="black"
     transform="rotate(0,362.3756794186042,211.8374144320723)"
@@ -1241,7 +389,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="411.5786692454848,58.879999085250006 476.0327005570137,-52.75765789895341 540.4867318685426,58.879999085250006"
+    points="476.0327005570137,-71.36393406298731 540.4867318685426,40.27372292121605 411.5786692454847,40.27372292121609"
     size={128.9080626230579}
     stroke="black"
     transform="rotate(0,476.0327005570137,3.0611705931482986)"
@@ -1250,7 +398,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="135.0686030926248,73.77580692433165 194.64164400115672,-29.4077266906248 254.21468490968863,73.77580692433165"
+    points="194.64164400115672,-46.604982293117544 254.21468490968866,56.57855132183886 135.0686030926248,56.578551321838894"
     size={119.14608181706382}
     stroke="black"
     transform="rotate(0,194.64164400115672,22.184040116853424)"
@@ -1259,7 +407,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="267.88359486344535,424.4572078923814 317.1968783882885,339.04409533930385 366.51016191313164,424.4572078923814"
+    points="317.1968783882885,324.8085765804576 366.51016191313164,410.2216891335351 267.88359486344535,410.22168913353516"
     size={98.62656704968629}
     stroke="black"
     transform="rotate(0,317.1968783882885,381.7506516158426)"
@@ -1268,7 +416,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="252.58306763152075,425.72315014087974 284.08061636678525,371.16779541752476 315.57816510204975,425.72315014087974"
+    points="284.08061636678525,362.0752362969656 315.57816510204975,416.63059102032054 252.58306763152075,416.63059102032054"
     size={62.995097470529}
     stroke="black"
     transform="rotate(0,284.08061636678525,398.44547277920225)"
@@ -1277,7 +425,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="126.55858133308217,487.56214825063535 156.61026696208808,435.5111018881097 186.66195259109398,487.56214825063535"
+    points="156.61026696208808,426.83592749435536 186.661952591094,478.88697385688107 126.55858133308216,478.88697385688107"
     size={60.10337125801182}
     stroke="black"
     transform="rotate(0,156.61026696208808,461.5366250693725)"
@@ -1286,7 +434,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="286.74065750320983,489.96586396272556 331.98315647800814,411.6035570769921 377.22565545280645,489.96586396272556"
+    points="331.98315647800814,398.5431725960365 377.22565545280645,476.90547948176993 286.74065750320983,476.90547948177"
     size={90.48499794959659}
     stroke="black"
     transform="rotate(0,331.98315647800814,450.78471051985883)"
@@ -1295,7 +443,7 @@ exports[`animation with transform`] = `
   <polygon
     direction="up"
     fill="none"
-    points="50.334011636544176,326.1429971237898 108.30516018511625,225.73402246454023 166.27630873368832,326.1429971237898"
+    points="108.30516018511624,208.9991933546653 166.27630873368835,309.40816801391486 50.33401163654417,309.4081680139149"
     size={115.94229709714415}
     stroke="black"
     transform="rotate(0,108.30516018511625,275.93850979416504)"
@@ -1317,7 +465,7 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,71.65063509461096 50,28.349364905389034 75,71.65063509461096"
+      points="49.99999999999999,21.132486540518713 75.00000000000001,64.43375672974062 24.999999999999996,64.43375672974064"
       size={50}
       x={50}
       y={50} />
@@ -1326,16 +474,16 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,71.65063509461096 50,114.95190528383289 75,71.65063509461096"
+      points="50,107.73502691896257 24.999999999999996,64.43375672974065 75,64.43375672974064"
       size={50}
       x={50}
-      y={93.30127018922192} />
+      y={78.86751345948129} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,158.25317547305482 50,114.95190528383289 75,158.25317547305482"
+      points="49.99999999999999,107.73502691896256 75.00000000000001,151.03629710818447 24.999999999999996,151.0362971081845"
       size={50}
       x={50}
       y={136.60254037844385} />
@@ -1344,16 +492,16 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,158.25317547305482 50,201.55444566227678 75,158.25317547305482"
+      points="50,194.33756729740645 24.999999999999996,151.03629710818453 75,151.0362971081845"
       size={50}
       x={50}
-      y={179.9038105676658} />
+      y={165.47005383792515} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,244.8557158514987 50,201.55444566227675 75,244.8557158514987"
+      points="49.99999999999999,194.33756729740645 75.00000000000001,237.63883748662835 24.999999999999996,237.63883748662835"
       size={50}
       x={50}
       y={223.20508075688772} />
@@ -1362,16 +510,16 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,244.85571585149867 50,288.1569860407206 75,244.85571585149867"
+      points="50,280.9401076758503 24.999999999999996,237.63883748662838 75,237.63883748662835"
       size={50}
       x={50}
-      y={266.50635094610965} />
+      y={252.072594216369} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,331.45825622994255 50,288.15698604072065 75,331.45825622994255"
+      points="49.99999999999999,280.9401076758503 75.00000000000001,324.2413778650722 24.999999999999996,324.24137786507225"
       size={50}
       x={50}
       y={309.8076211353316} />
@@ -1380,16 +528,16 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,331.45825622994255 50,374.75952641916444 75,331.45825622994255"
+      points="50,367.54264805429415 24.999999999999996,324.2413778650722 75,324.2413778650722"
       size={50}
       x={50}
-      y={353.1088913245535} />
+      y={338.67513459481285} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,418.0607966083864 50,374.7595264191645 75,418.0607966083864"
+      points="49.99999999999999,367.54264805429415 75.00000000000001,410.8439182435161 24.999999999999996,410.8439182435161"
       size={50}
       x={50}
       y={396.41016151377545} />
@@ -1398,25 +546,25 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="25,418.06079660838645 50,461.36206679760835 75,418.06079660838645"
+      points="50,454.14518843273805 24.999999999999996,410.8439182435161 75,410.8439182435161"
       size={50}
       x={50}
-      y={439.7114317029974} />
+      y={425.27767497325675} />
     <polygon
       direction="down"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,28.349364905389034 75,71.65063509461096 100,28.349364905389034"
+      points="75,64.43375672974065 50,21.13248654051872 100,21.1324865405187"
       size={50}
       x={75}
-      y={50} />
+      y={35.566243270259356} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,114.95190528383289 75,71.65063509461096 100,114.95190528383289"
+      points="75,64.43375672974064 100.00000000000001,107.73502691896255 50,107.73502691896256"
       size={50}
       x={75}
       y={93.30127018922192} />
@@ -1425,16 +573,16 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,114.95190528383289 75,158.25317547305482 100,114.95190528383289"
+      points="75,151.0362971081845 50,107.73502691896259 100,107.73502691896257"
       size={50}
       x={75}
-      y={136.60254037844385} />
+      y={122.16878364870323} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,201.55444566227678 75,158.25317547305482 100,201.55444566227678"
+      points="75,151.0362971081845 100.00000000000001,194.33756729740642 50,194.33756729740645"
       size={50}
       x={75}
       y={179.9038105676658} />
@@ -1443,16 +591,16 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,201.55444566227675 75,244.8557158514987 100,201.55444566227675"
+      points="75,237.63883748662835 50,194.33756729740645 100,194.33756729740642"
       size={50}
       x={75}
-      y={223.20508075688772} />
+      y={208.77132402714707} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,288.1569860407206 75,244.85571585149867 100,288.1569860407206"
+      points="75,237.63883748662835 100.00000000000001,280.9401076758503 50,280.9401076758503"
       size={50}
       x={75}
       y={266.50635094610965} />
@@ -1461,16 +609,16 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,288.15698604072065 75,331.45825622994255 100,288.15698604072065"
+      points="75,324.24137786507225 50,280.9401076758503 100,280.9401076758503"
       size={50}
       x={75}
-      y={309.8076211353316} />
+      y={295.37386440559095} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,374.75952641916444 75,331.45825622994255 100,374.75952641916444"
+      points="75,324.2413778650722 100.00000000000001,367.5426480542941 50,367.54264805429415"
       size={50}
       x={75}
       y={353.1088913245535} />
@@ -1479,664 +627,664 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,374.7595264191645 75,418.0607966083864 100,374.7595264191645"
+      points="75,410.8439182435161 50,367.54264805429415 100,367.54264805429415"
       size={50}
       x={75}
-      y={396.41016151377545} />
+      y={381.9764047840348} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="50,461.36206679760835 75,418.06079660838645 100,461.36206679760835"
+      points="75,410.8439182435161 100.00000000000001,454.145188432738 50,454.14518843273805"
       size={50}
       x={75}
-      y={439.7114317029974} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,71.65063509461096 100,28.349364905389034 125,71.65063509461096"
-      size={50}
-      x={100}
-      y={50} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,71.65063509461096 100,114.95190528383289 125,71.65063509461096"
-      size={50}
-      x={100}
-      y={93.30127018922192} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,158.25317547305482 100,114.95190528383289 125,158.25317547305482"
-      size={50}
-      x={100}
-      y={136.60254037844385} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,158.25317547305482 100,201.55444566227678 125,158.25317547305482"
-      size={50}
-      x={100}
-      y={179.9038105676658} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,244.8557158514987 100,201.55444566227675 125,244.8557158514987"
-      size={50}
-      x={100}
-      y={223.20508075688772} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,244.85571585149867 100,288.1569860407206 125,244.85571585149867"
-      size={50}
-      x={100}
-      y={266.50635094610965} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,331.45825622994255 100,288.15698604072065 125,331.45825622994255"
-      size={50}
-      x={100}
-      y={309.8076211353316} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,331.45825622994255 100,374.75952641916444 125,331.45825622994255"
-      size={50}
-      x={100}
-      y={353.1088913245535} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,418.0607966083864 100,374.7595264191645 125,418.0607966083864"
-      size={50}
-      x={100}
-      y={396.41016151377545} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="75,418.06079660838645 100,461.36206679760835 125,418.06079660838645"
-      size={50}
-      x={100}
-      y={439.7114317029974} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,28.349364905389034 125,71.65063509461096 150,28.349364905389034"
-      size={50}
-      x={125}
-      y={50} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,114.95190528383289 125,71.65063509461096 150,114.95190528383289"
-      size={50}
-      x={125}
-      y={93.30127018922192} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,114.95190528383289 125,158.25317547305482 150,114.95190528383289"
-      size={50}
-      x={125}
-      y={136.60254037844385} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,201.55444566227678 125,158.25317547305482 150,201.55444566227678"
-      size={50}
-      x={125}
-      y={179.9038105676658} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,201.55444566227675 125,244.8557158514987 150,201.55444566227675"
-      size={50}
-      x={125}
-      y={223.20508075688772} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,288.1569860407206 125,244.85571585149867 150,288.1569860407206"
-      size={50}
-      x={125}
-      y={266.50635094610965} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,288.15698604072065 125,331.45825622994255 150,288.15698604072065"
-      size={50}
-      x={125}
-      y={309.8076211353316} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,374.75952641916444 125,331.45825622994255 150,374.75952641916444"
-      size={50}
-      x={125}
-      y={353.1088913245535} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,374.7595264191645 125,418.0607966083864 150,374.7595264191645"
-      size={50}
-      x={125}
-      y={396.41016151377545} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="100,461.36206679760835 125,418.06079660838645 150,461.36206679760835"
-      size={50}
-      x={125}
       y={439.7114317029974} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,71.65063509461096 150,28.349364905389034 175,71.65063509461096"
+      points="100,21.132486540518713 125.00000000000001,64.43375672974062 75,64.43375672974064"
       size={50}
-      x={150}
+      x={100}
       y={50} />
     <polygon
       direction="down"
-      fill="white"
+      fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,71.65063509461096 150,114.95190528383289 175,71.65063509461096"
+      points="100,107.73502691896257 75,64.43375672974065 125,64.43375672974064"
       size={50}
-      x={150}
-      y={93.30127018922192} />
+      x={100}
+      y={78.86751345948129} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,158.25317547305482 150,114.95190528383289 175,158.25317547305482"
+      points="100,107.73502691896256 125.00000000000001,151.03629710818447 75,151.0362971081845"
       size={50}
-      x={150}
+      x={100}
       y={136.60254037844385} />
     <polygon
       direction="down"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,158.25317547305482 150,201.55444566227678 175,158.25317547305482"
+      points="100,194.33756729740645 75,151.03629710818453 125,151.0362971081845"
       size={50}
-      x={150}
-      y={179.9038105676658} />
+      x={100}
+      y={165.47005383792515} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,244.8557158514987 150,201.55444566227675 175,244.8557158514987"
+      points="100,194.33756729740645 125.00000000000001,237.63883748662835 75,237.63883748662835"
       size={50}
-      x={150}
+      x={100}
       y={223.20508075688772} />
     <polygon
       direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="125,244.85571585149867 150,288.1569860407206 175,244.85571585149867"
-      size={50}
-      x={150}
-      y={266.50635094610965} />
-    <polygon
-      direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,331.45825622994255 150,288.15698604072065 175,331.45825622994255"
+      points="100,280.9401076758503 75,237.63883748662838 125,237.63883748662835"
       size={50}
-      x={150}
+      x={100}
+      y={252.072594216369} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="100,280.9401076758503 125.00000000000001,324.2413778650722 75,324.24137786507225"
+      size={50}
+      x={100}
       y={309.8076211353316} />
     <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,331.45825622994255 150,374.75952641916444 175,331.45825622994255"
+      points="100,367.54264805429415 75,324.2413778650722 125,324.2413778650722"
       size={50}
-      x={150}
-      y={353.1088913245535} />
+      x={100}
+      y={338.67513459481285} />
     <polygon
       direction="up"
-      fill="black"
+      fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,418.0607966083864 150,374.7595264191645 175,418.0607966083864"
+      points="100,367.54264805429415 125.00000000000001,410.8439182435161 75,410.8439182435161"
       size={50}
-      x={150}
+      x={100}
       y={396.41016151377545} />
     <polygon
       direction="down"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="125,418.06079660838645 150,461.36206679760835 175,418.06079660838645"
+      points="100,454.14518843273805 75,410.8439182435161 125,410.8439182435161"
       size={50}
-      x={150}
-      y={439.7114317029974} />
+      x={100}
+      y={425.27767497325675} />
     <polygon
       direction="down"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="150,28.349364905389034 175,71.65063509461096 200,28.349364905389034"
+      points="125,64.43375672974065 100,21.13248654051872 150,21.1324865405187"
       size={50}
-      x={175}
-      y={50} />
+      x={125}
+      y={35.566243270259356} />
     <polygon
       direction="up"
-      fill="white"
+      fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="150,114.95190528383289 175,71.65063509461096 200,114.95190528383289"
+      points="125,64.43375672974064 150,107.73502691896255 100,107.73502691896256"
       size={50}
-      x={175}
+      x={125}
       y={93.30127018922192} />
     <polygon
       direction="down"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="150,114.95190528383289 175,158.25317547305482 200,114.95190528383289"
+      points="125,151.0362971081845 100,107.73502691896259 150,107.73502691896257"
       size={50}
-      x={175}
-      y={136.60254037844385} />
+      x={125}
+      y={122.16878364870323} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="150,201.55444566227678 175,158.25317547305482 200,201.55444566227678"
+      points="125,151.0362971081845 150,194.33756729740642 100,194.33756729740645"
       size={50}
-      x={175}
+      x={125}
       y={179.9038105676658} />
     <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="150,201.55444566227675 175,244.8557158514987 200,201.55444566227675"
+      points="125,237.63883748662835 100,194.33756729740645 150,194.33756729740642"
       size={50}
-      x={175}
-      y={223.20508075688772} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="150,288.1569860407206 175,244.85571585149867 200,288.1569860407206"
-      size={50}
-      x={175}
-      y={266.50635094610965} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="150,288.15698604072065 175,331.45825622994255 200,288.15698604072065"
-      size={50}
-      x={175}
-      y={309.8076211353316} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="150,374.75952641916444 175,331.45825622994255 200,374.75952641916444"
-      size={50}
-      x={175}
-      y={353.1088913245535} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="150,374.7595264191645 175,418.0607966083864 200,374.7595264191645"
-      size={50}
-      x={175}
-      y={396.41016151377545} />
+      x={125}
+      y={208.77132402714707} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="150,461.36206679760835 175,418.06079660838645 200,461.36206679760835"
+      points="125,237.63883748662835 150,280.9401076758503 100,280.9401076758503"
       size={50}
-      x={175}
-      y={439.7114317029974} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,71.65063509461096 200,28.349364905389034 225,71.65063509461096"
-      size={50}
-      x={200}
-      y={50} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,71.65063509461096 200,114.95190528383289 225,71.65063509461096"
-      size={50}
-      x={200}
-      y={93.30127018922192} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,158.25317547305482 200,114.95190528383289 225,158.25317547305482"
-      size={50}
-      x={200}
-      y={136.60254037844385} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,158.25317547305482 200,201.55444566227678 225,158.25317547305482"
-      size={50}
-      x={200}
-      y={179.9038105676658} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,244.8557158514987 200,201.55444566227675 225,244.8557158514987"
-      size={50}
-      x={200}
-      y={223.20508075688772} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,244.85571585149867 200,288.1569860407206 225,244.85571585149867"
-      size={50}
-      x={200}
-      y={266.50635094610965} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,331.45825622994255 200,288.15698604072065 225,331.45825622994255"
-      size={50}
-      x={200}
-      y={309.8076211353316} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,331.45825622994255 200,374.75952641916444 225,331.45825622994255"
-      size={50}
-      x={200}
-      y={353.1088913245535} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,418.0607966083864 200,374.7595264191645 225,418.0607966083864"
-      size={50}
-      x={200}
-      y={396.41016151377545} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="175,418.06079660838645 200,461.36206679760835 225,418.06079660838645"
-      size={50}
-      x={200}
-      y={439.7114317029974} />
-    <polygon
-      direction="down"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="200,28.349364905389034 225,71.65063509461096 250,28.349364905389034"
-      size={50}
-      x={225}
-      y={50} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="200,114.95190528383289 225,71.65063509461096 250,114.95190528383289"
-      size={50}
-      x={225}
-      y={93.30127018922192} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="200,114.95190528383289 225,158.25317547305482 250,114.95190528383289"
-      size={50}
-      x={225}
-      y={136.60254037844385} />
-    <polygon
-      direction="up"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="200,201.55444566227678 225,158.25317547305482 250,201.55444566227678"
-      size={50}
-      x={225}
-      y={179.9038105676658} />
-    <polygon
-      direction="down"
-      fill="white"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="200,201.55444566227675 225,244.8557158514987 250,201.55444566227675"
-      size={50}
-      x={225}
-      y={223.20508075688772} />
-    <polygon
-      direction="up"
-      fill="black"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      points="200,288.1569860407206 225,244.85571585149867 250,288.1569860407206"
-      size={50}
-      x={225}
+      x={125}
       y={266.50635094610965} />
     <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="200,288.15698604072065 225,331.45825622994255 250,288.15698604072065"
+      points="125,324.24137786507225 100,280.9401076758503 150,280.9401076758503"
       size={50}
-      x={225}
-      y={309.8076211353316} />
+      x={125}
+      y={295.37386440559095} />
     <polygon
       direction="up"
-      fill="white"
+      fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="200,374.75952641916444 225,331.45825622994255 250,374.75952641916444"
+      points="125,324.2413778650722 150,367.5426480542941 100,367.54264805429415"
       size={50}
-      x={225}
+      x={125}
       y={353.1088913245535} />
     <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="200,374.7595264191645 225,418.0607966083864 250,374.7595264191645"
+      points="125,410.8439182435161 100,367.54264805429415 150,367.54264805429415"
       size={50}
-      x={225}
-      y={396.41016151377545} />
+      x={125}
+      y={381.9764047840348} />
     <polygon
       direction="up"
-      fill="black"
+      fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="200,461.36206679760835 225,418.06079660838645 250,461.36206679760835"
+      points="125,410.8439182435161 150,454.145188432738 100,454.14518843273805"
       size={50}
-      x={225}
+      x={125}
       y={439.7114317029974} />
     <polygon
       direction="up"
-      fill="white"
+      fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,71.65063509461096 250,28.349364905389034 275,71.65063509461096"
+      points="150,21.132486540518713 175,64.43375672974062 125,64.43375672974064"
       size={50}
-      x={250}
+      x={150}
       y={50} />
     <polygon
       direction="down"
-      fill="black"
+      fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,71.65063509461096 250,114.95190528383289 275,71.65063509461096"
+      points="150,107.73502691896257 125,64.43375672974065 175,64.43375672974064"
       size={50}
-      x={250}
-      y={93.30127018922192} />
+      x={150}
+      y={78.86751345948129} />
     <polygon
       direction="up"
-      fill="black"
+      fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,158.25317547305482 250,114.95190528383289 275,158.25317547305482"
+      points="150,107.73502691896256 175,151.03629710818447 125,151.0362971081845"
       size={50}
-      x={250}
+      x={150}
       y={136.60254037844385} />
     <polygon
       direction="down"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,158.25317547305482 250,201.55444566227678 275,158.25317547305482"
+      points="150,194.33756729740645 125,151.03629710818453 175,151.0362971081845"
       size={50}
-      x={250}
-      y={179.9038105676658} />
+      x={150}
+      y={165.47005383792515} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,244.8557158514987 250,201.55444566227675 275,244.8557158514987"
+      points="150,194.33756729740645 175,237.63883748662835 125,237.63883748662835"
       size={50}
-      x={250}
+      x={150}
       y={223.20508075688772} />
     <polygon
       direction="down"
-      fill="black"
+      fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,244.85571585149867 250,288.1569860407206 275,244.85571585149867"
+      points="150,280.9401076758503 125,237.63883748662838 175,237.63883748662835"
       size={50}
-      x={250}
-      y={266.50635094610965} />
+      x={150}
+      y={252.072594216369} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,331.45825622994255 250,288.15698604072065 275,331.45825622994255"
+      points="150,280.9401076758503 175,324.2413778650722 125,324.24137786507225"
       size={50}
-      x={250}
+      x={150}
       y={309.8076211353316} />
     <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,331.45825622994255 250,374.75952641916444 275,331.45825622994255"
+      points="150,367.54264805429415 125,324.2413778650722 175,324.2413778650722"
       size={50}
-      x={250}
-      y={353.1088913245535} />
+      x={150}
+      y={338.67513459481285} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,418.0607966083864 250,374.7595264191645 275,418.0607966083864"
+      points="150,367.54264805429415 175,410.8439182435161 125,410.8439182435161"
       size={50}
-      x={250}
+      x={150}
       y={396.41016151377545} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="150,454.14518843273805 125,410.8439182435161 175,410.8439182435161"
+      size={50}
+      x={150}
+      y={425.27767497325675} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,64.43375672974065 150,21.13248654051872 200,21.1324865405187"
+      size={50}
+      x={175}
+      y={35.566243270259356} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,64.43375672974064 200,107.73502691896255 150,107.73502691896256"
+      size={50}
+      x={175}
+      y={93.30127018922192} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,151.0362971081845 150,107.73502691896259 200,107.73502691896257"
+      size={50}
+      x={175}
+      y={122.16878364870323} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,151.0362971081845 200,194.33756729740642 150,194.33756729740645"
+      size={50}
+      x={175}
+      y={179.9038105676658} />
     <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="225,418.06079660838645 250,461.36206679760835 275,418.06079660838645"
+      points="175,237.63883748662835 150,194.33756729740645 200,194.33756729740642"
       size={50}
-      x={250}
+      x={175}
+      y={208.77132402714707} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,237.63883748662835 200,280.9401076758503 150,280.9401076758503"
+      size={50}
+      x={175}
+      y={266.50635094610965} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,324.24137786507225 150,280.9401076758503 200,280.9401076758503"
+      size={50}
+      x={175}
+      y={295.37386440559095} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,324.2413778650722 200,367.5426480542941 150,367.54264805429415"
+      size={50}
+      x={175}
+      y={353.1088913245535} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,410.8439182435161 150,367.54264805429415 200,367.54264805429415"
+      size={50}
+      x={175}
+      y={381.9764047840348} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="175,410.8439182435161 200,454.145188432738 150,454.14518843273805"
+      size={50}
+      x={175}
       y={439.7114317029974} />
     <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,21.132486540518713 225,64.43375672974062 175,64.43375672974064"
+      size={50}
+      x={200}
+      y={50} />
+    <polygon
       direction="down"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,28.349364905389034 275,71.65063509461096 300,28.349364905389034"
+      points="200,107.73502691896257 175,64.43375672974065 225,64.43375672974064"
       size={50}
-      x={275}
-      y={50} />
+      x={200}
+      y={78.86751345948129} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,107.73502691896256 225,151.03629710818447 175,151.0362971081845"
+      size={50}
+      x={200}
+      y={136.60254037844385} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,194.33756729740645 175,151.03629710818453 225,151.0362971081845"
+      size={50}
+      x={200}
+      y={165.47005383792515} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,114.95190528383289 275,71.65063509461096 300,114.95190528383289"
+      points="200,194.33756729740645 225,237.63883748662835 175,237.63883748662835"
+      size={50}
+      x={200}
+      y={223.20508075688772} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,280.9401076758503 175,237.63883748662838 225,237.63883748662835"
+      size={50}
+      x={200}
+      y={252.072594216369} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,280.9401076758503 225,324.2413778650722 175,324.24137786507225"
+      size={50}
+      x={200}
+      y={309.8076211353316} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,367.54264805429415 175,324.2413778650722 225,324.2413778650722"
+      size={50}
+      x={200}
+      y={338.67513459481285} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,367.54264805429415 225,410.8439182435161 175,410.8439182435161"
+      size={50}
+      x={200}
+      y={396.41016151377545} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="200,454.14518843273805 175,410.8439182435161 225,410.8439182435161"
+      size={50}
+      x={200}
+      y={425.27767497325675} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,64.43375672974065 200,21.13248654051872 250,21.1324865405187"
+      size={50}
+      x={225}
+      y={35.566243270259356} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,64.43375672974064 250,107.73502691896255 200,107.73502691896256"
+      size={50}
+      x={225}
+      y={93.30127018922192} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,151.0362971081845 200,107.73502691896259 250,107.73502691896257"
+      size={50}
+      x={225}
+      y={122.16878364870323} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,151.0362971081845 250,194.33756729740642 200,194.33756729740645"
+      size={50}
+      x={225}
+      y={179.9038105676658} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,237.63883748662835 200,194.33756729740645 250,194.33756729740642"
+      size={50}
+      x={225}
+      y={208.77132402714707} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,237.63883748662835 250,280.9401076758503 200,280.9401076758503"
+      size={50}
+      x={225}
+      y={266.50635094610965} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,324.24137786507225 200,280.9401076758503 250,280.9401076758503"
+      size={50}
+      x={225}
+      y={295.37386440559095} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,324.2413778650722 250,367.5426480542941 200,367.54264805429415"
+      size={50}
+      x={225}
+      y={353.1088913245535} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,410.8439182435161 200,367.54264805429415 250,367.54264805429415"
+      size={50}
+      x={225}
+      y={381.9764047840348} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="225,410.8439182435161 250,454.145188432738 200,454.14518843273805"
+      size={50}
+      x={225}
+      y={439.7114317029974} />
+    <polygon
+      direction="up"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,21.132486540518713 275,64.43375672974062 225,64.43375672974064"
+      size={50}
+      x={250}
+      y={50} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,107.73502691896257 225,64.43375672974065 275,64.43375672974064"
+      size={50}
+      x={250}
+      y={78.86751345948129} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,107.73502691896256 275,151.03629710818447 225,151.0362971081845"
+      size={50}
+      x={250}
+      y={136.60254037844385} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,194.33756729740645 225,151.03629710818453 275,151.0362971081845"
+      size={50}
+      x={250}
+      y={165.47005383792515} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,194.33756729740645 275,237.63883748662835 225,237.63883748662835"
+      size={50}
+      x={250}
+      y={223.20508075688772} />
+    <polygon
+      direction="down"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,280.9401076758503 225,237.63883748662838 275,237.63883748662835"
+      size={50}
+      x={250}
+      y={252.072594216369} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,280.9401076758503 275,324.2413778650722 225,324.24137786507225"
+      size={50}
+      x={250}
+      y={309.8076211353316} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,367.54264805429415 225,324.2413778650722 275,324.2413778650722"
+      size={50}
+      x={250}
+      y={338.67513459481285} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,367.54264805429415 275,410.8439182435161 225,410.8439182435161"
+      size={50}
+      x={250}
+      y={396.41016151377545} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="250,454.14518843273805 225,410.8439182435161 275,410.8439182435161"
+      size={50}
+      x={250}
+      y={425.27767497325675} />
+    <polygon
+      direction="down"
+      fill="white"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="275,64.43375672974065 250,21.13248654051872 300,21.1324865405187"
+      size={50}
+      x={275}
+      y={35.566243270259356} />
+    <polygon
+      direction="up"
+      fill="black"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      points="275,64.43375672974064 300,107.73502691896255 250,107.73502691896256"
       size={50}
       x={275}
       y={93.30127018922192} />
@@ -2145,16 +1293,16 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,114.95190528383289 275,158.25317547305482 300,114.95190528383289"
+      points="275,151.0362971081845 250,107.73502691896259 300,107.73502691896257"
       size={50}
       x={275}
-      y={136.60254037844385} />
+      y={122.16878364870323} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,201.55444566227678 275,158.25317547305482 300,201.55444566227678"
+      points="275,151.0362971081845 300,194.33756729740642 250,194.33756729740645"
       size={50}
       x={275}
       y={179.9038105676658} />
@@ -2163,16 +1311,16 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,201.55444566227675 275,244.8557158514987 300,201.55444566227675"
+      points="275,237.63883748662835 250,194.33756729740645 300,194.33756729740642"
       size={50}
       x={275}
-      y={223.20508075688772} />
+      y={208.77132402714707} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,288.1569860407206 275,244.85571585149867 300,288.1569860407206"
+      points="275,237.63883748662835 300,280.9401076758503 250,280.9401076758503"
       size={50}
       x={275}
       y={266.50635094610965} />
@@ -2181,16 +1329,16 @@ exports[`draw`] = `
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,288.15698604072065 275,331.45825622994255 300,288.15698604072065"
+      points="275,324.24137786507225 250,280.9401076758503 300,280.9401076758503"
       size={50}
       x={275}
-      y={309.8076211353316} />
+      y={295.37386440559095} />
     <polygon
       direction="up"
       fill="black"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,374.75952641916444 275,331.45825622994255 300,374.75952641916444"
+      points="275,324.2413778650722 300,367.5426480542941 250,367.54264805429415"
       size={50}
       x={275}
       y={353.1088913245535} />
@@ -2199,16 +1347,16 @@ exports[`draw`] = `
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,374.7595264191645 275,418.0607966083864 300,374.7595264191645"
+      points="275,410.8439182435161 250,367.54264805429415 300,367.54264805429415"
       size={50}
       x={275}
-      y={396.41016151377545} />
+      y={381.9764047840348} />
     <polygon
       direction="up"
       fill="white"
       onClick={[Function]}
       onMouseEnter={[Function]}
-      points="250,461.36206679760835 275,418.06079660838645 300,461.36206679760835"
+      points="275,410.8439182435161 300,454.145188432738 250,454.14518843273805"
       size={50}
       x={275}
       y={439.7114317029974} />
@@ -2223,7 +1371,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="143.30127018922192,150 56.69872981077807,100 143.30127018922192,50"
+      points="42.264973081037425,100 128.86751345948124,49.99999999999998 128.86751345948133,150"
       size={100}
       stroke="white"
       x={100}
@@ -2238,14 +1386,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="56.69872981077807,200 143.30127018922192,150 56.69872981077807,100"
+      points="128.8675134594813,150 42.26497308103744,200 42.2649730810374,100.00000000000001"
       size={100}
       stroke="white"
-      x={100}
+      x={71.13248654051871}
       y={150} />
     <text
       fill="white"
-      x={90}
+      x={61.13248654051871}
       y={150}>
       0,1
     </text>
@@ -2253,7 +1401,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="143.30127018922192,250 56.69872981077807,200 143.30127018922192,150"
+      points="42.264973081037425,200 128.86751345948124,149.99999999999997 128.86751345948133,250"
       size={100}
       stroke="white"
       x={100}
@@ -2268,14 +1416,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="56.69872981077807,300 143.30127018922192,250 56.69872981077807,200"
+      points="128.8675134594813,250 42.26497308103744,300 42.2649730810374,200"
       size={100}
       stroke="white"
-      x={100}
+      x={71.13248654051871}
       y={250} />
     <text
       fill="white"
-      x={90}
+      x={61.13248654051871}
       y={250}>
       0,3
     </text>
@@ -2283,7 +1431,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="143.30127018922192,350 56.69872981077807,300 143.30127018922192,250"
+      points="42.264973081037425,300 128.86751345948124,249.99999999999997 128.86751345948133,350"
       size={100}
       stroke="white"
       x={100}
@@ -2298,14 +1446,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="56.69872981077807,400 143.30127018922192,350 56.69872981077807,300"
+      points="128.8675134594813,350 42.26497308103744,400 42.2649730810374,300"
       size={100}
       stroke="white"
-      x={100}
+      x={71.13248654051871}
       y={350} />
     <text
       fill="white"
-      x={90}
+      x={61.13248654051871}
       y={350}>
       0,5
     </text>
@@ -2313,7 +1461,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="143.30127018922192,450 56.69872981077807,400 143.30127018922192,350"
+      points="42.264973081037425,400 128.86751345948124,350 128.86751345948133,450"
       size={100}
       stroke="white"
       x={100}
@@ -2328,14 +1476,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="56.69872981077807,500 143.30127018922192,450 56.69872981077807,400"
+      points="128.8675134594813,450 42.26497308103744,500 42.2649730810374,400"
       size={100}
       stroke="white"
-      x={100}
+      x={71.13248654051871}
       y={450} />
     <text
       fill="white"
-      x={90}
+      x={61.13248654051871}
       y={450}>
       0,7
     </text>
@@ -2343,7 +1491,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="143.30127018922192,550 56.69872981077807,500 143.30127018922192,450"
+      points="42.264973081037425,500 128.86751345948124,450 128.86751345948133,550"
       size={100}
       stroke="white"
       x={100}
@@ -2358,14 +1506,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="56.69872981077807,600 143.30127018922192,550 56.69872981077807,500"
+      points="128.8675134594813,550 42.26497308103744,600 42.2649730810374,500"
       size={100}
       stroke="white"
-      x={100}
+      x={71.13248654051871}
       y={550} />
     <text
       fill="white"
-      x={90}
+      x={61.13248654051871}
       y={550}>
       0,9
     </text>
@@ -2373,14 +1521,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="143.30127018922192,150 229.90381056766577,100 143.30127018922192,50"
+      points="215.47005383792515,100 128.8675134594813,150 128.86751345948127,50.000000000000014"
       size={100}
       stroke="white"
-      x={186.60254037844385}
+      x={157.73502691896257}
       y={100} />
     <text
       fill="white"
-      x={176.60254037844385}
+      x={147.73502691896257}
       y={100}>
       1,0
     </text>
@@ -2388,7 +1536,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="229.90381056766577,200 143.30127018922192,150 229.90381056766577,100"
+      points="128.86751345948127,150 215.4700538379251,99.99999999999997 215.47005383792518,200"
       size={100}
       stroke="white"
       x={186.60254037844385}
@@ -2403,14 +1551,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="143.30127018922192,250 229.90381056766577,200 143.30127018922192,150"
+      points="215.47005383792515,200 128.8675134594813,250 128.86751345948127,150"
       size={100}
       stroke="white"
-      x={186.60254037844385}
+      x={157.73502691896257}
       y={200} />
     <text
       fill="white"
-      x={176.60254037844385}
+      x={147.73502691896257}
       y={200}>
       1,2
     </text>
@@ -2418,7 +1566,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="229.90381056766577,300 143.30127018922192,250 229.90381056766577,200"
+      points="128.86751345948127,250 215.4700538379251,199.99999999999997 215.47005383792518,300"
       size={100}
       stroke="white"
       x={186.60254037844385}
@@ -2433,14 +1581,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="143.30127018922192,350 229.90381056766577,300 143.30127018922192,250"
+      points="215.47005383792515,300 128.8675134594813,350 128.86751345948127,250"
       size={100}
       stroke="white"
-      x={186.60254037844385}
+      x={157.73502691896257}
       y={300} />
     <text
       fill="white"
-      x={176.60254037844385}
+      x={147.73502691896257}
       y={300}>
       1,4
     </text>
@@ -2448,7 +1596,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="229.90381056766577,400 143.30127018922192,350 229.90381056766577,300"
+      points="128.86751345948127,350 215.4700538379251,300 215.47005383792518,400"
       size={100}
       stroke="white"
       x={186.60254037844385}
@@ -2463,14 +1611,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="143.30127018922192,450 229.90381056766577,400 143.30127018922192,350"
+      points="215.47005383792515,400 128.8675134594813,450 128.86751345948127,350"
       size={100}
       stroke="white"
-      x={186.60254037844385}
+      x={157.73502691896257}
       y={400} />
     <text
       fill="white"
-      x={176.60254037844385}
+      x={147.73502691896257}
       y={400}>
       1,6
     </text>
@@ -2478,7 +1626,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="229.90381056766577,500 143.30127018922192,450 229.90381056766577,400"
+      points="128.86751345948127,450 215.4700538379251,400 215.47005383792518,500"
       size={100}
       stroke="white"
       x={186.60254037844385}
@@ -2493,14 +1641,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="143.30127018922192,550 229.90381056766577,500 143.30127018922192,450"
+      points="215.47005383792515,500 128.8675134594813,550 128.86751345948127,450"
       size={100}
       stroke="white"
-      x={186.60254037844385}
+      x={157.73502691896257}
       y={500} />
     <text
       fill="white"
-      x={176.60254037844385}
+      x={147.73502691896257}
       y={500}>
       1,8
     </text>
@@ -2508,7 +1656,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="229.90381056766577,600 143.30127018922192,550 229.90381056766577,500"
+      points="128.86751345948127,550 215.4700538379251,500 215.47005383792518,600"
       size={100}
       stroke="white"
       x={186.60254037844385}
@@ -2523,7 +1671,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="316.50635094610965,150 229.90381056766577,100 316.50635094610965,50"
+      points="215.47005383792512,100 302.07259421636894,49.99999999999998 302.072594216369,150"
       size={100}
       stroke="white"
       x={273.2050807568877}
@@ -2538,14 +1686,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="229.90381056766577,200 316.50635094610965,150 229.90381056766577,100"
+      points="302.072594216369,150 215.47005383792518,200 215.47005383792515,100.00000000000001"
       size={100}
       stroke="white"
-      x={273.2050807568877}
+      x={244.33756729740645}
       y={150} />
     <text
       fill="white"
-      x={263.2050807568877}
+      x={234.33756729740645}
       y={150}>
       2,1
     </text>
@@ -2553,7 +1701,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="316.50635094610965,250 229.90381056766577,200 316.50635094610965,150"
+      points="215.47005383792512,200 302.07259421636894,149.99999999999997 302.072594216369,250"
       size={100}
       stroke="white"
       x={273.2050807568877}
@@ -2568,14 +1716,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="229.90381056766577,300 316.50635094610965,250 229.90381056766577,200"
+      points="302.072594216369,250 215.47005383792518,300 215.47005383792515,200"
       size={100}
       stroke="white"
-      x={273.2050807568877}
+      x={244.33756729740645}
       y={250} />
     <text
       fill="white"
-      x={263.2050807568877}
+      x={234.33756729740645}
       y={250}>
       2,3
     </text>
@@ -2583,7 +1731,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="316.50635094610965,350 229.90381056766577,300 316.50635094610965,250"
+      points="215.47005383792512,300 302.07259421636894,249.99999999999997 302.072594216369,350"
       size={100}
       stroke="white"
       x={273.2050807568877}
@@ -2598,14 +1746,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="229.90381056766577,400 316.50635094610965,350 229.90381056766577,300"
+      points="302.072594216369,350 215.47005383792518,400 215.47005383792515,300"
       size={100}
       stroke="white"
-      x={273.2050807568877}
+      x={244.33756729740645}
       y={350} />
     <text
       fill="white"
-      x={263.2050807568877}
+      x={234.33756729740645}
       y={350}>
       2,5
     </text>
@@ -2613,7 +1761,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="316.50635094610965,450 229.90381056766577,400 316.50635094610965,350"
+      points="215.47005383792512,400 302.07259421636894,350 302.072594216369,450"
       size={100}
       stroke="white"
       x={273.2050807568877}
@@ -2628,14 +1776,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="229.90381056766577,500 316.50635094610965,450 229.90381056766577,400"
+      points="302.072594216369,450 215.47005383792518,500 215.47005383792515,400"
       size={100}
       stroke="white"
-      x={273.2050807568877}
+      x={244.33756729740645}
       y={450} />
     <text
       fill="white"
-      x={263.2050807568877}
+      x={234.33756729740645}
       y={450}>
       2,7
     </text>
@@ -2643,7 +1791,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="316.50635094610965,550 229.90381056766577,500 316.50635094610965,450"
+      points="215.47005383792512,500 302.07259421636894,450 302.072594216369,550"
       size={100}
       stroke="white"
       x={273.2050807568877}
@@ -2658,14 +1806,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="229.90381056766577,600 316.50635094610965,550 229.90381056766577,500"
+      points="302.072594216369,550 215.47005383792518,600 215.47005383792515,500"
       size={100}
       stroke="white"
-      x={273.2050807568877}
+      x={244.33756729740645}
       y={550} />
     <text
       fill="white"
-      x={263.2050807568877}
+      x={234.33756729740645}
       y={550}>
       2,9
     </text>
@@ -2673,14 +1821,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="316.50635094610965,150 403.10889132455355,100 316.50635094610965,50"
+      points="388.6751345948129,100 302.072594216369,150 302.072594216369,50.000000000000014"
       size={100}
       stroke="white"
-      x={359.8076211353316}
+      x={330.9401076758503}
       y={100} />
     <text
       fill="white"
-      x={349.8076211353316}
+      x={320.9401076758503}
       y={100}>
       3,0
     </text>
@@ -2688,7 +1836,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="403.10889132455355,200 316.50635094610965,150 403.10889132455355,100"
+      points="302.072594216369,150 388.67513459481285,99.99999999999997 388.6751345948129,200"
       size={100}
       stroke="white"
       x={359.8076211353316}
@@ -2703,14 +1851,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="316.50635094610965,250 403.10889132455355,200 316.50635094610965,150"
+      points="388.6751345948129,200 302.072594216369,250 302.072594216369,150"
       size={100}
       stroke="white"
-      x={359.8076211353316}
+      x={330.9401076758503}
       y={200} />
     <text
       fill="white"
-      x={349.8076211353316}
+      x={320.9401076758503}
       y={200}>
       3,2
     </text>
@@ -2718,7 +1866,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="403.10889132455355,300 316.50635094610965,250 403.10889132455355,200"
+      points="302.072594216369,250 388.67513459481285,199.99999999999997 388.6751345948129,300"
       size={100}
       stroke="white"
       x={359.8076211353316}
@@ -2733,14 +1881,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="316.50635094610965,350 403.10889132455355,300 316.50635094610965,250"
+      points="388.6751345948129,300 302.072594216369,350 302.072594216369,250"
       size={100}
       stroke="white"
-      x={359.8076211353316}
+      x={330.9401076758503}
       y={300} />
     <text
       fill="white"
-      x={349.8076211353316}
+      x={320.9401076758503}
       y={300}>
       3,4
     </text>
@@ -2748,7 +1896,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="403.10889132455355,400 316.50635094610965,350 403.10889132455355,300"
+      points="302.072594216369,350 388.67513459481285,300 388.6751345948129,400"
       size={100}
       stroke="white"
       x={359.8076211353316}
@@ -2763,14 +1911,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="316.50635094610965,450 403.10889132455355,400 316.50635094610965,350"
+      points="388.6751345948129,400 302.072594216369,450 302.072594216369,350"
       size={100}
       stroke="white"
-      x={359.8076211353316}
+      x={330.9401076758503}
       y={400} />
     <text
       fill="white"
-      x={349.8076211353316}
+      x={320.9401076758503}
       y={400}>
       3,6
     </text>
@@ -2778,7 +1926,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="403.10889132455355,500 316.50635094610965,450 403.10889132455355,400"
+      points="302.072594216369,450 388.67513459481285,400 388.6751345948129,500"
       size={100}
       stroke="white"
       x={359.8076211353316}
@@ -2793,14 +1941,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="316.50635094610965,550 403.10889132455355,500 316.50635094610965,450"
+      points="388.6751345948129,500 302.072594216369,550 302.072594216369,450"
       size={100}
       stroke="white"
-      x={359.8076211353316}
+      x={330.9401076758503}
       y={500} />
     <text
       fill="white"
-      x={349.8076211353316}
+      x={320.9401076758503}
       y={500}>
       3,8
     </text>
@@ -2808,7 +1956,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="403.10889132455355,600 316.50635094610965,550 403.10889132455355,500"
+      points="302.072594216369,550 388.67513459481285,500 388.6751345948129,600"
       size={100}
       stroke="white"
       x={359.8076211353316}
@@ -2823,7 +1971,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="489.7114317029974,150 403.1088913245535,100 489.7114317029974,50"
+      points="388.6751345948129,100 475.2776749732567,49.99999999999998 475.27767497325675,150"
       size={100}
       stroke="white"
       x={446.41016151377545}
@@ -2838,14 +1986,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="403.1088913245535,200 489.7114317029974,150 403.1088913245535,100"
+      points="475.2776749732567,150 388.6751345948129,200 388.67513459481285,100.00000000000001"
       size={100}
       stroke="white"
-      x={446.41016151377545}
+      x={417.54264805429415}
       y={150} />
     <text
       fill="white"
-      x={436.41016151377545}
+      x={407.54264805429415}
       y={150}>
       4,1
     </text>
@@ -2853,7 +2001,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="489.7114317029974,250 403.1088913245535,200 489.7114317029974,150"
+      points="388.6751345948129,200 475.2776749732567,149.99999999999997 475.27767497325675,250"
       size={100}
       stroke="white"
       x={446.41016151377545}
@@ -2868,14 +2016,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="403.1088913245535,300 489.7114317029974,250 403.1088913245535,200"
+      points="475.2776749732567,250 388.6751345948129,300 388.67513459481285,200"
       size={100}
       stroke="white"
-      x={446.41016151377545}
+      x={417.54264805429415}
       y={250} />
     <text
       fill="white"
-      x={436.41016151377545}
+      x={407.54264805429415}
       y={250}>
       4,3
     </text>
@@ -2883,7 +2031,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="489.7114317029974,350 403.1088913245535,300 489.7114317029974,250"
+      points="388.6751345948129,300 475.2776749732567,249.99999999999997 475.27767497325675,350"
       size={100}
       stroke="white"
       x={446.41016151377545}
@@ -2898,14 +2046,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="403.1088913245535,400 489.7114317029974,350 403.1088913245535,300"
+      points="475.2776749732567,350 388.6751345948129,400 388.67513459481285,300"
       size={100}
       stroke="white"
-      x={446.41016151377545}
+      x={417.54264805429415}
       y={350} />
     <text
       fill="white"
-      x={436.41016151377545}
+      x={407.54264805429415}
       y={350}>
       4,5
     </text>
@@ -2913,7 +2061,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="489.7114317029974,450 403.1088913245535,400 489.7114317029974,350"
+      points="388.6751345948129,400 475.2776749732567,350 475.27767497325675,450"
       size={100}
       stroke="white"
       x={446.41016151377545}
@@ -2928,14 +2076,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="403.1088913245535,500 489.7114317029974,450 403.1088913245535,400"
+      points="475.2776749732567,450 388.6751345948129,500 388.67513459481285,400"
       size={100}
       stroke="white"
-      x={446.41016151377545}
+      x={417.54264805429415}
       y={450} />
     <text
       fill="white"
-      x={436.41016151377545}
+      x={407.54264805429415}
       y={450}>
       4,7
     </text>
@@ -2943,7 +2091,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="489.7114317029974,550 403.1088913245535,500 489.7114317029974,450"
+      points="388.6751345948129,500 475.2776749732567,450 475.27767497325675,550"
       size={100}
       stroke="white"
       x={446.41016151377545}
@@ -2958,14 +2106,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="403.1088913245535,600 489.7114317029974,550 403.1088913245535,500"
+      points="475.2776749732567,550 388.6751345948129,600 388.67513459481285,500"
       size={100}
       stroke="white"
-      x={446.41016151377545}
+      x={417.54264805429415}
       y={550} />
     <text
       fill="white"
-      x={436.41016151377545}
+      x={407.54264805429415}
       y={550}>
       4,9
     </text>
@@ -2973,14 +2121,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="489.71143170299734,150 576.3139720814412,100 489.71143170299734,50"
+      points="561.8802153517006,100 475.2776749732567,150 475.2776749732567,50.000000000000014"
       size={100}
       stroke="white"
-      x={533.0127018922193}
+      x={504.145188432738}
       y={100} />
     <text
       fill="white"
-      x={523.0127018922193}
+      x={494.145188432738}
       y={100}>
       5,0
     </text>
@@ -2988,7 +2136,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="576.3139720814412,200 489.71143170299734,150 576.3139720814412,100"
+      points="475.2776749732567,150 561.8802153517006,99.99999999999997 561.8802153517006,200"
       size={100}
       stroke="white"
       x={533.0127018922193}
@@ -3003,14 +2151,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="489.71143170299734,250 576.3139720814412,200 489.71143170299734,150"
+      points="561.8802153517006,200 475.2776749732567,250 475.2776749732567,150"
       size={100}
       stroke="white"
-      x={533.0127018922193}
+      x={504.145188432738}
       y={200} />
     <text
       fill="white"
-      x={523.0127018922193}
+      x={494.145188432738}
       y={200}>
       5,2
     </text>
@@ -3018,7 +2166,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="576.3139720814412,300 489.71143170299734,250 576.3139720814412,200"
+      points="475.2776749732567,250 561.8802153517006,199.99999999999997 561.8802153517006,300"
       size={100}
       stroke="white"
       x={533.0127018922193}
@@ -3033,14 +2181,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="489.71143170299734,350 576.3139720814412,300 489.71143170299734,250"
+      points="561.8802153517006,300 475.2776749732567,350 475.2776749732567,250"
       size={100}
       stroke="white"
-      x={533.0127018922193}
+      x={504.145188432738}
       y={300} />
     <text
       fill="white"
-      x={523.0127018922193}
+      x={494.145188432738}
       y={300}>
       5,4
     </text>
@@ -3048,7 +2196,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="576.3139720814412,400 489.71143170299734,350 576.3139720814412,300"
+      points="475.2776749732567,350 561.8802153517006,300 561.8802153517006,400"
       size={100}
       stroke="white"
       x={533.0127018922193}
@@ -3063,14 +2211,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="489.71143170299734,450 576.3139720814412,400 489.71143170299734,350"
+      points="561.8802153517006,400 475.2776749732567,450 475.2776749732567,350"
       size={100}
       stroke="white"
-      x={533.0127018922193}
+      x={504.145188432738}
       y={400} />
     <text
       fill="white"
-      x={523.0127018922193}
+      x={494.145188432738}
       y={400}>
       5,6
     </text>
@@ -3078,7 +2226,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="576.3139720814412,500 489.71143170299734,450 576.3139720814412,400"
+      points="475.2776749732567,450 561.8802153517006,400 561.8802153517006,500"
       size={100}
       stroke="white"
       x={533.0127018922193}
@@ -3093,14 +2241,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="489.71143170299734,550 576.3139720814412,500 489.71143170299734,450"
+      points="561.8802153517006,500 475.2776749732567,550 475.2776749732567,450"
       size={100}
       stroke="white"
-      x={533.0127018922193}
+      x={504.145188432738}
       y={500} />
     <text
       fill="white"
-      x={523.0127018922193}
+      x={494.145188432738}
       y={500}>
       5,8
     </text>
@@ -3108,7 +2256,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="576.3139720814412,600 489.71143170299734,550 576.3139720814412,500"
+      points="475.2776749732567,550 561.8802153517006,500 561.8802153517006,600"
       size={100}
       stroke="white"
       x={533.0127018922193}
@@ -3123,7 +2271,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="662.9165124598851,150 576.3139720814413,100 662.9165124598851,50"
+      points="561.8802153517006,100 648.4827557301445,49.99999999999998 648.4827557301445,150"
       size={100}
       stroke="white"
       x={619.6152422706632}
@@ -3138,14 +2286,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="576.3139720814413,200 662.9165124598851,150 576.3139720814413,100"
+      points="648.4827557301445,150 561.8802153517006,200 561.8802153517006,100.00000000000001"
       size={100}
       stroke="white"
-      x={619.6152422706632}
+      x={590.7477288111819}
       y={150} />
     <text
       fill="white"
-      x={609.6152422706632}
+      x={580.7477288111819}
       y={150}>
       6,1
     </text>
@@ -3153,7 +2301,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="662.9165124598851,250 576.3139720814413,200 662.9165124598851,150"
+      points="561.8802153517006,200 648.4827557301445,149.99999999999997 648.4827557301445,250"
       size={100}
       stroke="white"
       x={619.6152422706632}
@@ -3168,14 +2316,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="576.3139720814413,300 662.9165124598851,250 576.3139720814413,200"
+      points="648.4827557301445,250 561.8802153517006,300 561.8802153517006,200"
       size={100}
       stroke="white"
-      x={619.6152422706632}
+      x={590.7477288111819}
       y={250} />
     <text
       fill="white"
-      x={609.6152422706632}
+      x={580.7477288111819}
       y={250}>
       6,3
     </text>
@@ -3183,7 +2331,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="662.9165124598851,350 576.3139720814413,300 662.9165124598851,250"
+      points="561.8802153517006,300 648.4827557301445,249.99999999999997 648.4827557301445,350"
       size={100}
       stroke="white"
       x={619.6152422706632}
@@ -3198,14 +2346,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="576.3139720814413,400 662.9165124598851,350 576.3139720814413,300"
+      points="648.4827557301445,350 561.8802153517006,400 561.8802153517006,300"
       size={100}
       stroke="white"
-      x={619.6152422706632}
+      x={590.7477288111819}
       y={350} />
     <text
       fill="white"
-      x={609.6152422706632}
+      x={580.7477288111819}
       y={350}>
       6,5
     </text>
@@ -3213,7 +2361,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="662.9165124598851,450 576.3139720814413,400 662.9165124598851,350"
+      points="561.8802153517006,400 648.4827557301445,350 648.4827557301445,450"
       size={100}
       stroke="white"
       x={619.6152422706632}
@@ -3228,14 +2376,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="576.3139720814413,500 662.9165124598851,450 576.3139720814413,400"
+      points="648.4827557301445,450 561.8802153517006,500 561.8802153517006,400"
       size={100}
       stroke="white"
-      x={619.6152422706632}
+      x={590.7477288111819}
       y={450} />
     <text
       fill="white"
-      x={609.6152422706632}
+      x={580.7477288111819}
       y={450}>
       6,7
     </text>
@@ -3243,7 +2391,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="662.9165124598851,550 576.3139720814413,500 662.9165124598851,450"
+      points="561.8802153517006,500 648.4827557301445,450 648.4827557301445,550"
       size={100}
       stroke="white"
       x={619.6152422706632}
@@ -3258,14 +2406,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="576.3139720814413,600 662.9165124598851,550 576.3139720814413,500"
+      points="648.4827557301445,550 561.8802153517006,600 561.8802153517006,500"
       size={100}
       stroke="white"
-      x={619.6152422706632}
+      x={590.7477288111819}
       y={550} />
     <text
       fill="white"
-      x={609.6152422706632}
+      x={580.7477288111819}
       y={550}>
       6,9
     </text>
@@ -3273,14 +2421,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="662.9165124598851,150 749.5190528383289,100 662.9165124598851,50"
+      points="735.0852961085883,100 648.4827557301444,150 648.4827557301444,50.000000000000014"
       size={100}
       stroke="white"
-      x={706.217782649107}
+      x={677.3502691896257}
       y={100} />
     <text
       fill="white"
-      x={696.217782649107}
+      x={667.3502691896257}
       y={100}>
       7,0
     </text>
@@ -3288,7 +2436,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="749.5190528383289,200 662.9165124598851,150 749.5190528383289,100"
+      points="648.4827557301444,150 735.0852961085883,99.99999999999997 735.0852961085883,200"
       size={100}
       stroke="white"
       x={706.217782649107}
@@ -3303,14 +2451,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="662.9165124598851,250 749.5190528383289,200 662.9165124598851,150"
+      points="735.0852961085883,200 648.4827557301444,250 648.4827557301444,150"
       size={100}
       stroke="white"
-      x={706.217782649107}
+      x={677.3502691896257}
       y={200} />
     <text
       fill="white"
-      x={696.217782649107}
+      x={667.3502691896257}
       y={200}>
       7,2
     </text>
@@ -3318,7 +2466,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="749.5190528383289,300 662.9165124598851,250 749.5190528383289,200"
+      points="648.4827557301444,250 735.0852961085883,199.99999999999997 735.0852961085883,300"
       size={100}
       stroke="white"
       x={706.217782649107}
@@ -3333,14 +2481,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="662.9165124598851,350 749.5190528383289,300 662.9165124598851,250"
+      points="735.0852961085883,300 648.4827557301444,350 648.4827557301444,250"
       size={100}
       stroke="white"
-      x={706.217782649107}
+      x={677.3502691896257}
       y={300} />
     <text
       fill="white"
-      x={696.217782649107}
+      x={667.3502691896257}
       y={300}>
       7,4
     </text>
@@ -3348,7 +2496,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="749.5190528383289,400 662.9165124598851,350 749.5190528383289,300"
+      points="648.4827557301444,350 735.0852961085883,300 735.0852961085883,400"
       size={100}
       stroke="white"
       x={706.217782649107}
@@ -3363,14 +2511,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="662.9165124598851,450 749.5190528383289,400 662.9165124598851,350"
+      points="735.0852961085883,400 648.4827557301444,450 648.4827557301444,350"
       size={100}
       stroke="white"
-      x={706.217782649107}
+      x={677.3502691896257}
       y={400} />
     <text
       fill="white"
-      x={696.217782649107}
+      x={667.3502691896257}
       y={400}>
       7,6
     </text>
@@ -3378,7 +2526,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="749.5190528383289,500 662.9165124598851,450 749.5190528383289,400"
+      points="648.4827557301444,450 735.0852961085883,400 735.0852961085883,500"
       size={100}
       stroke="white"
       x={706.217782649107}
@@ -3393,14 +2541,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="662.9165124598851,550 749.5190528383289,500 662.9165124598851,450"
+      points="735.0852961085883,500 648.4827557301444,550 648.4827557301444,450"
       size={100}
       stroke="white"
-      x={706.217782649107}
+      x={677.3502691896257}
       y={500} />
     <text
       fill="white"
-      x={696.217782649107}
+      x={667.3502691896257}
       y={500}>
       7,8
     </text>
@@ -3408,7 +2556,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="749.5190528383289,600 662.9165124598851,550 749.5190528383289,500"
+      points="648.4827557301444,550 735.0852961085883,500 735.0852961085883,600"
       size={100}
       stroke="white"
       x={706.217782649107}
@@ -3423,7 +2571,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="836.1215932167728,150 749.519052838329,100 836.1215932167728,50"
+      points="735.0852961085883,100 821.6878364870322,49.99999999999998 821.6878364870322,150"
       size={100}
       stroke="white"
       x={792.8203230275509}
@@ -3438,14 +2586,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="749.519052838329,200 836.1215932167728,150 749.519052838329,100"
+      points="821.6878364870322,150 735.0852961085883,200 735.0852961085883,100.00000000000001"
       size={100}
       stroke="white"
-      x={792.8203230275509}
+      x={763.9528095680696}
       y={150} />
     <text
       fill="white"
-      x={782.8203230275509}
+      x={753.9528095680696}
       y={150}>
       8,1
     </text>
@@ -3453,7 +2601,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="836.1215932167728,250 749.519052838329,200 836.1215932167728,150"
+      points="735.0852961085883,200 821.6878364870322,149.99999999999997 821.6878364870322,250"
       size={100}
       stroke="white"
       x={792.8203230275509}
@@ -3468,14 +2616,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="749.519052838329,300 836.1215932167728,250 749.519052838329,200"
+      points="821.6878364870322,250 735.0852961085883,300 735.0852961085883,200"
       size={100}
       stroke="white"
-      x={792.8203230275509}
+      x={763.9528095680696}
       y={250} />
     <text
       fill="white"
-      x={782.8203230275509}
+      x={753.9528095680696}
       y={250}>
       8,3
     </text>
@@ -3483,7 +2631,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="836.1215932167728,350 749.519052838329,300 836.1215932167728,250"
+      points="735.0852961085883,300 821.6878364870322,249.99999999999997 821.6878364870322,350"
       size={100}
       stroke="white"
       x={792.8203230275509}
@@ -3498,14 +2646,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="749.519052838329,400 836.1215932167728,350 749.519052838329,300"
+      points="821.6878364870322,350 735.0852961085883,400 735.0852961085883,300"
       size={100}
       stroke="white"
-      x={792.8203230275509}
+      x={763.9528095680696}
       y={350} />
     <text
       fill="white"
-      x={782.8203230275509}
+      x={753.9528095680696}
       y={350}>
       8,5
     </text>
@@ -3513,7 +2661,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="836.1215932167728,450 749.519052838329,400 836.1215932167728,350"
+      points="735.0852961085883,400 821.6878364870322,350 821.6878364870322,450"
       size={100}
       stroke="white"
       x={792.8203230275509}
@@ -3528,14 +2676,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="749.519052838329,500 836.1215932167728,450 749.519052838329,400"
+      points="821.6878364870322,450 735.0852961085883,500 735.0852961085883,400"
       size={100}
       stroke="white"
-      x={792.8203230275509}
+      x={763.9528095680696}
       y={450} />
     <text
       fill="white"
-      x={782.8203230275509}
+      x={753.9528095680696}
       y={450}>
       8,7
     </text>
@@ -3543,7 +2691,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="836.1215932167728,550 749.519052838329,500 836.1215932167728,450"
+      points="735.0852961085883,500 821.6878364870322,450 821.6878364870322,550"
       size={100}
       stroke="white"
       x={792.8203230275509}
@@ -3558,14 +2706,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="749.519052838329,600 836.1215932167728,550 749.519052838329,500"
+      points="821.6878364870322,550 735.0852961085883,600 735.0852961085883,500"
       size={100}
       stroke="white"
-      x={792.8203230275509}
+      x={763.9528095680696}
       y={550} />
     <text
       fill="white"
-      x={782.8203230275509}
+      x={753.9528095680696}
       y={550}>
       8,9
     </text>
@@ -3573,14 +2721,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="836.1215932167729,150 922.7241335952167,100 836.1215932167729,50"
+      points="908.2903768654761,100 821.6878364870322,150 821.6878364870322,50.000000000000014"
       size={100}
       stroke="white"
-      x={879.4228634059948}
+      x={850.5553499465135}
       y={100} />
     <text
       fill="white"
-      x={869.4228634059948}
+      x={840.5553499465135}
       y={100}>
       9,0
     </text>
@@ -3588,7 +2736,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="922.7241335952167,200 836.1215932167729,150 922.7241335952167,100"
+      points="821.6878364870322,150 908.2903768654761,99.99999999999997 908.2903768654761,200"
       size={100}
       stroke="white"
       x={879.4228634059948}
@@ -3603,14 +2751,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="836.1215932167729,250 922.7241335952167,200 836.1215932167729,150"
+      points="908.2903768654761,200 821.6878364870322,250 821.6878364870322,150"
       size={100}
       stroke="white"
-      x={879.4228634059948}
+      x={850.5553499465135}
       y={200} />
     <text
       fill="white"
-      x={869.4228634059948}
+      x={840.5553499465135}
       y={200}>
       9,2
     </text>
@@ -3618,7 +2766,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="922.7241335952167,300 836.1215932167729,250 922.7241335952167,200"
+      points="821.6878364870322,250 908.2903768654761,199.99999999999997 908.2903768654761,300"
       size={100}
       stroke="white"
       x={879.4228634059948}
@@ -3633,14 +2781,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="836.1215932167729,350 922.7241335952167,300 836.1215932167729,250"
+      points="908.2903768654761,300 821.6878364870322,350 821.6878364870322,250"
       size={100}
       stroke="white"
-      x={879.4228634059948}
+      x={850.5553499465135}
       y={300} />
     <text
       fill="white"
-      x={869.4228634059948}
+      x={840.5553499465135}
       y={300}>
       9,4
     </text>
@@ -3648,7 +2796,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="922.7241335952167,400 836.1215932167729,350 922.7241335952167,300"
+      points="821.6878364870322,350 908.2903768654761,300 908.2903768654761,400"
       size={100}
       stroke="white"
       x={879.4228634059948}
@@ -3663,14 +2811,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="836.1215932167729,450 922.7241335952167,400 836.1215932167729,350"
+      points="908.2903768654761,400 821.6878364870322,450 821.6878364870322,350"
       size={100}
       stroke="white"
-      x={879.4228634059948}
+      x={850.5553499465135}
       y={400} />
     <text
       fill="white"
-      x={869.4228634059948}
+      x={840.5553499465135}
       y={400}>
       9,6
     </text>
@@ -3678,7 +2826,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="922.7241335952167,500 836.1215932167729,450 922.7241335952167,400"
+      points="821.6878364870322,450 908.2903768654761,400 908.2903768654761,500"
       size={100}
       stroke="white"
       x={879.4228634059948}
@@ -3693,14 +2841,14 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="right"
-      points="836.1215932167729,550 922.7241335952167,500 836.1215932167729,450"
+      points="908.2903768654761,500 821.6878364870322,550 821.6878364870322,450"
       size={100}
       stroke="white"
-      x={879.4228634059948}
+      x={850.5553499465135}
       y={500} />
     <text
       fill="white"
-      x={869.4228634059948}
+      x={840.5553499465135}
       y={500}>
       9,8
     </text>
@@ -3708,7 +2856,7 @@ exports[`left-right direction grid system`] = `
   <g>
     <polygon
       direction="left"
-      points="922.7241335952167,600 836.1215932167729,550 922.7241335952167,500"
+      points="821.6878364870322,550 908.2903768654761,500 908.2903768654761,600"
       size={100}
       stroke="white"
       x={879.4228634059948}
@@ -3730,7 +2878,7 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="up"
-      points="50,143.30127018922192 100,56.69872981077807 150,143.30127018922192"
+      points="99.99999999999999,42.264973081037425 150.00000000000003,128.86751345948124 49.99999999999999,128.86751345948127"
       size={100}
       stroke="white"
       x={100}
@@ -3745,22 +2893,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="50,143.30127018922192 100,229.90381056766577 150,143.30127018922192"
+      points="100,215.47005383792515 49.99999999999999,128.8675134594813 150,128.86751345948127"
       size={100}
       stroke="white"
       x={100}
-      y={186.60254037844385} />
+      y={157.73502691896257} />
     <text
       fill="white"
       x={90}
-      y={186.60254037844385}>
+      y={157.73502691896257}>
       0,1
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="50,316.50635094610965 100,229.90381056766577 150,316.50635094610965"
+      points="99.99999999999999,215.47005383792512 150.00000000000003,302.07259421636894 49.99999999999999,302.072594216369"
       size={100}
       stroke="white"
       x={100}
@@ -3775,22 +2923,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="50,316.50635094610965 100,403.10889132455355 150,316.50635094610965"
+      points="100,388.6751345948129 49.99999999999999,302.07259421636905 150,302.072594216369"
       size={100}
       stroke="white"
       x={100}
-      y={359.8076211353316} />
+      y={330.9401076758503} />
     <text
       fill="white"
       x={90}
-      y={359.8076211353316}>
+      y={330.9401076758503}>
       0,3
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="50,489.7114317029974 100,403.1088913245535 150,489.7114317029974"
+      points="99.99999999999999,388.6751345948129 150.00000000000003,475.2776749732567 49.99999999999999,475.2776749732567"
       size={100}
       stroke="white"
       x={100}
@@ -3805,22 +2953,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="50,489.71143170299734 100,576.3139720814412 150,489.71143170299734"
+      points="100,561.8802153517006 49.99999999999999,475.27767497325675 150,475.2776749732567"
       size={100}
       stroke="white"
       x={100}
-      y={533.0127018922193} />
+      y={504.145188432738} />
     <text
       fill="white"
       x={90}
-      y={533.0127018922193}>
+      y={504.145188432738}>
       0,5
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="50,662.9165124598851 100,576.3139720814413 150,662.9165124598851"
+      points="99.99999999999999,561.8802153517006 150.00000000000003,648.4827557301444 49.99999999999999,648.4827557301445"
       size={100}
       stroke="white"
       x={100}
@@ -3835,22 +2983,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="50,662.9165124598851 100,749.5190528383289 150,662.9165124598851"
+      points="100,735.0852961085883 49.99999999999999,648.4827557301444 150,648.4827557301444"
       size={100}
       stroke="white"
       x={100}
-      y={706.217782649107} />
+      y={677.3502691896257} />
     <text
       fill="white"
       x={90}
-      y={706.217782649107}>
+      y={677.3502691896257}>
       0,7
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="50,836.1215932167728 100,749.519052838329 150,836.1215932167728"
+      points="99.99999999999999,735.0852961085883 150.00000000000003,821.6878364870322 49.99999999999999,821.6878364870322"
       size={100}
       stroke="white"
       x={100}
@@ -3865,37 +3013,37 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="50,836.1215932167729 100,922.7241335952167 150,836.1215932167729"
+      points="100,908.2903768654761 49.99999999999999,821.6878364870322 150,821.6878364870322"
       size={100}
       stroke="white"
       x={100}
-      y={879.4228634059948} />
+      y={850.5553499465135} />
     <text
       fill="white"
       x={90}
-      y={879.4228634059948}>
+      y={850.5553499465135}>
       0,9
     </text>
   </g>
   <g>
     <polygon
       direction="down"
-      points="100,56.69872981077807 150,143.30127018922192 200,56.69872981077807"
+      points="150,128.8675134594813 100,42.26497308103744 200,42.2649730810374"
       size={100}
       stroke="white"
       x={150}
-      y={100} />
+      y={71.13248654051871} />
     <text
       fill="white"
       x={140}
-      y={100}>
+      y={71.13248654051871}>
       1,0
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="100,229.90381056766577 150,143.30127018922192 200,229.90381056766577"
+      points="150,128.86751345948127 200.00000000000003,215.4700538379251 100,215.47005383792512"
       size={100}
       stroke="white"
       x={150}
@@ -3910,22 +3058,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="100,229.90381056766577 150,316.50635094610965 200,229.90381056766577"
+      points="150,302.072594216369 100,215.47005383792518 200,215.47005383792515"
       size={100}
       stroke="white"
       x={150}
-      y={273.2050807568877} />
+      y={244.33756729740645} />
     <text
       fill="white"
       x={140}
-      y={273.2050807568877}>
+      y={244.33756729740645}>
       1,2
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="100,403.10889132455355 150,316.50635094610965 200,403.10889132455355"
+      points="150,302.072594216369 200.00000000000003,388.67513459481285 100,388.6751345948129"
       size={100}
       stroke="white"
       x={150}
@@ -3940,22 +3088,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="100,403.1088913245535 150,489.7114317029974 200,403.1088913245535"
+      points="150,475.2776749732567 100,388.6751345948129 200,388.67513459481285"
       size={100}
       stroke="white"
       x={150}
-      y={446.41016151377545} />
+      y={417.54264805429415} />
     <text
       fill="white"
       x={140}
-      y={446.41016151377545}>
+      y={417.54264805429415}>
       1,4
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="100,576.3139720814412 150,489.71143170299734 200,576.3139720814412"
+      points="150,475.2776749732567 200.00000000000003,561.8802153517006 100,561.8802153517006"
       size={100}
       stroke="white"
       x={150}
@@ -3970,22 +3118,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="100,576.3139720814413 150,662.9165124598851 200,576.3139720814413"
+      points="150,648.4827557301445 100,561.8802153517006 200,561.8802153517006"
       size={100}
       stroke="white"
       x={150}
-      y={619.6152422706632} />
+      y={590.7477288111819} />
     <text
       fill="white"
       x={140}
-      y={619.6152422706632}>
+      y={590.7477288111819}>
       1,6
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="100,749.5190528383289 150,662.9165124598851 200,749.5190528383289"
+      points="150,648.4827557301444 200.00000000000003,735.0852961085882 100,735.0852961085883"
       size={100}
       stroke="white"
       x={150}
@@ -4000,22 +3148,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="100,749.519052838329 150,836.1215932167728 200,749.519052838329"
+      points="150,821.6878364870322 100,735.0852961085883 200,735.0852961085883"
       size={100}
       stroke="white"
       x={150}
-      y={792.8203230275509} />
+      y={763.9528095680696} />
     <text
       fill="white"
       x={140}
-      y={792.8203230275509}>
+      y={763.9528095680696}>
       1,8
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="100,922.7241335952167 150,836.1215932167729 200,922.7241335952167"
+      points="150,821.6878364870322 200.00000000000003,908.290376865476 100,908.2903768654761"
       size={100}
       stroke="white"
       x={150}
@@ -4030,7 +3178,7 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="up"
-      points="150,143.30127018922192 200,56.69872981077807 250,143.30127018922192"
+      points="200,42.264973081037425 250.00000000000003,128.86751345948124 150,128.86751345948127"
       size={100}
       stroke="white"
       x={200}
@@ -4045,22 +3193,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="150,143.30127018922192 200,229.90381056766577 250,143.30127018922192"
+      points="200,215.47005383792515 150,128.8675134594813 250,128.86751345948127"
       size={100}
       stroke="white"
       x={200}
-      y={186.60254037844385} />
+      y={157.73502691896257} />
     <text
       fill="white"
       x={190}
-      y={186.60254037844385}>
+      y={157.73502691896257}>
       2,1
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="150,316.50635094610965 200,229.90381056766577 250,316.50635094610965"
+      points="200,215.47005383792512 250.00000000000003,302.07259421636894 150,302.072594216369"
       size={100}
       stroke="white"
       x={200}
@@ -4075,22 +3223,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="150,316.50635094610965 200,403.10889132455355 250,316.50635094610965"
+      points="200,388.6751345948129 150,302.07259421636905 250,302.072594216369"
       size={100}
       stroke="white"
       x={200}
-      y={359.8076211353316} />
+      y={330.9401076758503} />
     <text
       fill="white"
       x={190}
-      y={359.8076211353316}>
+      y={330.9401076758503}>
       2,3
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="150,489.7114317029974 200,403.1088913245535 250,489.7114317029974"
+      points="200,388.6751345948129 250.00000000000003,475.2776749732567 150,475.2776749732567"
       size={100}
       stroke="white"
       x={200}
@@ -4105,22 +3253,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="150,489.71143170299734 200,576.3139720814412 250,489.71143170299734"
+      points="200,561.8802153517006 150,475.27767497325675 250,475.2776749732567"
       size={100}
       stroke="white"
       x={200}
-      y={533.0127018922193} />
+      y={504.145188432738} />
     <text
       fill="white"
       x={190}
-      y={533.0127018922193}>
+      y={504.145188432738}>
       2,5
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="150,662.9165124598851 200,576.3139720814413 250,662.9165124598851"
+      points="200,561.8802153517006 250.00000000000003,648.4827557301444 150,648.4827557301445"
       size={100}
       stroke="white"
       x={200}
@@ -4135,22 +3283,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="150,662.9165124598851 200,749.5190528383289 250,662.9165124598851"
+      points="200,735.0852961085883 150,648.4827557301444 250,648.4827557301444"
       size={100}
       stroke="white"
       x={200}
-      y={706.217782649107} />
+      y={677.3502691896257} />
     <text
       fill="white"
       x={190}
-      y={706.217782649107}>
+      y={677.3502691896257}>
       2,7
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="150,836.1215932167728 200,749.519052838329 250,836.1215932167728"
+      points="200,735.0852961085883 250.00000000000003,821.6878364870322 150,821.6878364870322"
       size={100}
       stroke="white"
       x={200}
@@ -4165,37 +3313,37 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="150,836.1215932167729 200,922.7241335952167 250,836.1215932167729"
+      points="200,908.2903768654761 150,821.6878364870322 250,821.6878364870322"
       size={100}
       stroke="white"
       x={200}
-      y={879.4228634059948} />
+      y={850.5553499465135} />
     <text
       fill="white"
       x={190}
-      y={879.4228634059948}>
+      y={850.5553499465135}>
       2,9
     </text>
   </g>
   <g>
     <polygon
       direction="down"
-      points="200,56.69872981077807 250,143.30127018922192 300,56.69872981077807"
+      points="250,128.8675134594813 200,42.26497308103744 300,42.2649730810374"
       size={100}
       stroke="white"
       x={250}
-      y={100} />
+      y={71.13248654051871} />
     <text
       fill="white"
       x={240}
-      y={100}>
+      y={71.13248654051871}>
       3,0
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="200,229.90381056766577 250,143.30127018922192 300,229.90381056766577"
+      points="250,128.86751345948127 300,215.4700538379251 200,215.47005383792512"
       size={100}
       stroke="white"
       x={250}
@@ -4210,22 +3358,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="200,229.90381056766577 250,316.50635094610965 300,229.90381056766577"
+      points="250,302.072594216369 200,215.47005383792518 300,215.47005383792515"
       size={100}
       stroke="white"
       x={250}
-      y={273.2050807568877} />
+      y={244.33756729740645} />
     <text
       fill="white"
       x={240}
-      y={273.2050807568877}>
+      y={244.33756729740645}>
       3,2
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="200,403.10889132455355 250,316.50635094610965 300,403.10889132455355"
+      points="250,302.072594216369 300,388.67513459481285 200,388.6751345948129"
       size={100}
       stroke="white"
       x={250}
@@ -4240,22 +3388,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="200,403.1088913245535 250,489.7114317029974 300,403.1088913245535"
+      points="250,475.2776749732567 200,388.6751345948129 300,388.67513459481285"
       size={100}
       stroke="white"
       x={250}
-      y={446.41016151377545} />
+      y={417.54264805429415} />
     <text
       fill="white"
       x={240}
-      y={446.41016151377545}>
+      y={417.54264805429415}>
       3,4
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="200,576.3139720814412 250,489.71143170299734 300,576.3139720814412"
+      points="250,475.2776749732567 300,561.8802153517006 200,561.8802153517006"
       size={100}
       stroke="white"
       x={250}
@@ -4270,22 +3418,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="200,576.3139720814413 250,662.9165124598851 300,576.3139720814413"
+      points="250,648.4827557301445 200,561.8802153517006 300,561.8802153517006"
       size={100}
       stroke="white"
       x={250}
-      y={619.6152422706632} />
+      y={590.7477288111819} />
     <text
       fill="white"
       x={240}
-      y={619.6152422706632}>
+      y={590.7477288111819}>
       3,6
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="200,749.5190528383289 250,662.9165124598851 300,749.5190528383289"
+      points="250,648.4827557301444 300,735.0852961085882 200,735.0852961085883"
       size={100}
       stroke="white"
       x={250}
@@ -4300,22 +3448,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="200,749.519052838329 250,836.1215932167728 300,749.519052838329"
+      points="250,821.6878364870322 200,735.0852961085883 300,735.0852961085883"
       size={100}
       stroke="white"
       x={250}
-      y={792.8203230275509} />
+      y={763.9528095680696} />
     <text
       fill="white"
       x={240}
-      y={792.8203230275509}>
+      y={763.9528095680696}>
       3,8
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="200,922.7241335952167 250,836.1215932167729 300,922.7241335952167"
+      points="250,821.6878364870322 300,908.290376865476 200,908.2903768654761"
       size={100}
       stroke="white"
       x={250}
@@ -4330,7 +3478,7 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="up"
-      points="250,143.30127018922192 300,56.69872981077807 350,143.30127018922192"
+      points="300,42.264973081037425 350,128.86751345948124 250,128.86751345948127"
       size={100}
       stroke="white"
       x={300}
@@ -4345,22 +3493,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="250,143.30127018922192 300,229.90381056766577 350,143.30127018922192"
+      points="300,215.47005383792515 250,128.8675134594813 350,128.86751345948127"
       size={100}
       stroke="white"
       x={300}
-      y={186.60254037844385} />
+      y={157.73502691896257} />
     <text
       fill="white"
       x={290}
-      y={186.60254037844385}>
+      y={157.73502691896257}>
       4,1
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="250,316.50635094610965 300,229.90381056766577 350,316.50635094610965"
+      points="300,215.47005383792512 350,302.07259421636894 250,302.072594216369"
       size={100}
       stroke="white"
       x={300}
@@ -4375,22 +3523,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="250,316.50635094610965 300,403.10889132455355 350,316.50635094610965"
+      points="300,388.6751345948129 250,302.07259421636905 350,302.072594216369"
       size={100}
       stroke="white"
       x={300}
-      y={359.8076211353316} />
+      y={330.9401076758503} />
     <text
       fill="white"
       x={290}
-      y={359.8076211353316}>
+      y={330.9401076758503}>
       4,3
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="250,489.7114317029974 300,403.1088913245535 350,489.7114317029974"
+      points="300,388.6751345948129 350,475.2776749732567 250,475.2776749732567"
       size={100}
       stroke="white"
       x={300}
@@ -4405,22 +3553,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="250,489.71143170299734 300,576.3139720814412 350,489.71143170299734"
+      points="300,561.8802153517006 250,475.27767497325675 350,475.2776749732567"
       size={100}
       stroke="white"
       x={300}
-      y={533.0127018922193} />
+      y={504.145188432738} />
     <text
       fill="white"
       x={290}
-      y={533.0127018922193}>
+      y={504.145188432738}>
       4,5
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="250,662.9165124598851 300,576.3139720814413 350,662.9165124598851"
+      points="300,561.8802153517006 350,648.4827557301444 250,648.4827557301445"
       size={100}
       stroke="white"
       x={300}
@@ -4435,22 +3583,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="250,662.9165124598851 300,749.5190528383289 350,662.9165124598851"
+      points="300,735.0852961085883 250,648.4827557301444 350,648.4827557301444"
       size={100}
       stroke="white"
       x={300}
-      y={706.217782649107} />
+      y={677.3502691896257} />
     <text
       fill="white"
       x={290}
-      y={706.217782649107}>
+      y={677.3502691896257}>
       4,7
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="250,836.1215932167728 300,749.519052838329 350,836.1215932167728"
+      points="300,735.0852961085883 350,821.6878364870322 250,821.6878364870322"
       size={100}
       stroke="white"
       x={300}
@@ -4465,37 +3613,37 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="250,836.1215932167729 300,922.7241335952167 350,836.1215932167729"
+      points="300,908.2903768654761 250,821.6878364870322 350,821.6878364870322"
       size={100}
       stroke="white"
       x={300}
-      y={879.4228634059948} />
+      y={850.5553499465135} />
     <text
       fill="white"
       x={290}
-      y={879.4228634059948}>
+      y={850.5553499465135}>
       4,9
     </text>
   </g>
   <g>
     <polygon
       direction="down"
-      points="300,56.69872981077807 350,143.30127018922192 400,56.69872981077807"
+      points="350,128.8675134594813 300,42.26497308103744 400,42.2649730810374"
       size={100}
       stroke="white"
       x={350}
-      y={100} />
+      y={71.13248654051871} />
     <text
       fill="white"
       x={340}
-      y={100}>
+      y={71.13248654051871}>
       5,0
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="300,229.90381056766577 350,143.30127018922192 400,229.90381056766577"
+      points="350,128.86751345948127 400,215.4700538379251 300,215.47005383792512"
       size={100}
       stroke="white"
       x={350}
@@ -4510,22 +3658,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="300,229.90381056766577 350,316.50635094610965 400,229.90381056766577"
+      points="350,302.072594216369 300,215.47005383792518 400,215.47005383792515"
       size={100}
       stroke="white"
       x={350}
-      y={273.2050807568877} />
+      y={244.33756729740645} />
     <text
       fill="white"
       x={340}
-      y={273.2050807568877}>
+      y={244.33756729740645}>
       5,2
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="300,403.10889132455355 350,316.50635094610965 400,403.10889132455355"
+      points="350,302.072594216369 400,388.67513459481285 300,388.6751345948129"
       size={100}
       stroke="white"
       x={350}
@@ -4540,22 +3688,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="300,403.1088913245535 350,489.7114317029974 400,403.1088913245535"
+      points="350,475.2776749732567 300,388.6751345948129 400,388.67513459481285"
       size={100}
       stroke="white"
       x={350}
-      y={446.41016151377545} />
+      y={417.54264805429415} />
     <text
       fill="white"
       x={340}
-      y={446.41016151377545}>
+      y={417.54264805429415}>
       5,4
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="300,576.3139720814412 350,489.71143170299734 400,576.3139720814412"
+      points="350,475.2776749732567 400,561.8802153517006 300,561.8802153517006"
       size={100}
       stroke="white"
       x={350}
@@ -4570,22 +3718,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="300,576.3139720814413 350,662.9165124598851 400,576.3139720814413"
+      points="350,648.4827557301445 300,561.8802153517006 400,561.8802153517006"
       size={100}
       stroke="white"
       x={350}
-      y={619.6152422706632} />
+      y={590.7477288111819} />
     <text
       fill="white"
       x={340}
-      y={619.6152422706632}>
+      y={590.7477288111819}>
       5,6
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="300,749.5190528383289 350,662.9165124598851 400,749.5190528383289"
+      points="350,648.4827557301444 400,735.0852961085882 300,735.0852961085883"
       size={100}
       stroke="white"
       x={350}
@@ -4600,22 +3748,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="300,749.519052838329 350,836.1215932167728 400,749.519052838329"
+      points="350,821.6878364870322 300,735.0852961085883 400,735.0852961085883"
       size={100}
       stroke="white"
       x={350}
-      y={792.8203230275509} />
+      y={763.9528095680696} />
     <text
       fill="white"
       x={340}
-      y={792.8203230275509}>
+      y={763.9528095680696}>
       5,8
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="300,922.7241335952167 350,836.1215932167729 400,922.7241335952167"
+      points="350,821.6878364870322 400,908.290376865476 300,908.2903768654761"
       size={100}
       stroke="white"
       x={350}
@@ -4630,7 +3778,7 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="up"
-      points="350,143.30127018922192 400,56.69872981077807 450,143.30127018922192"
+      points="400,42.264973081037425 450,128.86751345948124 350,128.86751345948127"
       size={100}
       stroke="white"
       x={400}
@@ -4645,22 +3793,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="350,143.30127018922192 400,229.90381056766577 450,143.30127018922192"
+      points="400,215.47005383792515 350,128.8675134594813 450,128.86751345948127"
       size={100}
       stroke="white"
       x={400}
-      y={186.60254037844385} />
+      y={157.73502691896257} />
     <text
       fill="white"
       x={390}
-      y={186.60254037844385}>
+      y={157.73502691896257}>
       6,1
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="350,316.50635094610965 400,229.90381056766577 450,316.50635094610965"
+      points="400,215.47005383792512 450,302.07259421636894 350,302.072594216369"
       size={100}
       stroke="white"
       x={400}
@@ -4675,22 +3823,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="350,316.50635094610965 400,403.10889132455355 450,316.50635094610965"
+      points="400,388.6751345948129 350,302.07259421636905 450,302.072594216369"
       size={100}
       stroke="white"
       x={400}
-      y={359.8076211353316} />
+      y={330.9401076758503} />
     <text
       fill="white"
       x={390}
-      y={359.8076211353316}>
+      y={330.9401076758503}>
       6,3
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="350,489.7114317029974 400,403.1088913245535 450,489.7114317029974"
+      points="400,388.6751345948129 450,475.2776749732567 350,475.2776749732567"
       size={100}
       stroke="white"
       x={400}
@@ -4705,22 +3853,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="350,489.71143170299734 400,576.3139720814412 450,489.71143170299734"
+      points="400,561.8802153517006 350,475.27767497325675 450,475.2776749732567"
       size={100}
       stroke="white"
       x={400}
-      y={533.0127018922193} />
+      y={504.145188432738} />
     <text
       fill="white"
       x={390}
-      y={533.0127018922193}>
+      y={504.145188432738}>
       6,5
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="350,662.9165124598851 400,576.3139720814413 450,662.9165124598851"
+      points="400,561.8802153517006 450,648.4827557301444 350,648.4827557301445"
       size={100}
       stroke="white"
       x={400}
@@ -4735,22 +3883,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="350,662.9165124598851 400,749.5190528383289 450,662.9165124598851"
+      points="400,735.0852961085883 350,648.4827557301444 450,648.4827557301444"
       size={100}
       stroke="white"
       x={400}
-      y={706.217782649107} />
+      y={677.3502691896257} />
     <text
       fill="white"
       x={390}
-      y={706.217782649107}>
+      y={677.3502691896257}>
       6,7
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="350,836.1215932167728 400,749.519052838329 450,836.1215932167728"
+      points="400,735.0852961085883 450,821.6878364870322 350,821.6878364870322"
       size={100}
       stroke="white"
       x={400}
@@ -4765,37 +3913,37 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="350,836.1215932167729 400,922.7241335952167 450,836.1215932167729"
+      points="400,908.2903768654761 350,821.6878364870322 450,821.6878364870322"
       size={100}
       stroke="white"
       x={400}
-      y={879.4228634059948} />
+      y={850.5553499465135} />
     <text
       fill="white"
       x={390}
-      y={879.4228634059948}>
+      y={850.5553499465135}>
       6,9
     </text>
   </g>
   <g>
     <polygon
       direction="down"
-      points="400,56.69872981077807 450,143.30127018922192 500,56.69872981077807"
+      points="450,128.8675134594813 400,42.26497308103744 500,42.2649730810374"
       size={100}
       stroke="white"
       x={450}
-      y={100} />
+      y={71.13248654051871} />
     <text
       fill="white"
       x={440}
-      y={100}>
+      y={71.13248654051871}>
       7,0
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="400,229.90381056766577 450,143.30127018922192 500,229.90381056766577"
+      points="450,128.86751345948127 500,215.4700538379251 400,215.47005383792512"
       size={100}
       stroke="white"
       x={450}
@@ -4810,22 +3958,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="400,229.90381056766577 450,316.50635094610965 500,229.90381056766577"
+      points="450,302.072594216369 400,215.47005383792518 500,215.47005383792515"
       size={100}
       stroke="white"
       x={450}
-      y={273.2050807568877} />
+      y={244.33756729740645} />
     <text
       fill="white"
       x={440}
-      y={273.2050807568877}>
+      y={244.33756729740645}>
       7,2
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="400,403.10889132455355 450,316.50635094610965 500,403.10889132455355"
+      points="450,302.072594216369 500,388.67513459481285 400,388.6751345948129"
       size={100}
       stroke="white"
       x={450}
@@ -4840,22 +3988,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="400,403.1088913245535 450,489.7114317029974 500,403.1088913245535"
+      points="450,475.2776749732567 400,388.6751345948129 500,388.67513459481285"
       size={100}
       stroke="white"
       x={450}
-      y={446.41016151377545} />
+      y={417.54264805429415} />
     <text
       fill="white"
       x={440}
-      y={446.41016151377545}>
+      y={417.54264805429415}>
       7,4
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="400,576.3139720814412 450,489.71143170299734 500,576.3139720814412"
+      points="450,475.2776749732567 500,561.8802153517006 400,561.8802153517006"
       size={100}
       stroke="white"
       x={450}
@@ -4870,22 +4018,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="400,576.3139720814413 450,662.9165124598851 500,576.3139720814413"
+      points="450,648.4827557301445 400,561.8802153517006 500,561.8802153517006"
       size={100}
       stroke="white"
       x={450}
-      y={619.6152422706632} />
+      y={590.7477288111819} />
     <text
       fill="white"
       x={440}
-      y={619.6152422706632}>
+      y={590.7477288111819}>
       7,6
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="400,749.5190528383289 450,662.9165124598851 500,749.5190528383289"
+      points="450,648.4827557301444 500,735.0852961085882 400,735.0852961085883"
       size={100}
       stroke="white"
       x={450}
@@ -4900,22 +4048,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="400,749.519052838329 450,836.1215932167728 500,749.519052838329"
+      points="450,821.6878364870322 400,735.0852961085883 500,735.0852961085883"
       size={100}
       stroke="white"
       x={450}
-      y={792.8203230275509} />
+      y={763.9528095680696} />
     <text
       fill="white"
       x={440}
-      y={792.8203230275509}>
+      y={763.9528095680696}>
       7,8
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="400,922.7241335952167 450,836.1215932167729 500,922.7241335952167"
+      points="450,821.6878364870322 500,908.290376865476 400,908.2903768654761"
       size={100}
       stroke="white"
       x={450}
@@ -4930,7 +4078,7 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="up"
-      points="450,143.30127018922192 500,56.69872981077807 550,143.30127018922192"
+      points="500,42.264973081037425 550,128.86751345948124 450,128.86751345948127"
       size={100}
       stroke="white"
       x={500}
@@ -4945,22 +4093,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="450,143.30127018922192 500,229.90381056766577 550,143.30127018922192"
+      points="500,215.47005383792515 450,128.8675134594813 550,128.86751345948127"
       size={100}
       stroke="white"
       x={500}
-      y={186.60254037844385} />
+      y={157.73502691896257} />
     <text
       fill="white"
       x={490}
-      y={186.60254037844385}>
+      y={157.73502691896257}>
       8,1
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="450,316.50635094610965 500,229.90381056766577 550,316.50635094610965"
+      points="500,215.47005383792512 550,302.07259421636894 450,302.072594216369"
       size={100}
       stroke="white"
       x={500}
@@ -4975,22 +4123,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="450,316.50635094610965 500,403.10889132455355 550,316.50635094610965"
+      points="500,388.6751345948129 450,302.07259421636905 550,302.072594216369"
       size={100}
       stroke="white"
       x={500}
-      y={359.8076211353316} />
+      y={330.9401076758503} />
     <text
       fill="white"
       x={490}
-      y={359.8076211353316}>
+      y={330.9401076758503}>
       8,3
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="450,489.7114317029974 500,403.1088913245535 550,489.7114317029974"
+      points="500,388.6751345948129 550,475.2776749732567 450,475.2776749732567"
       size={100}
       stroke="white"
       x={500}
@@ -5005,22 +4153,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="450,489.71143170299734 500,576.3139720814412 550,489.71143170299734"
+      points="500,561.8802153517006 450,475.27767497325675 550,475.2776749732567"
       size={100}
       stroke="white"
       x={500}
-      y={533.0127018922193} />
+      y={504.145188432738} />
     <text
       fill="white"
       x={490}
-      y={533.0127018922193}>
+      y={504.145188432738}>
       8,5
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="450,662.9165124598851 500,576.3139720814413 550,662.9165124598851"
+      points="500,561.8802153517006 550,648.4827557301444 450,648.4827557301445"
       size={100}
       stroke="white"
       x={500}
@@ -5035,22 +4183,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="450,662.9165124598851 500,749.5190528383289 550,662.9165124598851"
+      points="500,735.0852961085883 450,648.4827557301444 550,648.4827557301444"
       size={100}
       stroke="white"
       x={500}
-      y={706.217782649107} />
+      y={677.3502691896257} />
     <text
       fill="white"
       x={490}
-      y={706.217782649107}>
+      y={677.3502691896257}>
       8,7
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="450,836.1215932167728 500,749.519052838329 550,836.1215932167728"
+      points="500,735.0852961085883 550,821.6878364870322 450,821.6878364870322"
       size={100}
       stroke="white"
       x={500}
@@ -5065,37 +4213,37 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="450,836.1215932167729 500,922.7241335952167 550,836.1215932167729"
+      points="500,908.2903768654761 450,821.6878364870322 550,821.6878364870322"
       size={100}
       stroke="white"
       x={500}
-      y={879.4228634059948} />
+      y={850.5553499465135} />
     <text
       fill="white"
       x={490}
-      y={879.4228634059948}>
+      y={850.5553499465135}>
       8,9
     </text>
   </g>
   <g>
     <polygon
       direction="down"
-      points="500,56.69872981077807 550,143.30127018922192 600,56.69872981077807"
+      points="550,128.8675134594813 500,42.26497308103744 600,42.2649730810374"
       size={100}
       stroke="white"
       x={550}
-      y={100} />
+      y={71.13248654051871} />
     <text
       fill="white"
       x={540}
-      y={100}>
+      y={71.13248654051871}>
       9,0
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="500,229.90381056766577 550,143.30127018922192 600,229.90381056766577"
+      points="550,128.86751345948127 600,215.4700538379251 500,215.47005383792512"
       size={100}
       stroke="white"
       x={550}
@@ -5110,22 +4258,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="500,229.90381056766577 550,316.50635094610965 600,229.90381056766577"
+      points="550,302.072594216369 500,215.47005383792518 600,215.47005383792515"
       size={100}
       stroke="white"
       x={550}
-      y={273.2050807568877} />
+      y={244.33756729740645} />
     <text
       fill="white"
       x={540}
-      y={273.2050807568877}>
+      y={244.33756729740645}>
       9,2
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="500,403.10889132455355 550,316.50635094610965 600,403.10889132455355"
+      points="550,302.072594216369 600,388.67513459481285 500,388.6751345948129"
       size={100}
       stroke="white"
       x={550}
@@ -5140,22 +4288,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="500,403.1088913245535 550,489.7114317029974 600,403.1088913245535"
+      points="550,475.2776749732567 500,388.6751345948129 600,388.67513459481285"
       size={100}
       stroke="white"
       x={550}
-      y={446.41016151377545} />
+      y={417.54264805429415} />
     <text
       fill="white"
       x={540}
-      y={446.41016151377545}>
+      y={417.54264805429415}>
       9,4
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="500,576.3139720814412 550,489.71143170299734 600,576.3139720814412"
+      points="550,475.2776749732567 600,561.8802153517006 500,561.8802153517006"
       size={100}
       stroke="white"
       x={550}
@@ -5170,22 +4318,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="500,576.3139720814413 550,662.9165124598851 600,576.3139720814413"
+      points="550,648.4827557301445 500,561.8802153517006 600,561.8802153517006"
       size={100}
       stroke="white"
       x={550}
-      y={619.6152422706632} />
+      y={590.7477288111819} />
     <text
       fill="white"
       x={540}
-      y={619.6152422706632}>
+      y={590.7477288111819}>
       9,6
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="500,749.5190528383289 550,662.9165124598851 600,749.5190528383289"
+      points="550,648.4827557301444 600,735.0852961085882 500,735.0852961085883"
       size={100}
       stroke="white"
       x={550}
@@ -5200,22 +4348,22 @@ exports[`up-down direction grid system`] = `
   <g>
     <polygon
       direction="down"
-      points="500,749.519052838329 550,836.1215932167728 600,749.519052838329"
+      points="550,821.6878364870322 500,735.0852961085883 600,735.0852961085883"
       size={100}
       stroke="white"
       x={550}
-      y={792.8203230275509} />
+      y={763.9528095680696} />
     <text
       fill="white"
       x={540}
-      y={792.8203230275509}>
+      y={763.9528095680696}>
       9,8
     </text>
   </g>
   <g>
     <polygon
       direction="up"
-      points="500,922.7241335952167 550,836.1215932167729 600,922.7241335952167"
+      points="550,821.6878364870322 600,908.290376865476 500,908.2903768654761"
       size={100}
       stroke="white"
       x={550}

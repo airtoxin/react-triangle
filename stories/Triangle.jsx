@@ -17,24 +17,24 @@ storiesOf('Triangle', module)
   ), { inline: true })
   .addWithInfo('place in corner', () => (
     <svg width="500" height="500" style={{ border: 'solid 1px' }}>
-      <Triangle size={50}/>
-      <Triangle y={500} size={50} direction="down"/>
-      <Triangle x={500} size={50} direction="left"/>
-      <Triangle x={500} y={500} size={50} direction="right"/>
+      <Triangle direction="up" x={0} y={0} size={50} />
+      <Triangle direction="down" x={0} y={500} size={50} />
+      <Triangle direction="left" x={500} y={0} size={50} />
+      <Triangle direction="right" x={500} y={500} size={50} />
     </svg>
   ), { inline: true })
   .addWithInfo('big size', () => (
     <svg width="500" height="500" style={{ border: 'solid 1px' }}>
-      <Triangle x={250} y={250} size={500}/>
+      <Triangle direction="up" x={250} y={250} size={500}/>
     </svg>
   ), { inline: true })
   .addWithInfo('pass through props', () => (
     <svg width="500" height="500" style={{ border: 'solid 1px' }}>
       <Triangle
+        direction="up"
         x={250}
         y={250}
         size={100}
-        direction="up"
         fill="none"
         stroke="black"
         strokeWidth="10"
