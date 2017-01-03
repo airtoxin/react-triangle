@@ -67,8 +67,8 @@ Helper function to calculate triangle location in grid.
 | oX         | number                              | original triangle's center coordinate x  |
 | oY         | number                              | original triangle's center coordinate y  |
 | size       | number                              | triangle edge length                     |
-| gridX      | integer                             | coordinate x in hexagonal grid system    |
-| gridY      | integer                             | coordinate y in hexagonal grid system    |
+| gridX      | integer                             | coordinate x in tirianglar grid system   |
+| gridY      | integer                             | coordinate y in tirianglar grid system   |
 
 ```js
 import Triangle, { gridPoint } from 'react-triangle';
